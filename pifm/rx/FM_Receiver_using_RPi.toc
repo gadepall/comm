@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}Software Installation}{1}
+\contentsline {subsection}{\numberline {1.1}Preliminary Tools }{1}
+\contentsline {subsection}{\numberline {1.2}Update \& Install Dependencies}{1}
+\contentsline {subsection}{\numberline {1.3}Download \& Build RTL-SDR software}{1}
+\contentsline {section}{\numberline {2}Hardware Installation}{2}
+\contentsline {subsection}{\numberline {2.1}Interior Components}{2}
+\contentsline {subsection}{\numberline {2.2}Working Process}{2}
+\contentsline {subsection}{\numberline {2.3}Test Connection}{2}
+\contentsline {section}{\numberline {3}Operation}{2}
+\contentsline {section}{References}{3}
