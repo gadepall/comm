@@ -167,6 +167,9 @@ of Electrical Engineering, Indian Institute of Technology, Hyderabad
 
 \bigskip
 
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
 \begin{abstract}
 %\boldmath
 The manual frames the problems of receiver design and performance analysis in digital communication as applications of probability theory.
@@ -197,8 +200,11 @@ The manual frames the problems of receiver design and performance analysis in di
 \IEEEpeerreviewmaketitle
 
 
-\section{Multivariate Gaussian}
-The multivariate Gaussian distribution is defined as
+\section{Multivariate Gaussian: Coherent BFSK}
+\begin{enumerate}[label=\thesection.\arabic*
+,ref=\thesection.\theenumi]
+
+\item The multivariate Gaussian distribution is defined as
 %
 \begin{multline}
 p_{\mathbf{x}}(x_1,\dots,x_k)
@@ -207,13 +213,19 @@ p_{\mathbf{x}}(x_1,\dots,x_k)
 \end{multline}
 %
 where $\mathbf{\mu}$ is the mean vector, $\Sigma = E\sbrak{\brak{\mathbf{x}-\mathbf{\mu}}\brak{\mathbf{x}-\mathbf{\mu}}^T}$ is the covariance matrix and $\abs{\Sigma}$ is the determinant of $\Sigma$.
-\begin{problem}
+\item
 Show that
+{\small
 \begin{multline}
 p(x,y)= \frac{1}{2\pi \sigma_x\sigma_y\sqrt{1-\rho^2}}\exp\lsbrak{-\frac{1}{2\brak{1-\rho^2}}}
 \\
-\times \rsbrak{\cbrak{\frac{\brak{x-\mu_x}^2}{\sigma_x^2}+\frac{\brak{y-\mu_y}^2}{\sigma_y^2}-\frac{2\rho\brak{x-\mu_x}\brak{y-\mu_y}}{\sigma_x\sigma_y}}}
+\times 
+\rsbrak{
+\cbrak{\frac{\brak{x-\mu_x}^2}{\sigma_x^2}+\frac{\brak{y-\mu_y}^2}{\sigma_y^2}}
+-
+\frac{2\rho\brak{x-\mu_x}\brak{y-\mu_y}}{\sigma_x\sigma_y}}
 \end{multline}
+}
 %
 where
 %
@@ -231,7 +243,7 @@ where
 \end{align}
 %
 
-\end{problem}
+
 
 
 %\subsection{Bivariate Gaussian}
@@ -239,7 +251,7 @@ where
 %
  %Show that 
 %
-\begin{problem}
+\item
 If 
 \begin{align}
 \mathbf{y}|0 = 
@@ -257,13 +269,17 @@ n_{1}\\
 \end{pmatrix*},
 \end{align}
 use the MAP criterion to reach a decision.
-\end{problem}
-\begin{problem}
+
+\item
 Derive and plot the probability of error.  Verify through simulation.
-\end{problem}
+
 %
-\section{Coherent BFSK}
-\begin{problem}
+\end{enumerate}
+\section{QPSK}
+\begin{enumerate}[label=\thesection.\arabic*
+,ref=\thesection.\theenumi]
+
+\item
 Let
 \begin{equation}
 \mathbf{r} = \mathbf{s}+ \mathbf{n}
@@ -294,11 +310,11 @@ A
 E\sbrak{\mathbf{n}} &= \mathbf{0}, E\sbrak{\mathbf{n}\mathbf{n}^T} = \sigma^2 \mathbf{I}
 \end{align}
 %
-\begin{enumerate}
 \item Show that the MAP decision for detecting $\mathbf{s}_0$ results in
 \begin{equation}
 \abs{r}_2 < r_1
 \end{equation}
+
 \item Express $\pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0}$ in terms of $r_1, r_2$.
 Let $X=n_2-n_1, Y = -n_2-n_1$, where $\mathbf{n}=\brak{n_1,n_2}$.
 Their correlation coefficient is defined as
@@ -308,17 +324,23 @@ Their correlation coefficient is defined as
 \end{align}
 %
 $X$ and $Y$ are said to be uncorrelated if $\rho = 0$
-\item Show that if $X$ and $Y$ are uncorrelated 
-Verify this numerically.
+\item Show that if $X$ and $Y$ are uncorrelated and
+verify this numerically.
 \item Show that $X$ and $Y$ are independent, i.e. $p_{XY}(x,y) = p_{X}(x)p_{Y}(y)$.
 \item Show that $X,Y \sim \mathcal{N}\brak{0,2\sigma^2}$.
-\item Show that $\pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0} =\pr{ X < A,  Y < A}$.
+\item Show that 
+\begin{equation}
+\pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = 
+\mathbf{s}_0}=\pr{ X < A,  Y < A}.
+\end{equation}
 \item Find $\pr{ X < A,  Y < A}$.
 \item Verify the above through simulation.
 \end{enumerate}
-\end{problem}
 \section{Noncoherent BFSK}
-\begin{problem}
+\begin{enumerate}[label=\thesection.\arabic*
+,ref=\thesection.\theenumi]
+
+\item
 Show that
 %
 \begin{align}
@@ -332,8 +354,8 @@ where the modified Bessel function of order $n$ (integer) is defined as
 \begin{align}
 I_{n}(x) = \frac{1}{\pi}\int_{0}^{\pi}e^{x\cos\theta}\cos n\theta\,d\theta
 \end{align}
-\end{problem}
-\begin{problem}
+
+\item
 Let
 %
 \begin{align}
@@ -357,7 +379,6 @@ Let
 %
 where $\mathbf{n}_0,\mathbf{n}_1\sim \mathcal{N}\brak{\mathbf{0}, \frac{N_0}{2}\mathbf{I}}$.
 %
-\begin{enumerate}
 \item Taking $\mathbf{r} = \brak{r_1,r_2,r_3,r_4}^{T},$, find the pdf $p\brak{\mathbf{r}|0,\phi_0}$ in
 terms of $r_1,r_2,r_3,r_4,\phi,E_b$ and $N_0$. Assume that all noise variables are independent.
 %
@@ -407,15 +428,17 @@ E\sbrak{g\brak{r_1,r_2}}=\frac{1}{2}e^{-\frac{E_b}{2N_0}}.
 \end{align}
 %
 \end{enumerate}
-\end{problem}
-\begin{problem}
+\section{Fun with Probability}
+\begin{enumerate}[label=\thesection.\arabic*
+,ref=\thesection.\theenumi]
+
+\item
  Let $U,V\sim\mathcal{N}\brak{0,\frac{k}{2}}$ be i.i.d.  Assuming that
 %
 \begin{align}
 U = \sqrt{R} \cos \Theta \\
 V = \sqrt{R} \sin \Theta
 \end{align}
-\begin{enumerate}
 \item 
 Compute the jacobian for $U,V$ with respect to $X$ and $\Theta$ defined by
 %
@@ -493,9 +516,10 @@ p_{Z}(z) &=
 %
 find $\pr{R < Z}$.
 \end{enumerate}
-\end{problem}
 \section{$M$-PSK}
-\begin{problem}
+\begin{enumerate}[label=\thesection.\arabic*
+,ref=\thesection.\theenumi]
+\item
 Consider a system where 
 $\mathbf{s}_i=
 \begin{pmatrix}
@@ -519,8 +543,7 @@ n_2
 \end{pmatrix}
 \end{align}
 where $n_1,n_2 \sim \mathcal{N}\brak{0,\frac{N_0}{2}}$.
-
-\begin{enumerate}
+Find the decision rule.
 \item Substituting 
 \begin{align}
 r_1=R\cos \theta \\
@@ -557,11 +580,14 @@ Find a compact expression for
 I = 1 - \sqrt{\frac{\gamma}{\pi}}\int_{-\frac{\pi}{M}}^{\frac{\pi}{M}}e^{- \gamma\sin^2\theta }\cos \theta\, d\theta
 \end{align}
 \item Find $P_{e|\mathbf{s}_0}$.
-\end{enumerate}
-\end{problem}
+
 %
+\end{enumerate}
 \section{Craig's Formula and MGF}
-\begin{problem}
+\begin{enumerate}[label=\thesection.\arabic*
+,ref=\thesection.\theenumi]
+
+\item
 The Moment Generating Function (MGF) of $X$ is defined as
 %
 \begin{align}
@@ -571,7 +597,6 @@ M_{X}(s) = E\sbrak{e^{s X}}
 where $X$ is a random variable and $E\sbrak{\cdot}$ is the expectation.  
 %
 %
-\begin{enumerate}
 \item Let $Y \sim \gauss{0}{1}$.  Define
 %
 \begin{align}
@@ -614,7 +639,6 @@ Find $P_e$.
 \item 
 If $\gamma = \frac{\Omega E_s}{N_0}$, show that $P_e < \frac{1}{2\gamma}$. 
 \end{enumerate}
-\end{problem}
 
 
 

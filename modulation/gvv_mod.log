@@ -1,25 +1,29 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2018.1.20)  31 JAN 2018 22:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.1)  31 JAN 2019 13:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **gvv_mod.tex
 (./gvv_mod.tex
-LaTeX2e <2017/01/01> patch level 3
-Babel <3.9r> and hyphenation patterns for 3 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 85 language(s) loaded.
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IE
+EEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
 \@IEEEtrantmpdimenA=\dimen102
 \@IEEEtrantmpdimenB=\dimen103
 \@IEEEtrantmpdimenC=\dimen104
-\@IEEEtrantmpcountA=\count79
-\@IEEEtrantmpcountB=\count80
-\@IEEEtrantmpcountC=\count81
+\@IEEEtrantmpcountA=\count80
+\@IEEEtrantmpcountB=\count81
+\@IEEEtrantmpcountC=\count82
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1p
+tm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -86,44 +90,50 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \IEEEiednormlabelsep=\dimen118
 \IEEEiedmathlabelsep=\dimen119
 \IEEEiedtopsep=\skip41
-\c@section=\count82
-\c@subsection=\count83
-\c@subsubsection=\count84
-\c@paragraph=\count85
-\c@IEEEsubequation=\count86
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@IEEEsubequation=\count87
 \abovecaptionskip=\skip42
 \belowcaptionskip=\skip43
-\c@figure=\count87
-\c@table=\count88
-\@IEEEeqnnumcols=\count89
-\@IEEEeqncolcnt=\count90
-\@IEEEsubeqnnumrollback=\count91
+\c@figure=\count88
+\c@table=\count89
+\@IEEEeqnnumcols=\count90
+\@IEEEeqncolcnt=\count91
+\@IEEEsubeqnnumrollback=\count92
 \@IEEEquantizeheightA=\dimen120
 \@IEEEquantizeheightB=\dimen121
 \@IEEEquantizeheightC=\dimen122
 \@IEEEquantizeprevdepth=\dimen123
-\@IEEEquantizemultiple=\count92
+\@IEEEquantizemultiple=\count93
 \@IEEEquantizeboxA=\box26
 \@IEEEtmpitemindent=\dimen124
 \IEEEPARstartletwidth=\dimen125
-\c@IEEEbiography=\count93
+\c@IEEEbiography=\count94
 \@IEEEtranrubishbin=\box27
-) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/setspace/se
+tspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/was/gensymb
+.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcol
+or.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics-cf
+g/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: dvips.def on input line 225.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
-File: dvips.def 2016/07/10 v3.1a Driver-dependent file (DPC,SPQR)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics-de
+f/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -134,14 +144,17 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/caption/cap
+tion.sty
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/caption/cap
+tion3.sty
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/ke
+yval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
@@ -171,22 +184,25 @@ ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
 ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
 \else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
 \fi .
-\c@ContinuedFloat=\count94
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
-\c@tracingmulticols=\count95
+\c@caption@flags=\count95
+\c@ContinuedFloat=\count96
+)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/multi
+col.sty
+Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
+\c@tracingmulticols=\count97
 
 
 Package multicol Warning: May not work with the twocolumn option on input line 
-134.
+141.
 
 \mult@box=\box28
 \multicol@leftmargin=\dimen133
-\c@unbalance=\count96
-\c@collectmore=\count97
-\doublecol@number=\count98
-\multicoltolerance=\count99
-\multicolpretolerance=\count100
+\c@unbalance=\count98
+\c@collectmore=\count99
+\doublecol@number=\count100
+\multicoltolerance=\count101
+\multicolpretolerance=\count102
 \full@width=\dimen134
 \page@free=\dimen135
 \premulticols=\dimen136
@@ -217,27 +233,31 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \@tempa=\box49
 \@tempa=\box50
 \@tempa=\box51
-\c@columnbadness=\count101
-\c@finalcolumnbadness=\count102
+\c@columnbadness=\count103
+\c@finalcolumnbadness=\count104
 \last@try=\dimen139
 \multicolovershoot=\dimen140
 \multicolundershoot=\dimen141
 \mult@nat@firstbox=\box52
 \colbreak@box=\box53
-\mc@col@check@num=\count103
-) (/home/linaro/texmf/tex/latex/iithtlc/iithtlc.sty
+\mc@col@check@num=\count105
+) (/data/data/com.termux/files/home/texmf/tex/latex/iithtlc/iithtlc.sty
 Package: iithtlc 10/04/2016 IITH TLC
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/gr
+aphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/gr
+aphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/tr
+ig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics-cf
+g/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvips.def on input line 99.
@@ -245,33 +265,39 @@ Package graphics Info: Driver file: dvips.def on input line 99.
 \Gin@req@height=\dimen142
 \Gin@req@width=\dimen143
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/11/05 v2.16a AMS math features
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amsmath/ams
+math.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amsmath/ams
+text.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amsmath/ams
+gen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen144
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amsmath/ams
+bsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen145
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amsmath/ams
+opn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count104
+\inf@bad=\count106
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count105
-\leftroot@=\count106
+\uproot@=\count107
+\leftroot@=\count108
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count107
-\DOTSCASE@=\count108
+\classnum@=\count109
+\DOTSCASE@=\count110
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -280,15 +306,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen146
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count109
-\c@MaxMatrixCols=\count110
+\macc@depth=\count111
+\c@MaxMatrixCols=\count112
 \dotsspace@=\muskip10
-\c@parentequation=\count111
-\dspbrk@lvl=\count112
+\c@parentequation=\count113
+\dspbrk@lvl=\count114
 \tag@help=\toks17
-\row@=\count113
-\column@=\count114
-\maxfields@=\count115
+\row@=\count115
+\column@=\count116
+\maxfields@=\count117
 \andhelp@=\toks18
 \eqnshift@=\dimen147
 \alignsep@=\dimen148
@@ -303,30 +329,33 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/mathtools/m
+athtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count116
-\calc@Bcount=\count117
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/calc.
+sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count118
+\calc@Bcount=\count119
 \calc@Adimen=\dimen153
 \calc@Bdimen=\dimen154
 \calc@Askip=\skip49
 \calc@Bskip=\skip50
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count118
+\calc@Ccount=\count120
 \calc@Cskip=\skip51
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/mathtools/m
+hsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count119
+\g_MT_multlinerow_int=\count121
 \l_MT_multwidth_dim=\dimen155
 \origjot=\skip52
 \l_MT_shortvdotswithinadjustabove_dim=\dimen156
@@ -336,8 +365,9 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen160
 \l_MT_below_shortintertext_sep=\dimen161
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2015/03/04 v2.20.2
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amscls/amst
+hm.sty
+Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks21
 \thm@bodyfont=\toks22
 \thm@headfont=\toks23
@@ -348,11 +378,13 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip55
 \dth@everypar=\toks26
 )
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ma
+thrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup4
 )
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/txfonts.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/txf
+onts.sty
 Package: txfonts 2008/01/22 v3.2.1
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -430,128 +462,149 @@ LaTeX Info: Redefining \not on input line 1043.
 LaTeX Info: Redefining \textsquare on input line 1063.
 LaTeX Info: Redefining \openbox on input line 1064.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/sttools/stfloats.sty
-Package: stfloats 2016/06/28 v3.2 Improve float mechanism and baselineskip sett
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/sttools/stf
+loats.sty
+Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip sett
 ings
-\@dblbotnum=\count120
-\c@dblbotnumber=\count121
+\@dblbotnum=\count122
+\c@dblbotnumber=\count123
 )
-(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/cite/cite.s
+ty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(/usr/share/texlive/texmf-dist/tex/latex/cases/cases.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/cases/cases
+.sty
 Package: cases 2002/05/02 ver 2.5 
 )
-(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/subfig/subf
+ig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count122
+\c@KVtest=\count124
 \sf@farskip=\skip56
 \sf@captopadj=\dimen162
 \sf@capskip=\skip57
 \sf@nearskip=\skip58
-\c@subfigure=\count123
-\c@subfigure@save=\count124
-\c@lofdepth=\count125
-\c@subtable=\count126
-\c@subtable@save=\count127
-\c@lotdepth=\count128
+\c@subfigure=\count125
+\c@subfigure@save=\count126
+\c@lofdepth=\count127
+\c@subtable=\count128
+\c@subtable@save=\count129
+\c@lotdepth=\count130
 \sf@top=\skip59
 \sf@bottom=\skip60
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/longt
+able.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip61
 \LTright=\skip62
 \LTpre=\skip63
 \LTpost=\skip64
-\LTchunksize=\count129
+\LTchunksize=\count131
 \LTcapwidth=\dimen163
 \LT@head=\box56
 \LT@firsthead=\box57
 \LT@foot=\box58
 \LT@lastfoot=\box59
-\LT@cols=\count130
-\LT@rows=\count131
-\c@LT@tables=\count132
-\c@LT@chunks=\count133
+\LT@cols=\count132
+\LT@rows=\count133
+\c@LT@tables=\count134
+\c@LT@chunks=\count135
 \LT@p@ftn=\toks27
 )
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/multirow/mu
+ltirow.sty
+Package: multirow 2018/08/03 v2.3 Span multiple rows of a table
 \multirow@colwidth=\skip65
-\multirow@cntb=\count134
+\multirow@cntb=\count136
 \multirow@dima=\skip66
 \bigstrutjot=\dimen164
 )
-(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/enumitem/en
+umitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip67
 \enit@outerparindent=\dimen165
 \enit@toks=\toks28
 \enit@inbox=\box60
-\enitdp@description=\count135
+\enitdp@description=\count137
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count136
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/li
+stings.sty
+\lst@mode=\count138
 \lst@gtempboxa=\box61
 \lst@token=\toks29
-\lst@length=\count137
+\lst@length=\count139
 \lst@currlwidth=\dimen166
-\lst@column=\count138
-\lst@pos=\count139
+\lst@column=\count140
+\lst@pos=\count141
 \lst@lostspace=\dimen167
 \lst@width=\dimen168
-\lst@newlines=\count140
-\lst@lineno=\count141
+\lst@newlines=\count142
+\lst@lineno=\count143
 \lst@maxwidth=\dimen169
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count142
-\lst@skipnumbers=\count143
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/ls
+tmisc.sty
+File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+\c@lstnumber=\count144
+\lst@skipnumbers=\count145
 \lst@framebox=\box62
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2015/06/04 1.6 listings configuration
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/li
+stings.cfg
+File: listings.cfg 2018/09/02 1.7 listings configuration
 ))
-Package: listings 2015/06/04 1.6 (Carsten Heinz)
+Package: listings 2018/09/02 1.7 (Carsten Heinz)
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2015/03/17 v1.2c Input encoding file
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/base/inpute
+nc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks30
 \inpenc@posthook=\toks31
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
-File: latin1.def 2015/03/17 v1.2c Input encoding file
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/base/latin1
+.def
+File: latin1.def 2018/04/06 v1.3b Input encoding file
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/array
+.sty
+Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
 \col@sep=\dimen170
+\ar@mcellbox=\box63
 \extrarowheight=\dimen171
 \NC@list=\toks32
 \extratabsurround=\skip68
 \backup@length=\skip69
+\ar@cellbox=\box64
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/hhline.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/hhlin
+e.sty
 Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/base/ifthen
+.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/ls
+cape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/ls
+tlang1.sty
+File: lstlang1.sty 2018/09/02 1.7 listings language file
 ) (./gvv_mod.aux)
 \openout1 = `gvv_mod.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 75.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 75.
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oml
+txmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 75.
@@ -563,7 +616,8 @@ LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 75.
 LaTeX Font Info:    Try loading font information for OMS+txsy on input line 75.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oms
+txsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 75.
@@ -571,20 +625,23 @@ LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 75.
 LaTeX Font Info:    Try loading font information for OMX+txex on input line 75.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/omx
+txex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 75.
 LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 75.
 LaTeX Font Info:    Try loading font information for U+txexa on input line 75.
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
+exa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 75.
 LaTeX Font Info:    Try loading font information for OT1+txr on input line 75.
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
+txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 -- Lines per column: 50 (exact).
@@ -603,99 +660,113 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/caption/ltc
+aption.sty
+Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count144
-\c@theorem=\count145
-\c@problem=\count146
-\c@proposition=\count147
-\c@lemma=\count148
-\c@example=\count149
-\c@definition=\count150
-\c@rem=\count151
+\c@lstlisting=\count146
+\c@theorem=\count147
+\c@problem=\count148
+\c@proposition=\count149
+\c@lemma=\count150
+\c@example=\count151
+\c@definition=\count152
+\c@rem=\count153
 File: iith_logo.eps Graphic file (type eps)
-
-<iith_logo.eps>
+ <iith_logo.eps>
 LaTeX Font Info:    Calculating math sizes for size <24> on input line 164.
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 164.
- (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
+sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Try loading font information for U+txmia on input line 164.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
+mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for U+txsya on input line 164.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
+sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for U+txsyb on input line 164.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
+syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for U+txsyc on input line 164.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
+syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 File: tlc.eps Graphic file (type eps)
  <tlc.eps>
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 164.
 File: iith_logo.eps Graphic file (type eps)
-
-<iith_logo.eps>
+ <iith_logo.eps>
 File: tlc.eps Graphic file (type eps)
  <tlc.eps>
 File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
 File: tlc.eps Graphic file (type eps)
- <tlc.eps> (./gvv_mod.toc)
+ <tlc.eps>
+(./gvv_mod.toc
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[][]\OT1/txr/bx/n/12 Multivariate Gaus-sian: Co-her-ent 
+ []
+
+)
 \tf@toc=\write3
 \openout3 = `gvv_mod.toc'.
 
- [1
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--217
+\OT1/txr/m/n/12 where $\OML/txmi/m/it/12 ^^V$ \OT1/txr/m/n/12 is the mean vec-t
+or,
+ []
+
+[1
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
-[]\OT1/txr/m/n/12 Show that $[] [] =
+Overfull \hbox (9.15128pt too wide) detected at line 378
+[]
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 361--365
+Underfull \hbox (badness 1694) in paragraph at lines 382--386
 []\OT1/txr/m/n/12 Taking $\OT1/txr/bx/n/12 r \OT1/txr/m/n/12 = [][] \OML/txmi/m
 /it/12 ;$\OT1/txr/m/n/12 , find the pdf
  []
 
 [2]
-Underfull \hbox (badness 3189) in paragraph at lines 499--509
-[]\OT1/txr/bx/n/12 Problem 8. []\OT1/txr/m/n/12 Con-sider a sys-tem where $\OT1
-/txr/bx/n/12 s[] \OT1/txr/m/n/12 =
- []
+Underfull \vbox (badness 5022) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 565--567
-[]\OT1/txr/bx/n/12 Problem 9. []\OT1/txr/m/n/12 The Mo-ment Gen-er-at-ing Func-
-tion
+Overfull \hbox (1.14877pt too wide) detected at line 617
+[]
  []
 
 [3] (./gvv_mod.aux) ) 
 Here is how much of TeX's memory you used:
- 7480 strings out of 494946
- 112336 string characters out of 6181058
- 222653 words of memory out of 5000000
- 10653 multiletter control sequences out of 15000+600000
- 67844 words of font info for 167 fonts, out of 8000000 for 9000
- 17 hyphenation exceptions out of 8191
- 36i,17n,40p,225b,412s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 7537 strings out of 492645
+ 116966 string characters out of 6118921
+ 399247 words of memory out of 5000000
+ 11299 multiletter control sequences out of 15000+600000
+ 74604 words of font info for 188 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 36i,17n,40p,225b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_mod.dvi (3 pages, 23920 bytes).
+Output written on gvv_mod.dvi (3 pages, 24388 bytes).
