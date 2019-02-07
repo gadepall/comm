@@ -167,6 +167,9 @@ of Electrical Engineering, Indian Institute of Technology, Hyderabad
 
 \bigskip
 
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
 \begin{abstract}
 %\boldmath
 The manual frames the problems of receiver design and performance analysis in digital communication as applications of probability theory.
@@ -198,7 +201,10 @@ The manual frames the problems of receiver design and performance analysis in di
 
 
 \section{Multivariate Gaussian}
-The multivariate Gaussian distribution is defined as
+\begin{enumerate}[label=\thesection.\arabic*
+,ref=\thesection.\theenumi]
+
+\item The multivariate Gaussian distribution is defined as
 %
 \begin{multline}
 p_{\mathbf{x}}(x_1,\dots,x_k)
@@ -207,8 +213,7 @@ p_{\mathbf{x}}(x_1,\dots,x_k)
 \end{multline}
 %
 where $\mathbf{\mu}$ is the mean vector, $\Sigma = E\sbrak{\brak{\mathbf{x}-\mathbf{\mu}}\brak{\mathbf{x}-\mathbf{\mu}}^T}$ is the covariance matrix and $\abs{\Sigma}$ is the determinant of $\Sigma$.
-\begin{problem}
-Show that
+\item Show that
 \begin{multline}
 p(x,y)= \frac{1}{2\pi \sigma_x\sigma_y\sqrt{1-\rho^2}}\exp\lsbrak{-\frac{1}{2\brak{1-\rho^2}}}
 \\
@@ -231,7 +236,7 @@ where
 \end{align}
 %
 
-\end{problem}
+
 
 
 %\subsection{Bivariate Gaussian}
@@ -239,7 +244,7 @@ where
 %
  %Show that 
 %
-\begin{problem}
+\item
 If 
 \begin{align}
 \mathbf{y}|0 = 
@@ -257,13 +262,17 @@ n_{1}\\
 \end{pmatrix*},
 \end{align}
 use the MAP criterion to reach a decision.
-\end{problem}
-\begin{problem}
+
+\item
 Derive and plot the probability of error.  Verify through simulation.
-\end{problem}
+
 %
+\end{enumerate}
 \section{Coherent BFSK}
-\begin{problem}
+\begin{enumerate}[label=\thesection.\arabic*
+,ref=\thesection.\theenumi]
+
+\item
 Let
 \begin{equation}
 \mathbf{r} = \mathbf{s}+ \mathbf{n}
@@ -316,9 +325,13 @@ Verify this numerically.
 \item Find $\pr{ X < A,  Y < A}$.
 \item Verify the above through simulation.
 \end{enumerate}
-\end{problem}
+
+\end{enumerate}
 \section{Noncoherent BFSK}
-\begin{problem}
+\begin{enumerate}[label=\thesection.\arabic*
+,ref=\thesection.\theenumi]
+
+\item
 Show that
 %
 \begin{align}
@@ -332,8 +345,8 @@ where the modified Bessel function of order $n$ (integer) is defined as
 \begin{align}
 I_{n}(x) = \frac{1}{\pi}\int_{0}^{\pi}e^{x\cos\theta}\cos n\theta\,d\theta
 \end{align}
-\end{problem}
-\begin{problem}
+
+\item
 Let
 %
 \begin{align}
@@ -394,10 +407,11 @@ p_{Y}(y) = \frac{1}{N_0}e^{-\frac{y}{N_0}}, y > 0
 Find 
 %
 \begin{align}
-g\brak{r_1,r_2} = \pr{r_1^2+r_2^2<X|0,r_1,r_2}.
+g\brak{r_1,r_2} = \pr{r_1^2+r_2^2<Y|0,r_1,r_2}.
 \end{align}
 \item 
-Show that $E\sbrak{e^{-\frac{X^2}{2\sigma^2}}}=\frac{1}{\sqrt{2}}e^{-\frac{\mu^2}{2\sigma^2}}$ for $X \sim \mathcal{N}\brak{\mu,\sigma^2}$.
+Show that $E\sbrak{e^{-\frac{X^2}{2\sigma^2}}}=\frac{1}{\sqrt{2}}e^{-\frac{\mu^2}{4\sigma^2}}$ for $X \sim 
+\mathcal{N}\brak{\mu,\sigma^2}$.
 %
 \item 
 Now show that
@@ -407,8 +421,8 @@ E\sbrak{g\brak{r_1,r_2}}=\frac{1}{2}e^{-\frac{E_b}{2N_0}}.
 \end{align}
 %
 \end{enumerate}
-\end{problem}
-\begin{problem}
+
+\item
  Let $U,V\sim\mathcal{N}\brak{0,\frac{k}{2}}$ be i.i.d.  Assuming that
 %
 \begin{align}
@@ -493,9 +507,13 @@ p_{Z}(z) &=
 %
 find $\pr{R < Z}$.
 \end{enumerate}
-\end{problem}
+
+\end{enumerate}
 \section{$M$-PSK}
-\begin{problem}
+\begin{enumerate}[label=\thesection.\arabic*
+,ref=\thesection.\theenumi]
+
+\item
 Consider a system where 
 $\mathbf{s}_i=
 \begin{pmatrix}
@@ -558,10 +576,14 @@ I = 1 - \sqrt{\frac{\gamma}{\pi}}\int_{-\frac{\pi}{M}}^{\frac{\pi}{M}}e^{- \gamm
 \end{align}
 \item Find $P_{e|\mathbf{s}_0}$.
 \end{enumerate}
-\end{problem}
+
 %
+\end{enumerate}
 \section{Craig's Formula and MGF}
-\begin{problem}
+\begin{enumerate}[label=\thesection.\arabic*
+,ref=\thesection.\theenumi]
+
+\item
 The Moment Generating Function (MGF) of $X$ is defined as
 %
 \begin{align}
@@ -614,7 +636,7 @@ Find $P_e$.
 \item 
 If $\gamma = \frac{\Omega E_s}{N_0}$, show that $P_e < \frac{1}{2\gamma}$. 
 \end{enumerate}
-\end{problem}
+
 
 
 
@@ -638,7 +660,7 @@ If $\gamma = \frac{\Omega E_s}{N_0}$, show that $P_e < \frac{1}{2\gamma}$.
 %\newpage
 %\section{BER in Rayleigh Flat Slowly Fading Channels}
 %\input{chapter4} 
-
+\end{enumerate}
 \end{document}
 
 

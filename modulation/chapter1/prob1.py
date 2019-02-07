@@ -10,4 +10,4 @@ import scipy.stats as sp
 import matplotlib.pyplot as plt
 import subprocess
 
-print np.random.normal(0,1)
+print (np.random.normal(0,1))
