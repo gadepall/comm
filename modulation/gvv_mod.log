@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  7 FEB 2019 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  7 FEB 2019 14:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -737,21 +737,18 @@ Overfull \hbox (18.91522pt too wide) detected at line 221
  []$[] \OMS/txsy/m/n/12 ^^B [] []$ []  
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
-[]\OT1/txr/m/n/12 Show that $[] [] =
- []
-
 [1
 
 
 ]
-Overfull \hbox (9.15128pt too wide) detected at line 369
-[]
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
+[]\OT1/txr/m/n/12 Show that $[] [] =
  []
 
 
-Underfull \vbox (badness 4036) has occurred while \output is active []
+Overfull \hbox (9.15128pt too wide) detected at line 369
+[]
+ []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -762,25 +759,18 @@ Overfull \hbox (5.64873pt too wide) detected at line 551
  []
 
 
-Underfull \vbox (badness 5924) has occurred while \output is active []
-
-
 Overfull \hbox (13.14877pt too wide) detected at line 614
 []
  []
 
-[3] (./gvv_mod.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[3] (./gvv_mod.aux) ) 
 Here is how much of TeX's memory you used:
  7516 strings out of 494591
  116673 string characters out of 6176027
- 396286 words of memory out of 5000000
+ 395286 words of memory out of 5000000
  11027 multiletter control sequences out of 15000+600000
  67844 words of font info for 167 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  36i,17n,40p,225b,432s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_mod.dvi (3 pages, 23924 bytes).
+Output written on gvv_mod.dvi (3 pages, 24160 bytes).
