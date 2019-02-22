@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  7 FEB 2019 14:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  22 FEB 2019 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -187,6 +187,15 @@ ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
 \c@caption@flags=\count95
 \c@ContinuedFloat=\count96
 )
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/bm.st
+y
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/multi
 col.sty
 Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
@@ -285,6 +294,7 @@ File: amsgen.sty 1999/11/30 v2.0 generic functions
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amsmath/ams
 bsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+LaTeX Info: Redefining \boldsymbol on input line 28.
 \pmbraise@=\dimen145
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/amsmath/ams
@@ -381,7 +391,7 @@ Package: amsthm 2017/10/31 v2.20.4
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ma
 thrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup4
+\symrsfs=\mathgroup7
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/txf
 onts.sty
@@ -393,14 +403,10 @@ LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> OT1/txr/m/n on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/txr/m/n --> OT1/txr/bx/n on input line 22.
-\symitalic=\mathgroup5
+\symitalic=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `italic' in version `bold'
 (Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 26.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/txr/bx/n on input line 29.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/txr/bx/n on input line 29.
 LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> OT1/txr/m/it on input line 30.
@@ -429,7 +435,7 @@ LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 (Font)                  OML/cmm/b/it --> OML/txmi/m/it on input line 58.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 (Font)                  OML/txmi/m/it --> OML/txmi/bx/it on input line 59.
-\symlettersA=\mathgroup6
+\symlettersA=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
 (Font)                  U/txmia/m/it --> U/txmia/bx/it on input line 67.
 LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 77.
@@ -439,13 +445,13 @@ LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> OMS/txsy/m/n on input line 77.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/txsy/m/n --> OMS/txsy/bx/n on input line 78.
-\symAMSa=\mathgroup7
+\symAMSa=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
 (Font)                  U/txsya/m/n --> U/txsya/bx/n on input line 94.
-\symAMSb=\mathgroup8
+\symAMSb=\mathgroup11
 LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
 (Font)                  U/txsyb/m/n --> U/txsyb/bx/n on input line 103.
-\symsymbolsC=\mathgroup9
+\symsymbolsC=\mathgroup12
 LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
 (Font)                  U/txsyc/m/n --> U/txsyc/bx/n on input line 113.
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 120.
@@ -455,7 +461,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> OMX/txex/m/n on input line 120.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/txex/m/n --> OMX/txex/bx/n on input line 121.
-\symlargesymbolsA=\mathgroup10
+\symlargesymbolsA=\mathgroup13
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
 (Font)                  U/txexa/m/n --> U/txexa/bx/n on input line 129.
 LaTeX Info: Redefining \not on input line 1043.
@@ -599,60 +605,60 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 ) (./gvv_mod.aux)
 \openout1 = `gvv_mod.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 75.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 75.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 76.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 76.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oml
 txmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 75.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 75.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 76.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oms
 txsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 75.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 75.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 76.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/omx
 txex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 75.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 75.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 76.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 exa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 75.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 76.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
 txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 75.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 75.
+LaTeX Info: Redefining \celsius on input line 76.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 76.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 75.
-Package gensymb Info: Using \Omega for \ohm on input line 75.
+LaTeX Info: Redefining \ohm on input line 76.
+Package gensymb Info: Using \Omega for \ohm on input line 76.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -676,35 +682,35 @@ Package caption Info: End \AtBeginDocument code.
 \c@rem=\count153
 File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
-LaTeX Font Info:    Calculating math sizes for size <24> on input line 164.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 164.
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 166.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 166.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 164.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 166.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 164.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 166.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 164.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 166.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 164.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 166.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
@@ -713,7 +719,7 @@ File: utxsyc.fd 2000/12/15 v3.1
 )
 File: tlc.eps Graphic file (type eps)
  <tlc.eps>
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 164.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 166.
 File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
 File: tlc.eps Graphic file (type eps)
@@ -727,50 +733,53 @@ File: tlc.eps Graphic file (type eps)
 \openout3 = `gvv_mod.toc'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--216
-\OT1/txr/m/n/12 where $\OML/txmi/m/it/12 ^^V$ \OT1/txr/m/n/12 is the mean vec-t
-or,
+Underfull \hbox (badness 10000) in paragraph at lines 215--218
+\OT1/txr/m/n/12 where $\OML/cmm/b/it/12 ^^V$ \OT1/txr/m/n/12 is the mean vec-to
+r, $\OT1/cmr/bx/n/12 ^^F \OT1/txr/m/n/12 =
  []
 
 
-Overfull \hbox (18.91522pt too wide) detected at line 221
- []$[] \OMS/txsy/m/n/12 ^^B [] []$ []  
+Underfull \hbox (badness 10000) in paragraph at lines 215--218
+\OML/txmi/m/it/12 E[] []$ \OT1/txr/m/n/12 is the co-vari-ance ma-trix
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+[]\OT1/txr/m/n/12 Show that $[] [] =
+ []
+
+
+Overfull \hbox (9.15128pt too wide) detected at line 353
+[]
  []
 
 [1
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
-[]\OT1/txr/m/n/12 Show that $[] [] =
- []
-
-
-Overfull \hbox (9.15128pt too wide) detected at line 369
-[]
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-Overfull \hbox (5.64873pt too wide) detected at line 551
+Overfull \hbox (5.64873pt too wide) detected at line 535
 \OML/txmi/m/it/12 p [] \OT1/txr/m/n/12 = [] [] []
  []
 
 
-Overfull \hbox (13.14877pt too wide) detected at line 614
+Overfull \hbox (13.14877pt too wide) detected at line 598
 []
  []
 
 [3] (./gvv_mod.aux) ) 
 Here is how much of TeX's memory you used:
- 7516 strings out of 494591
- 116673 string characters out of 6176027
- 395286 words of memory out of 5000000
- 11027 multiletter control sequences out of 15000+600000
- 67844 words of font info for 167 fonts, out of 8000000 for 9000
+ 7631 strings out of 494591
+ 118106 string characters out of 6176027
+ 397644 words of memory out of 5000000
+ 11126 multiletter control sequences out of 15000+600000
+ 75214 words of font info for 191 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,17n,40p,225b,432s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,17n,40p,225b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_mod.dvi (3 pages, 24160 bytes).
+Output written on gvv_mod.dvi (3 pages, 22024 bytes).
