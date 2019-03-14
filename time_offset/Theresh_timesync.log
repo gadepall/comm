@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  1 MAR 2019 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  14 MAR 2019 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**theresh_time.tex
-(./theresh_time.tex
+**Theresh_timesync.tex
+(./Theresh_timesync.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
 
@@ -555,9 +555,8 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/ls
 tmisc.sty
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-)
-No file theresh_time.aux.
-\openout1 = `theresh_time.aux'.
+) (./Theresh_timesync.aux)
+\openout1 = `Theresh_timesync.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 112.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 112
@@ -676,32 +675,22 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 224.
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-)
-No file theresh_time.toc.
+) (./Theresh_timesync.toc)
 \tf@toc=\write3
-\openout3 = `theresh_time.toc'.
+\openout3 = `Theresh_timesync.toc'.
+
+ [1
 
 
-Overfull \hbox (56.93652pt too wide) detected at line 261
-[]
- []
 
-
-Overfull \hbox (48.27383pt too wide) detected at line 266
-[]
- []
-
-[1
-
-
-] (./theresh_time.aux) ) 
+] (./Theresh_timesync.aux) ) 
 Here is how much of TeX's memory you used:
- 7574 strings out of 494591
- 116947 string characters out of 6176027
- 380772 words of memory out of 5000000
+ 7578 strings out of 494591
+ 117059 string characters out of 6176027
+ 375772 words of memory out of 5000000
  11084 multiletter control sequences out of 15000+600000
  62210 words of font info for 151 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,9n,49p,230b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,9n,49p,234b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on theresh_time.dvi (1 page, 3668 bytes).
+Output written on Theresh_timesync.dvi (1 page, 2252 bytes).
