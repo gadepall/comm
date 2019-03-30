@@ -1,3 +1,4 @@
+
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 %
 \makeatletter
@@ -59,10 +60,8 @@
     \usepackage{lscape}     
 
 
-
+%\usepackage{minted}
 %\usepackage{stmaryrd}
-
-
 %\usepackage{wasysym}
 %\newcounter{MYtempeqncnt}
 \DeclareMathOperator*{\Res}{Res}
@@ -159,32 +158,32 @@ breaklines=true
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
 %\numberwithin{equation}{subsection}
-\numberwithin{equation}{section}
+\numberwithin{equation}{problem}
 %\numberwithin{problem}{subsection}
 %\numberwithin{definition}{subsection}
-%\makeatletter
-%\@addtoreset{figure}{section}
-%\makeatother
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
 
 \let\StandardTheFigure\thefigure
 %\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
-%\renewcommand{\thefigure}{\thesection}
+\renewcommand{\thefigure}{\theproblem}
 
 
 %\numberwithin{figure}{subsection}
 
 %\numberwithin{equation}{subsection}
 %\numberwithin{equation}{section}
-%\numberwithin{equation}{problem}
+\numberwithin{equation}{problem}
 %\numberwithin{problem}{subsection}
-%\numberwithin{problem}{section}
+\numberwithin{problem}{section}
 %%\numberwithin{definition}{subsection}
 %\makeatletter
 %\@addtoreset{figure}{problem}
 %\makeatother
-%\makeatletter
-%\@addtoreset{table}{problem}
-%\makeatother
+\makeatletter
+\@addtoreset{table}{problem}
+\makeatother
 
 \let\StandardTheFigure\thefigure
 \let\StandardTheTable\thetable
@@ -207,13 +206,13 @@ breaklines=true
 
 \title{ 
 %	\logo{
-Timing Offset Synchronization using Gardner Timing Error Detector (TED) Algorithm
+Frequence Offset Synchronization using Luise-Reggiannini (LR) Technique
 %	}
 }
 
 
 
-\author{Theresh Babu,Sandeep Kumar and G V V Sharma$^{*}$% <-this % stops a space
+\author{Sai Manasa, Siddharth Mourya and Theresh Babu, G V V Sharma$^{*}$% <-this % stops a space
 \thanks{*The authors are with the Department
 of Electrical Engineering, Indian Institute of Technology, Hyderabad
 502285 India e-mail:  gadepall@iith.ac.in.}
@@ -227,107 +226,70 @@ of Electrical Engineering, Indian Institute of Technology, Hyderabad
 
 %\bigskip
 %
-%\begin{abstract}
-%%\boldmath
-%A brief description about the modulation/demodulation blocks and Coding/Decoding blocks for DVBS2.
-%% and the Kaiser window is used for the FIR filter.
-%\end{abstract}
+\begin{abstract}
+\boldmath
+A brief description about the Frequency estimation using the Luise and Reggiannini Technique.
+\end{abstract}
 
 %\IEEEpeerreviewmaketitle
 %
-\section{Time Offset: Gardner TED}
-%\subsection{Transmitter}
-%\begin{equation}
-%m \rightarrow\boxed	{BPSK}\rightarrow\boxed	{\uparrow T_{sym}}\rightarrow C	
-%\end{equation}
-%
-%  Let bit stream was $m$, $xc$ will be mapped sequence and $C$ will be upsampled by $T_{sym}$
-% Where $T_{sym}$ is the samples per symbol. 
-%\begin{equation}
-%X=P \circledast C
-%\end{equation} where $P$ is the shape of the pulse. And defined as,
-%\begin{equation}
-%    P =
-%    \begin{cases}
-%      1 & 0\leq t\leq 99 \\
-%      0        & otherwise
-%    \end{cases}
-%  \end{equation}
-%\subsection{Receiver}
-Let the $m$th sample in the $r$th received symbol time slot be
-\begin{equation}
-Y_k(m)= X_k + V_k(m), \quad k = 1,\dots,N, m = 1 ,\dots,M.
-\end{equation} 
-where $X_k$ is the transmitted symbol in the $k$th time slot and $V_k(m) \sim \mathcal{N}\brak{0,\sigma^2} $. 
-The decision variable for the $k$th symbol 
-is
-\begin{align}
-U_k&=Y_{k-1}\brak{\frac{M}{2}}\sbrak{Y_{k}\brak{M}-Y_{k-1}\brak{M}}
-\end{align}
-%
-\subsection{Plots}
-\section{Frequency Offset: LR Technique}
+
+\section{LR Technique-Actual approximation }
 %There are two parts.
 %\begin{itemize}
 %\item Estimate
 %\item Exact
 %\end{itemize}
-Let the frequency offset be 
-$\Delta f$  \cite{1}.  Then
+\subsection{Estimated}
+\cite{1}
+This is true for small frequency offset , as what we observed , it is true until 800 Hz frequency offset.\\
 \begin{equation}
-\label{eq:freq_offset_model}
-Y_k= X_k e^{j2\pi\Delta fkM} + V_k, \quad k = 1,\dots,N 
-\end{equation}  
-From \eqref{eq:freq_offset_model},
-%
-\begin{align}
-Y_kX_k^*&= \abs{X_k}^2e^{j2\pi\Delta fkM}+ X_k^*{V}_k\\
-\implies r_k&=e^{j2\pi\Delta fkM}+ \bar{V}_k
-\end{align}
-where
-\begin{align}
-r_k=Y_kX_k^*, \bar{V}_k=X_k^*{V}_k, \abs{X_k}^2=1
-\end{align}
-%
-The autocorrelation can be calculated as
+\Delta\hat{f}\widetilde{=} \frac{1}{\pi T_s(M+1)}arg(\sum_{k=1}^{M}R(k)) 
+\end{equation}
+Where $R(k)$ is the AutoCorrelation, $T_s$ is the sampling time.
+
+Conditions:
+\begin{equation}
+\Delta\hat{f} : T_s \geq \frac{1}{2\Delta{f}}
+\end{equation} and
+\begin{equation}\label{eq:M}
+M: M\Delta{f}T_s << 1
+\end{equation}
+\begin{itemize}
+\item Calculation of Auto Correlation $R(k)$
+which is complex oscillation with added gaussian.
 \begin{equation}
 R(k) \overset{\Delta}{=} \frac{1}{N-k}\sum_{i=k+1}^{N} r_{i}r^{*}_{i-k}
  , 1 \leq k \leq N-1
 \end{equation}
 Where N is the length of the received signal.
-%DVB-S2 operating with large frequency. So Large frequency offset model has to be employed which is the  Exact approximation of LR technique \cite{1}
-For large centre frequency, the following yields a good approximation for frequency offset upto 40 
-MHz.
+\end{itemize}
+This Estimated part of the technique is only for the small frequency offset(Upto 800Hz). This is the major drawback.
+\subsection{Exact}
+For large frequency,This yields a better approximation even for frequency offset as large as 40 MHz.
 \begin{equation}
-\Delta\hat{f} \approx \frac{1}{2\pi M}\frac{\sum_{k=1}^{P}\text{Im}(R(k))}{\sum_{k=1}^{P}k\text{Re}(R(k))},
-\quad  P\Delta{f}M << 1
-\label{eq:Z}
+\Delta\hat{f}\widetilde{=} \frac{1}{2\pi T_s}\frac{\sum_{k=1}^{M}Im(R(k))}{\sum_{k=1}^{M}kRe(R(k))} 
 \end{equation}
-%
-where $P$ is the number of pilot symbols.
-\subsection{Plots}
-%
-The number of pilot symbols is $P = 18$. The codes for generating the plots are available at
+Constraints on M is same as \ref{eq:M}.
+\section{Practical values}
+\begin{enumerate}
+\item Signal Length N = 36
+\item frequency offset $\Delta{f}$ = 5MHz 
+\item $T_s$ = 1e-9 
+\item Central frequency $F_c$ = 25 GHz.
+But Fc isn't required anywhere in code.
+\item $M = \frac{N}{2} =18$\\
+\end{enumerate}
+\section{Plots}
+\subsection{For the fixed SNR}
+\begin{center}
+\includegraphics[scale=0.4]{./frequency_best.eps}
+\end{center}
 
-Fig. \ref{fig:freq_best} shows the variation of the error in the offset estimate with respect to the offset 
-$\Delta f$ when the SNR = 10 dB.  Similarly Fig. \ref{fig: freq_est} shows the variation of the error with 
-respect 
-to the SNR for $\Delta f = 5 MHz$.
-\begin{figure}
+\subsection{For the fixed frequency offset of 5 MHz}
 \begin{center}
-\includegraphics[width=\columnwidth]{./figs/frequency_best.eps}
+\includegraphics[scale=0.4]{./frequencyestiamtion_best_error_vs_snr.eps}
 \end{center}
-\caption{Error variation with respect to frequency offset.  }
-\label{fig:freq_best}
-\end{figure}
-%
-\begin{figure}
-\begin{center}
-\includegraphics[width=\columnwidth]{./figs/frequencyestiamtion_best_error_vs_snr.eps}
-\end{center}
-\caption{$\Delta f = 5$ MHz}
-\label{fig:freq_est}
-\end{figure}
 
 
 \begin{thebibliography}{20}
