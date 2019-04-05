@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  5 APR 2019 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  5 APR 2019 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -547,58 +547,50 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/ls
 cape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/ls
-tlang1.sty
-File: lstlang1.sty 2018/09/02 1.7 listings language file
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/ls
-tmisc.sty
-File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 ) (./Theresh_timesync.aux)
 \openout1 = `Theresh_timesync.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 112.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 112
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 115.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 115
 .
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oml
 txmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 112.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 112
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 115.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 115
 .
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oms
 txsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 112.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 112
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 115.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 115
 .
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/omx
 txex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 112.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 112.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 115.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 115.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 exa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 112.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 115.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
@@ -606,14 +598,14 @@ txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 112.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 112
+LaTeX Info: Redefining \celsius on input line 115.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 115
 .
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 112.
-Package gensymb Info: Using \Omega for \ohm on input line 112.
+LaTeX Info: Redefining \ohm on input line 115.
+Package gensymb Info: Using \Omega for \ohm on input line 115.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -635,41 +627,41 @@ Package caption Info: End \AtBeginDocument code.
 \c@example=\count142
 \c@definition=\count143
 \c@rem=\count144
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 224.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 224.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 227.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 227.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwa
 sy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 224.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 227.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 224.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 227.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 224.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 227.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 224.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 227.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 224.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 227.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
@@ -681,11 +673,8 @@ File: utxsyc.fd 2000/12/15 v3.1
 
 File: ./figs/Different_timeoffsets_snrvsber.eps Graphic file (type eps)
  <./figs/Different_timeoffsets_snrvsber.eps>
-Overfull \hbox (84.80322pt too wide) in paragraph at lines 290--291
-[][] 
- []
-
 File: ./figs/frequency_best.eps Graphic file (type eps)
+
 <./figs/frequency_best.eps>
 Underfull \vbox (badness 1087) has occurred while \output is active []
 
@@ -707,12 +696,12 @@ File: ./figs/Phase_error_with_respect_to_SNR_fixed_pilot.eps Graphic file (type
 ]
 (./Theresh_timesync.aux) ) 
 Here is how much of TeX's memory you used:
- 7932 strings out of 494591
- 120534 string characters out of 6176027
- 395772 words of memory out of 5000000
- 11431 multiletter control sequences out of 15000+600000
+ 7838 strings out of 494591
+ 119099 string characters out of 6176027
+ 194890 words of memory out of 5000000
+ 11343 multiletter control sequences out of 15000+600000
  62210 words of font info for 151 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,9n,49p,239b,1102s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,9n,39p,234b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Theresh_timesync.dvi (3 pages, 12288 bytes).
+Output written on Theresh_timesync.dvi (3 pages, 12120 bytes).
