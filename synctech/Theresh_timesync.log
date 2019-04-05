@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  5 APR 2019 16:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  5 APR 2019 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -627,41 +627,41 @@ Package caption Info: End \AtBeginDocument code.
 \c@example=\count142
 \c@definition=\count143
 \c@rem=\count144
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 227.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 227.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 228.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 228.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwa
 sy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 227.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 228.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 227.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 228.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 227.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 228.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 227.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 228.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 227.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 228.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
@@ -675,10 +675,7 @@ File: ./figs/Different_timeoffsets_snrvsber.eps Graphic file (type eps)
  <./figs/Different_timeoffsets_snrvsber.eps>
 File: ./figs/frequency_best.eps Graphic file (type eps)
 
-<./figs/frequency_best.eps>
-Underfull \vbox (badness 1087) has occurred while \output is active []
-
- [1
+<./figs/frequency_best.eps> [1
 
 
 ]
@@ -691,17 +688,17 @@ File: ./figs/Phase_error_with_respect_to_pilots.eps Graphic file (type eps)
 File: ./figs/Phase_error_with_respect_to_SNR_fixed_pilot.eps Graphic file (type
  eps)
 
-<./figs/Phase_error_with_respect_to_SNR_fixed_pilot.eps> [2] [3
+<./figs/Phase_error_with_respect_to_SNR_fixed_pilot.eps> [2]
+(./Theresh_timesync.bbl) [3
 
-]
-(./Theresh_timesync.aux) ) 
+] (./Theresh_timesync.aux) ) 
 Here is how much of TeX's memory you used:
- 7838 strings out of 494591
- 119099 string characters out of 6176027
+ 7847 strings out of 494591
+ 119295 string characters out of 6176027
  194890 words of memory out of 5000000
- 11343 multiletter control sequences out of 15000+600000
+ 11349 multiletter control sequences out of 15000+600000
  62210 words of font info for 151 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  36i,9n,39p,234b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Theresh_timesync.dvi (3 pages, 12120 bytes).
+Output written on Theresh_timesync.dvi (3 pages, 13352 bytes).
