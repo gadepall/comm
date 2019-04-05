@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Time Offset: Gardner TED}{1}
+\contentsline {subsection}{\numberline {1.1}Plots}{1}
+\contentsline {section}{\numberline {2}Frequency Offset: LR Technique}{1}
+\contentsline {subsection}{\numberline {2.1}Plots}{2}
+\contentsline {section}{\numberline {3}Phase Offset: Feed Forward Maximum Likelihood (FF-ML)technique}{2}
+\contentsline {subsection}{\numberline {3.1}Plots}{2}
+\contentsline {section}{References}{2}

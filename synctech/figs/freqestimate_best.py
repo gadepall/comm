@@ -1,6 +1,8 @@
-#Code for large frequency offset estimation
-#we have plot error vs frequency offset for snr =5.
+# -*- coding: utf-8 -*-
+"""
 
+@authors : Sai Manasa Pappu , Siddharth Mourya
+"""
 import numpy as np 
 import scipy
 import math
@@ -27,7 +29,7 @@ def R_k(k,r):
 	
 def err(delf):
 	r = scipy.vectorize(complex)
-	r = 10*np.exp(r(np.zeros(int(simlen)),2*math.pi*delf*k*Ts + theta)) + v *(0.707)
+	r = 5*np.exp(r(np.zeros(int(simlen)),2*math.pi*delf*k*Ts + theta)) + v 
 	#print abs(r)
 	#print(r)
 	M = 10
@@ -43,10 +45,10 @@ def err(delf):
 freq_values = np.linspace(1e5,4e7,20) # freq values from 1000 to 40 MHz
 error_values = scipy.vectorize(err)
 
-#plt.title("$\Delta f$ vs frequency error with fixed SNR ")
-plt.plot(freq_values,error_values(freq_values),label="QPSK Mapping, SNR= 10 dB ")
-plt.xlabel('$\Delta_f$ (MHz)')
-plt.ylabel('$(\\frac{\Delta_f - \hat{f}}{\Delta_f})$')
+plt.title("$\Delta f$ vs frequency error with fixed SNR ")
+plt.plot(freq_values,error_values(freq_values),label="QPSK Mapping, SNR= 6.98 dB ")
+plt.xlabel('$\Delta_f$')
+plt.ylabel('Error= $(\\frac{\Delta_f - \hat{f}}{\Delta_f})$')
 plt.legend(loc='best')
 plt.grid()
 plt.savefig("./frequency_best.eps")

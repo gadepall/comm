@@ -207,13 +207,13 @@ breaklines=true
 
 \title{ 
 %	\logo{
-Timing Offset Synchronization using Gardner Timing Error Detector (TED) Algorithm
+Modern Digital Synchronization Techniques for Reliable Communication 
 %	}
 }
 
 
 
-\author{Theresh Babu,Sandeep Kumar and G V V Sharma$^{*}$% <-this % stops a space
+\author{Theresh Babu Benguluri and G V V Sharma$^{*}$% <-this % stops a space
 \thanks{*The authors are with the Department
 of Electrical Engineering, Indian Institute of Technology, Hyderabad
 502285 India e-mail:  gadepall@iith.ac.in.}
@@ -227,11 +227,10 @@ of Electrical Engineering, Indian Institute of Technology, Hyderabad
 
 %\bigskip
 %
-%\begin{abstract}
-%%\boldmath
-%A brief description about the modulation/demodulation blocks and Coding/Decoding blocks for DVBS2.
-%% and the Kaiser window is used for the FIR filter.
-%\end{abstract}
+\begin{abstract}
+\boldmath
+A brief description about the design and implementation of Modern Digital Synchronization Techniques for reliable communication.
+\end{abstract}
 
 %\IEEEpeerreviewmaketitle
 %
@@ -260,12 +259,37 @@ Y_k(m)= X_k + V_k(m), \quad k = 1,\dots,N, m = 1 ,\dots,M.
 \end{equation} 
 where $X_k$ is the transmitted symbol in the $k$th time slot and $V_k(m) \sim \mathcal{N}\brak{0,\sigma^2} $. 
 The decision variable for the $k$th symbol 
-is
+is \cite{2}
 \begin{align}
 U_k&=Y_{k-1}\brak{\frac{M}{2}}\sbrak{Y_{k}\brak{M}-Y_{k-1}\brak{M}}
 \end{align}
 %
 \subsection{Plots}
+\begin{figure}
+\begin{center}
+\includegraphics[width=\columnwidth]{./figs/Different_timeoffsets_snrvsber.eps}
+\end{center}
+\caption{SNR vs BER for varying $\tau$.}
+\label{fig:difftoff}
+\end{figure}
+%
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=\columnwidth]{./figs/frequencyestiamtion_best_error_vs_snr.eps}
+%\end{center}
+%\caption{$\Delta f = 5$ MHz}
+%\label{fig:freq_est}
+%\end{figure}
+
+%
+The codes for generating the plots are available at
+
+Fig. \ref{fig:difftoff} shows the variation of the bit error rate respect to the snr with different timing offsets.
+$\Delta f$ when the SNR = 10 dB. 
+% Similarly Fig. \ref{fig:difftoff} shows the variation of the error with 
+%respect 
+%to the SNR .
+
 \section{Frequency Offset: LR Technique}
 %There are two parts.
 %\begin{itemize}
@@ -273,7 +297,7 @@ U_k&=Y_{k-1}\brak{\frac{M}{2}}\sbrak{Y_{k}\brak{M}-Y_{k-1}\brak{M}}
 %\item Exact
 %\end{itemize}
 Let the frequency offset be 
-$\Delta f$  \cite{1}.  Then
+$\Delta f$  \cite{3}.  Then
 \begin{equation}
 \label{eq:freq_offset_model}
 Y_k= X_k e^{j2\pi\Delta fkM} + V_k, \quad k = 1,\dots,N 
@@ -306,13 +330,6 @@ MHz.
 %
 where $P$ is the number of pilot symbols.
 \subsection{Plots}
-%
-The number of pilot symbols is $P = 18$. The codes for generating the plots are available at
-
-Fig. \ref{fig:freq_best} shows the variation of the error in the offset estimate with respect to the offset 
-$\Delta f$ when the SNR = 10 dB.  Similarly Fig. \ref{fig: freq_est} shows the variation of the error with 
-respect 
-to the SNR for $\Delta f = 5 MHz$.
 \begin{figure}
 \begin{center}
 \includegraphics[width=\columnwidth]{./figs/frequency_best.eps}
@@ -325,18 +342,95 @@ to the SNR for $\Delta f = 5 MHz$.
 \begin{center}
 \includegraphics[width=\columnwidth]{./figs/frequencyestiamtion_best_error_vs_snr.eps}
 \end{center}
-\caption{$\Delta f = 5$ MHz}
+\caption{$\Delta f = 5$ MHz, Center frequency $f_c=25$ GHz}
 \label{fig:freq_est}
 \end{figure}
 
+%
+The number of pilot symbols is $P = 18$. The codes for generating the plots are available at
+
+Fig. \ref{fig:freq_best} shows the variation of the error in the offset estimate with respect to the offset 
+$\Delta f$ when the SNR = 10 dB.  Similarly Fig. \ref{fig:freq_est} shows the variation of the error with 
+respect 
+to the SNR for $\Delta f = 5 MHz$.
+
+
+\section{Phase Offset: Feed Forward Maximum Likelihood (FF-ML)technique}
+%There are two parts.
+%\begin{itemize}
+%\item Estimate
+%\item Exact
+%\end{itemize}
+Let the phase offset be 
+$\Delta\phi$  \cite{4}.  Then
+\begin{equation}
+\label{eq:phase_offset_model}
+Y_k= X_k e^{j\Delta\phi} + V_k, \quad k = 1,\dots,N 
+\end{equation}  
+From \eqref{eq:phase_offset_model},
+%
+\begin{align}
+Y_kX_k^*&= \abs{X_k}^2e^{j \Delta\phi}+ X_k^*{V}_k\\
+\implies r_k&=e^{j\Delta\phi}+ \bar{V}_k
+\end{align}
+where
+\begin{align}
+r_k=Y_kX_k^*, \bar{V}_k=X_k^*{V}_k, \abs{X_k}^2=1
+\end{align}
+$\hat{\phi}$ can be written as: 
+\begin{equation}
+\label{eq:phase_estimation}
+\hat{\Delta\phi}_k  = arg(r_k)
+\end{equation} 
+
+This equation gives the final estimation of phase
+\begin{equation}
+{\hat{\Delta\phi}^{(p)}}_{f}(l) = {\hat{\Delta\phi}^{(p)}}_{f}(l-1) + \alpha{SAW}[{\hat{\Delta\phi}^{(p)}}(l) -{\hat{\Delta\phi}^{(p)}}_{f}(l-1)] 
+\end{equation}
+
+ \begin{equation}
+ SAW[\phi]=\sbrak{\phi}^{\pi}_{-\pi}
+ \end{equation} Where $SAW$ is sawtooth non-linearity and $\alpha \leq 1$ . \\$l$ counts the number of pilot-based estimates.\\ ${\hat{\Delta\phi}^{(p)}}_{f}(l)$  is the final unwrapped pilot estimate.
+ 
+\subsection{Plots}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\columnwidth]{./figs/Phase_error_with_respect_to_pilots.eps}
+\end{center}
+\caption{Phase error variation with respect to pilot symbols }
+\label{fig:phaseerrorp}
+\end{figure}
+%
+\begin{figure}
+\begin{center}
+\includegraphics[width=\columnwidth]{./figs/Phase_error_with_respect_to_SNR_fixed_pilot.eps}
+\end{center}
+\caption{$\Delta f = 5$ MHz}
+\label{fig:phaseerrorsnr}
+\end{figure}
+%
+ The codes for generating the plots are available at
+
+Fig. \ref{fig:phaseerrorp} shows the variation of the phase error in the offset estimate with respect to the pilot symbols.
+$\Delta f$ when the SNR = 10 dB.  Similarly Fig. \ref{fig:phaseerrorsnr} shows the variation of the error with 
+respect 
+to the SNR for pilot symbols $P = 18$.
 
 \begin{thebibliography}{20}
 \bibitem{1}
+U. Mengali and A. N. D'Andrea:'synchronization Techniques for Digital Receivers,' New York: Plenum, 1997.
+
+\bibitem{2}
+F. M. Gardner:'A BPSK/QPSK timing-error detector for sampled receivers,' IEEE TRANSACTIONS ON COMMUNICATIONS, VOL.COM-34,NO.5,MAY 1986
+\bibitem{3}
 M. Luise and R. Reggiannini:'Carrier frequency recovery in all-digital modems for burst mode transmissions,' IEEE Trans. Commun., vol. 43,
 no. 2/3/4, pp. 1169-1178, Feb/Mar/Apr 1995.
 
-\bibitem{2}
-U. Mengali and A. N. D'Andrea:'synchronization Techniques for Digital Receivers,' New York: Plenum, 1997.
+\bibitem{4}
+E. Casini, R. De Gaudenzi, and A. Ginesi:'DVB-S2 modem algorithms
+design and performance over typical satellite channels,' International
+Journal of Satellite Communications and Networking 2004, vol. 22(3), pp. 281-318, 2004.
 
 
 \end{thebibliography}

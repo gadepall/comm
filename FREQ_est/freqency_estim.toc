@@ -1,8 +1,0 @@
-\contentsline {section}{\numberline {1}LR Technique-Actual approximation }{1}
-\contentsline {subsection}{\numberline {1.1}Estimated}{1}
-\contentsline {subsection}{\numberline {1.2}Exact}{1}
-\contentsline {section}{\numberline {2}Practical values}{1}
-\contentsline {section}{\numberline {3}Plots}{1}
-\contentsline {subsection}{\numberline {3.1}For the fixed SNR}{1}
-\contentsline {subsection}{\numberline {3.2}For the fixed frequency offset of 5 MHz}{2}
-\contentsline {section}{References}{2}
