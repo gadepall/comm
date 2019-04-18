@@ -448,6 +448,76 @@ to the SNR for pilot symbols $P = 18$ and  $\alpha = 1$.
 \label{fig:phaseerrorsnr}
 \end{figure}
 %
+\section{Automatic Gain Controller (AGC): Data-Aided Vector-Tracker (DA-VT) }
+Let the random AGC offset $\alpha$, then the received symbol equation with amplitude offset as,
+\begin{equation}
+\label{eq:AGC model}
+Y_k = \alpha X_k +V_k  \quad k = 1,\dots,P
+\end{equation}
+%
+where $\alpha = \alpha_I+j\alpha_Q$ is the gain parameter.
+According to \cite{agc}, the $\hat{\alpha_k}$ estimate for the $k$th pilot is
+%
+\begin{equation}
+\alpha_{k+1}=
+%\begin{cases}
+\alpha_k-\gamma\sbrak{\alpha_k Y^p_k - X^p_k}\sbrak{X^p_k}^*, 
+%& k \in pilot symbols \\
+%\alpha_k, & otherwise
+%\end{cases}
+\end{equation}
+%
+where $\gamma$ is the AGC step size.
+%\begin{align}
+%\alpha_{k+1}=\alpha_k + \mu \Delta J
+%\end{align}
+%Where ,
+%\begin{equation}
+%\Delta J=\brak{{\sbrak{\abs{Re(\hat{s(k)})}-\alpha_k\abs{Re(z(k)}}
+%+\sbrak{\abs{Im(\hat{s(k)})}-\alpha_k\abs{Im(z(k)}}}}
+%\end{equation}
+%
+\subsection{Plots}
+%
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=\columnwidth]{./figs/frequencyestiamtion_best_error_vs_snr.eps}
+%\end{center}
+%\caption{$\Delta f = 5$ MHz}
+%\label{fig:freq_est}
+%\end{figure}
+
+%
+The following code plots the real and imaginary parts of the gain parameter $\alpha$ with respect to the number of pilot symbols $P$.
+in Fig. \ref{fig:diffaoff}.  $\gamma = 10^{-3}, SNR=10 dB$.
+
+%
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=\columnwidth]{./figs/Convergence_of_Digital_AGC.eps}
+\end{center}
+\caption{Convergence of Digital AGC with resepct to P.}
+\label{fig:diffaoff}
+\end{figure}
+
+%\begin{lstlisting}
+%https://github.com/gadepall/EE5837/raw/master/synctech/codes/time_sync_offsets.py
+%\end{lstlisting}
+\section{Frame Synchronization : Differential detection and non-threshold peak search Algorithm} 
+%
+\cite{frame_offset}
+%
+
+\begin{align}
+\Lambda&= max(\abs{\sum_{j=1}^{\frac{L_{PLSC}}{2}}R_{2j-1}R^*_{2j}T_j+\sum_{i=1}^{L_{SOF}-1}r_i r_{i+1}^*t_i}\\
+&,\abs{\sum_{j=1}^{\frac{L_{PLSC}}{2}}R_{2j-1}R^*_{2j}T_j-\sum_{i=1}^{L_{SOF}-1}r_i r_{i+1}^*t_i})
+\end{align}
+Where $R$ denotes the received symbol of PLSC, $r$ is the
+received symbol of SOF, $T$ and $t$ are the taps corresponding to the differential correlation, $L_{SOF} =$ 26, $L_{PLSC}=$ 64.
+\subsection{Plots}
+
+
+%
 \bibliography{IEEEabrv,Theresh_timesync.bib}
 %\begin{thebibliography}{20}
 %\bibitem{1}

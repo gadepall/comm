@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  5 APR 2019 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  18 APR 2019 11:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -667,18 +667,22 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 228.
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-) (./Theresh_timesync.toc)
+) (./Theresh_timesync.toc
+Underfull \hbox (badness 1762) in paragraph at lines 7--7
+[][]\OT1/txr/bx/n/12 Automatic Gain Con-troller (AGC): 
+ []
+
+)
 \tf@toc=\write3
 \openout3 = `Theresh_timesync.toc'.
 
 File: ./figs/Different_timeoffsets_snrvsber.eps Graphic file (type eps)
- <./figs/Different_timeoffsets_snrvsber.eps>
-File: ./figs/frequency_best.eps Graphic file (type eps)
-
-<./figs/frequency_best.eps> [1
+ <./figs/Different_timeoffsets_snrvsber.eps> [1
 
 
 ]
+File: ./figs/frequency_best.eps Graphic file (type eps)
+ <./figs/frequency_best.eps>
 File: ./figs/frequencyestiamtion_best_error_vs_snr.eps Graphic file (type eps)
 
 <./figs/frequencyestiamtion_best_error_vs_snr.eps>
@@ -689,16 +693,19 @@ File: ./figs/Phase_error_with_respect_to_SNR_fixed_pilot.eps Graphic file (type
  eps)
 
 <./figs/Phase_error_with_respect_to_SNR_fixed_pilot.eps> [2]
-(./Theresh_timesync.bbl) [3
+File: ./figs/Convergence_of_Digital_AGC.eps Graphic file (type eps)
 
-] (./Theresh_timesync.aux) ) 
+<./figs/Convergence_of_Digital_AGC.eps> (./Theresh_timesync.bbl [3]) [4
+
+]
+(./Theresh_timesync.aux) ) 
 Here is how much of TeX's memory you used:
- 7847 strings out of 494591
- 119295 string characters out of 6176027
- 194890 words of memory out of 5000000
- 11349 multiletter control sequences out of 15000+600000
+ 7854 strings out of 494591
+ 119459 string characters out of 6176027
+ 195890 words of memory out of 5000000
+ 11355 multiletter control sequences out of 15000+600000
  62210 words of font info for 151 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,9n,39p,234b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,11n,39p,234b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Theresh_timesync.dvi (3 pages, 13352 bytes).
+Output written on Theresh_timesync.dvi (4 pages, 17872 bytes).

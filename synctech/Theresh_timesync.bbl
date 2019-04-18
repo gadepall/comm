@@ -45,4 +45,17 @@ E.~Casini, R.~D. Gaudenzi, and A.~Ginesi, ``{DVB-S2 modem algorithms design and
   \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/sat.791}
 \BIBentrySTDinterwordspacing
 
+\bibitem{agc}
+\BIBentryALTinterwordspacing
+R.~{De Gaudenzi} and M.~{Luise}, ``{Analysis and design of an all-digital
+  demodulator for trellis coded 16-QAM transmission over a nonlinear satellite
+  channel},'' \emph{IEEE Transactions on Communications}, vol.~43, no. 2/3/4,
+  pp. 659--668, Feb 1995. [Online]. Available:
+  \url{https://doi.org/10.1109/26.380085}
+\BIBentrySTDinterwordspacing
+
+\bibitem{frame_offset}
+J.~{Han}, ``{Optimal frame synchronization for DVB-S2},'' in \emph{2008 IEEE
+  International Symposium on Circuits and Systems}, May 2008, pp. 956--959.
+
 \end{thebibliography}
