@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  24 APR 2019 10:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  25 APR 2019 08:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -550,47 +550,47 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 ) (./others.aux)
 \openout1 = `others.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 115.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 115
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 114.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 114
 .
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oml
 txmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 115.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 115
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 114.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 114
 .
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oms
 txsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 115.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 115
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 114.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 114
 .
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/omx
 txex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 115.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 115.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 114.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 114.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 exa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 115.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 114.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
@@ -598,14 +598,14 @@ txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 115.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 115
+LaTeX Info: Redefining \celsius on input line 114.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 114
 .
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 115.
-Package gensymb Info: Using \Omega for \ohm on input line 115.
+LaTeX Info: Redefining \ohm on input line 114.
+Package gensymb Info: Using \Omega for \ohm on input line 114.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -627,41 +627,41 @@ Package caption Info: End \AtBeginDocument code.
 \c@example=\count142
 \c@definition=\count143
 \c@rem=\count144
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 228.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 228.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 227.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 227.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwa
 sy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 228.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 227.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 228.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 227.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 228.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 227.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 228.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 227.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 228.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 227.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
@@ -678,25 +678,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--2
 
 File: ./images/bitinterleaver_8psk.eps Graphic file (type eps)
  <./images/bitinterleaver_8psk.eps>
-Underfull \hbox (badness 1852) in paragraph at lines 241--252
+Underfull \hbox (badness 1852) in paragraph at lines 240--251
 []\OT1/txr/m/n/12 For 8PSK, 16APSK, and 32APSK map-ping
  []
 
 File: ./figs/Interleaver.eps Graphic file (type eps)
 <./figs/Interleaver.eps>
 File: ./images/pl_framing.eps Graphic file (type eps)
- <./images/pl_framing.eps> [1
+ <./images/pl_framing.eps> (./figs/short.tex
+\gnumericTableWidth=\skip68
+\gnumericTableWidthComplete=\skip69
+\gnumericMultiRowLength=\skip70
+\gnumericColA=\skip71
+\gnumericColB=\skip72
+\gnumericColC=\skip73
+\gnumericColD=\skip74
+\gnumericColE=\skip75
+\gnumericColF=\skip76
+\gnumericColG=\skip77
+\gnumericColH=\skip78
+\gnumericColI=\skip79
+\gnumericColJ=\skip80
+)
+(./figs/Normal.tex)
+Underfull \vbox (badness 3635) has occurred while \output is active []
+
+ [1
 
 
 ]
 File: ./images/MODCOD.eps Graphic file (type eps)
- <./images/MODCOD.eps>
-File: ./images/plscode.eps Graphic file (type eps)
 
-<./images/plscode.eps>
+<./images/MODCOD.eps>
+File: ./images/plscode.eps Graphic file (type eps)
+ <./images/plscode.eps>
 File: ./images/parameters_pl_frame.eps Graphic file (type eps)
- <./images/parameters_pl_frame.eps>
-Overfull \hbox (15.1313pt too wide) detected at line 384
+
+<./images/parameters_pl_frame.eps> [2]
+Overfull \hbox (15.1313pt too wide) detected at line 401
 \OML/txmi/m/it/12 Y[]\OT1/txr/m/n/12 (\OML/txmi/m/it/12 m\OT1/txr/m/n/12 ) = \O
 ML/txmi/m/it/12 H[]\OT1/txr/m/n/12 (\OML/txmi/m/it/12 m\OT1/txr/m/n/12 ) \OMS/t
 xsy/m/n/12 ^^C \OML/txmi/m/it/12 X[] \OT1/txr/m/n/12 + \OML/txmi/m/it/12 V[]\OT
@@ -706,14 +725,14 @@ xsy/m/n/12 ^^C \OML/txmi/m/it/12 X[] \OT1/txr/m/n/12 + \OML/txmi/m/it/12 V[]\OT
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 384--386
+Underfull \hbox (badness 2073) in paragraph at lines 401--403
 \OT1/txr/m/n/12 Where,$\OML/txmi/m/it/12 H[]$ \OT1/txr/m/n/12 rep-re-sents the 
 pulse shape,$\OML/txmi/m/it/12 V[]\OT1/txr/m/n/12 (\OML/txmi/m/it/12 m\OT1/txr/
 m/n/12 ) \OMS/txsy/m/n/12 ^^X
  []
 
-[2]
-Overfull \hbox (14.47795pt too wide) detected at line 390
+
+Overfull \hbox (14.47795pt too wide) detected at line 407
 []
  []
 
@@ -721,12 +740,12 @@ Overfull \hbox (14.47795pt too wide) detected at line 390
 
 ] (./others.aux) ) 
 Here is how much of TeX's memory you used:
- 7851 strings out of 494591
- 118931 string characters out of 6176027
- 181890 words of memory out of 5000000
- 11350 multiletter control sequences out of 15000+600000
- 62210 words of font info for 151 fonts, out of 8000000 for 9000
+ 7636 strings out of 494591
+ 117577 string characters out of 6176027
+ 215890 words of memory out of 5000000
+ 11128 multiletter control sequences out of 15000+600000
+ 65897 words of font info for 163 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,17n,39p,290b,966s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,17n,39p,290b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on others.dvi (3 pages, 11428 bytes).
+Output written on others.dvi (3 pages, 18196 bytes).
