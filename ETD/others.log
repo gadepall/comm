@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  25 APR 2019 08:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  25 APR 2019 13:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -685,7 +685,14 @@ Underfull \hbox (badness 1852) in paragraph at lines 240--251
 File: ./figs/Interleaver.eps Graphic file (type eps)
 <./figs/Interleaver.eps>
 File: ./images/pl_framing.eps Graphic file (type eps)
- <./images/pl_framing.eps> (./figs/short.tex
+ <./images/pl_framing.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+
+]
+(./figs/type.tex
 \gnumericTableWidth=\skip68
 \gnumericTableWidthComplete=\skip69
 \gnumericMultiRowLength=\skip70
@@ -693,59 +700,28 @@ File: ./images/pl_framing.eps Graphic file (type eps)
 \gnumericColB=\skip72
 \gnumericColC=\skip73
 \gnumericColD=\skip74
+)
+File: ./images/MODCOD.eps Graphic file (type eps)
+ <./images/MODCOD.eps>
+File: ./images/plscode.eps Graphic file (type eps)
+ <./images/plscode.eps>
+(./figs/short.tex
 \gnumericColE=\skip75
 \gnumericColF=\skip76
 \gnumericColG=\skip77
 \gnumericColH=\skip78
 \gnumericColI=\skip79
 \gnumericColJ=\skip80
-)
-(./figs/Normal.tex)
-Underfull \vbox (badness 3635) has occurred while \output is active []
-
- [1
-
-
-]
-File: ./images/MODCOD.eps Graphic file (type eps)
-
-<./images/MODCOD.eps>
-File: ./images/plscode.eps Graphic file (type eps)
- <./images/plscode.eps>
-File: ./images/parameters_pl_frame.eps Graphic file (type eps)
-
-<./images/parameters_pl_frame.eps> [2]
-Overfull \hbox (15.1313pt too wide) detected at line 401
-\OML/txmi/m/it/12 Y[]\OT1/txr/m/n/12 (\OML/txmi/m/it/12 m\OT1/txr/m/n/12 ) = \O
-ML/txmi/m/it/12 H[]\OT1/txr/m/n/12 (\OML/txmi/m/it/12 m\OT1/txr/m/n/12 ) \OMS/t
-xsy/m/n/12 ^^C \OML/txmi/m/it/12 X[] \OT1/txr/m/n/12 + \OML/txmi/m/it/12 V[]\OT
-1/txr/m/n/12 (\OML/txmi/m/it/12 m\OT1/txr/m/n/12 ) \OML/txmi/m/it/12 m \OT1/txr
-/m/n/12 = 1\OML/txmi/m/it/12 ; [] ; M\OT1/txr/m/n/12 ; \OML/txmi/m/it/12 k \OT1
-/txr/m/n/12 = 1\OML/txmi/m/it/12 ; [] ; N
- []
-
-
-Underfull \hbox (badness 2073) in paragraph at lines 401--403
-\OT1/txr/m/n/12 Where,$\OML/txmi/m/it/12 H[]$ \OT1/txr/m/n/12 rep-re-sents the 
-pulse shape,$\OML/txmi/m/it/12 V[]\OT1/txr/m/n/12 (\OML/txmi/m/it/12 m\OT1/txr/
-m/n/12 ) \OMS/txsy/m/n/12 ^^X
- []
-
-
-Overfull \hbox (14.47795pt too wide) detected at line 407
-[]
- []
-
-(./others.bbl) [3
+) (./figs/Normal.tex) [2] (./others.bbl) [3
 
 ] (./others.aux) ) 
 Here is how much of TeX's memory you used:
- 7636 strings out of 494591
- 117577 string characters out of 6176027
- 215890 words of memory out of 5000000
- 11128 multiletter control sequences out of 15000+600000
+ 7634 strings out of 494591
+ 117467 string characters out of 6176027
+ 218890 words of memory out of 5000000
+ 11124 multiletter control sequences out of 15000+600000
  65897 words of font info for 163 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,17n,39p,290b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,17n,39p,290b,379s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on others.dvi (3 pages, 18196 bytes).
+Output written on others.dvi (3 pages, 19956 bytes).

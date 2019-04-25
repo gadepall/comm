@@ -268,11 +268,10 @@ shows the BER comparison of 8PSK mapping scheme with  and without interleaver.
 
 \section{Physical Layer Framing(PLFRAMING)}
 
-PLFRAMING is useful for  specifying the modulation scheme,  code rate and frame characteristics, useful for Frame synchronization at the receiver.
+PLFRAMING is useful for  specifying the modulation scheme,  code rate and frame characteristics, useful for Frame synchronization at the receiver.  Fig. \ref{fig:splframe} shows the Typical Structure of PLFRAME according to \cite{dvb}.
+$SOF$=Starting Of Frame and  $PLSC$=Physical Layer Signalling Code.
+
 %\item In order to form the PLFRAME which is used for receiver synchronization, a header is inserted in the beginning of each frame.
-
-
-
 \begin{figure}[!ht]
 \begin{center}
 \includegraphics[width=\columnwidth]{/pl_framing}
@@ -281,9 +280,122 @@ PLFRAMING is useful for  specifying the modulation scheme,  code rate and frame 
 \label{fig:splframe}
 \end{figure}
 %
- Fig. \ref{fig:splframe} shows the Typical Structure of PLFRAME according to \cite{dvb}.
-More details are available in Tables \ref{table:splframe1} and \ref{table:splframe2}.
+\subsection{Generation of SOF}
+SOF consistutes a fixed sequence $18D2E82_{HEX}$ (length=26 bits) in binary format which is from right to left.
 
+\subsection{Generation of PLSC}
+\begin{itemize}
+\item Generation of PLSC involes definining 7 symbols and multiplying first 6 symbols with the defined $G$ matrix in \cite{dvb}. First 5 symbols called as MODCOD filed and next 2 symbols as TYPE field.
+\item First 5 symbols represents MODCOD which specifies Frame's mapping scheme and code rate.  Fig. \ref{fig:modcod} shows the MODCOD coding for various mapping schemes.
+\item Next 2 symbols represents TYPE filed which specifies Frame length and presence and absesnce of pilot fileds.
+This is shown in Table \ref{table:type}.
+\item  Similarly, Fig. \ref{fig:pls gen} shows the generation of 64 bit using the MODCOD and TYPE bits.
+\item  After the generation of PLS code, we will again scramble the PLS Code with the fixed SCR sequence which is defined in \cite{dvb}.
+\begin{equation}
+PLSC=PLSC \oplus SCR
+\end{equation}
+ 
+
+\end{itemize}
+%
+
+%
+\begin{table}[!ht]
+\begin{center}
+{\tiny
+\input{./figs/type.tex}
+}
+\end{center}
+\caption{Frame Type}
+\label{table:type}
+\end{table}
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=\columnwidth]{/MODCOD}
+\end{center}
+\caption{MODCOD coding for various mapping schemes. Subscript $D$ denotes decimal e.g. $1_D = 00001$ in binary}
+\label{fig:modcod}
+\end{figure}
+%
+%
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=\columnwidth]{/plscode}
+\end{center}
+\caption{Physical Layer Signalling generation}
+\label{fig:pls gen}
+\end{figure}
+%
+\subsection{PLHEADER}
+The PLHEADER has SOF (26 symbols) and PLSC (64 symbols) sequences, that are modulated by rotating QPSK by $\frac{\pi}{4}$.  This is also known as  $\frac{\pi}{2}$-BPSK. 
+ \begin{align}\label{eq:1}
+I_{2i-1}=Q_{2i-1}&=\frac{1}{\sqrt{2}}(1-2y_{2i-1}) \quad i=1,2,\dots,45
+\\
+\label{eq:2}
+I_{2i}=-Q_{2i}&=-\frac{1}{\sqrt{2}}(1-2y_{2i-1}) \quad 1,2\dots,45
+\end{align}
+%
+where $y_i \in \cbrak{0,1},i = 1,\dots,90$.
+ 
+\subsection{Generation of Pilots}
+%
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=\columnwidth]{/parameters_pl_frame}
+%\end{center}
+%\caption{paramters of plframe}
+%\label{fig:plframe}
+%\end{figure}
+%%
+Pilot block consists of $P=36$ symbols. Each pilot is composed of un-modulated complex symbol.Where, $I=Q=\frac{1}{\sqrt{2}}$ 
+%The first pilot block inserted 16 slots after the PLHEADER and next is inserted after the 32 slots and so on.
+%\begin{equation}\label{eq:plen}
+%K = 
+%\begin{cases}
+%90\times (S+1)  & \textit{with out pilots}
+%\\
+%90\times (S+1) + 36\times \alpha_{PIL}  & \textit{with pilots}
+%\end{cases}
+%\end{equation}
+%Where , $\alpha_{PIL}=\left\lfloor \frac{(S-1)}{16} \right\rfloor$.\\
+%Eq.\eqref{eq:plen} specifies the total length $K$ of the PLFRAME. Smiliarly, Fig. \ref{fig:plframe} Shows the Parameters of PLFRAME.
+
+% \begin{itemize}
+%%\item If pilots are used, then a 36 symbols
+%%pilot field is inserted every 16 slots of data symbols. Given that a PLFRAME cannot terminate to a pilot field, the total number of pilot fields is $\alpha_{PIL}=\left\lfloor \frac{(S-1)}{16} \right\rfloor$
+%%\item The total length of the PLFRAME in symbols is 
+%%\begin{equation}
+%%K = 
+%%\begin{cases}
+%%90\times (S+1)  & \textit{with out pilots}
+%%\\
+%%90\times (S+1) + 36\times \alpha_{PIL}  & \textit{with pilots}
+%%\end{cases}
+%%\end{equation}
+%%\begin{center}
+%%\includegraphics[scale=0.35]{/parameters_pl_frame}
+%%\end{center} 
+%
+%\item The different frame formats,parameters of the normal andshort DVB-S2 frame for all constellation formats were tabulated in above table as  specified in \cite{dvb}
+%\end{itemize}
+\subsection{PLFRAME Calculations}
+PLFRAME calculations are available in Tables \ref{table:splframe1} and \ref{table:splframe2}. 
+The PLFRAME length is calculated as
+%
+\begin{equation}
+\label{eq:plength}
+L= {SOF}+PLSC+(90*S_{SLOTS})+(36)*P_{SLOTS}
+\end{equation}
+where,
+\begin{equation}
+\nonumber
+S_{SLOTS}=\frac{N}{90\times\log_2M},P_{SLOTS}=\left\lfloor \frac{(S_{SLOTS}-1)}{16} \right\rfloor
+\end{equation}
+$N$ = Frame Type(64800/16200 bits),$M$ = Mapping order(4/8/16/32), depending upon the modulation scheme. 
+
+
+%
 \begin{table}[!ht]
 \begin{center}
 {\tiny
@@ -304,116 +416,34 @@ More details are available in Tables \ref{table:splframe1} and \ref{table:splfra
 \label{table:splframe2}
 \end{table}
 
- \begin{equation}\label{eq:1}
-I_{2i-1}=Q_{2i-1}=\frac{1}{\sqrt{2}}(1-2y_{2i-1}) \quad i=1,2,\dots,45
-\end{equation}
-\begin{equation}\label{eq:2}
-I_{2i}=-Q_{2i}=-\frac{1}{\sqrt{2}}(1-2y_{2i-1}) \quad 1,2\dots,45
-\end{equation}
-The PLHEADER, represented by binary stream , $y_1,\dots,y_{90}$ is modulated into 90 $\frac{\pi}{2}$-BPSK symbols. Eqs.\eqref{eq:1} and \eqref{eq:2} shows the generation of $\frac{\pi}{2}$-BPSK mapping.
-
-
-\begin{itemize}
-\item PLHEADER consists of two fields,
-\begin{enumerate}
-\item Starting of Frame(SOF) 26 symbols
-\item Physical Layer Signalling Code (PLSC) , 64 symbols
-\end{enumerate}
-\end{itemize} 
-\subsection{Generation of SOF}
-SOF consistutes a fixed sequence $18D2E82_{HEX}$ in binary format which is from right to left.
-\subsection{Generation of PLSC}
-\begin{itemize}
-\item Generation of PLSC involes definining 7 symbols and multiplying first 6 symbols with the defined $G$ matrix in \cite{dvb}. First 5 symbols called as MODCOD filed and next 2 symbols as TYPE field.
-\item First 5 symbols represents MODCOD which specifies Frame's mapping scheme and code rate.
-\item Next 2 symbols represents TYPE filed which specifies Frame length and presence and absesnce of pilot fileds.
-(0 = normal: 64 800 bits; 1 = short: 16 200 bits) ; (0 = no pilots, 1 = pilots)
-\end{itemize}
-%
-\begin{figure}
-\begin{center}
-\includegraphics[width=\columnwidth]{/MODCOD}
-\end{center}
-\caption{MODCOD coding for various mapping schemes}
-\label{fig:modcod}
-\end{figure}
-%
-%
-\begin{figure}
-\begin{center}
-\includegraphics[width=\columnwidth]{/plscode}
-\end{center}
-\caption{Physical Layer Signalling generation}
-\label{fig:pls gen}
-\end{figure}
-%
- Fig. \ref{fig:modcod} shows the MODCOD coding for various mapping schemes. Similarly, Fig. \ref{fig:pls gen} shows the generation of 64 bits.
- 
- After the generation of PLS code, we will again scramble the PLS Code with the fixed SCR sequence which is defined in the \cite{dvb}.
- 
-\begin{equation}
-PLSC=PLSC \oplus SCR
-\end{equation}
-\subsection{Generation of Pilots}
-%
-\begin{figure}
-\begin{center}
-\includegraphics[width=\columnwidth]{/parameters_pl_frame}
-\end{center}
-\caption{paramters of plframe}
-\label{fig:plframe}
-\end{figure}
-%
-Pilot block consists of $P=36$ symbols. Each pilot is composed of un-modulated complex symbol.Where, $I=Q=\frac{1}{\sqrt{2}}$ The first pilot block inserted 16 slots after the PLHEADER and next is inserted after the 32 slots and so on.
-\begin{equation}\label{eq:plen}
-K = 
-\begin{cases}
-90\times (S+1)  & \textit{with out pilots}
-\\
-90\times (S+1) + 36\times \alpha_{PIL}  & \textit{with pilots}
-\end{cases}
-\end{equation}
-Where , $\alpha_{PIL}=\left\lfloor \frac{(S-1)}{16} \right\rfloor$.\\
-Eq.\eqref{eq:plen} specifies the total length $K$ of the PLFRAME. Smiliarly, Fig. \ref{fig:plframe} Shows the Parameters of PLFRAME.
-
-% \begin{itemize}
-%%\item If pilots are used, then a 36 symbols
-%%pilot field is inserted every 16 slots of data symbols. Given that a PLFRAME cannot terminate to a pilot field, the total number of pilot fields is $\alpha_{PIL}=\left\lfloor \frac{(S-1)}{16} \right\rfloor$
-%%\item The total length of the PLFRAME in symbols is 
-%%\begin{equation}
-%%K = 
-%%\begin{cases}
-%%90\times (S+1)  & \textit{with out pilots}
-%%\\
-%%90\times (S+1) + 36\times \alpha_{PIL}  & \textit{with pilots}
-%%\end{cases}
-%%\end{equation}
-%%\begin{center}
-%%\includegraphics[scale=0.35]{/parameters_pl_frame}
-%%\end{center} 
-%
-%\item The different frame formats,parameters of the normal andshort DVB-S2 frame for all constellation formats were tabulated in above table as  specified in \cite{dvb}
-%\end{itemize}
-
 \section{Pulse Shaping}
-\begin{equation}
-Y_k(m)=H_k(m) \ast X_k + V_k(m) \quad m=1,\dots, M; k=1,\dots,N
-\end{equation}
-Where,$H_k$ represents the pulse shape,$V_k(m) \sim \mathcal{N}\brak{0,\sigma^2} $.
-
-At the Receiver we will,
+Let $X_k$ be the modulated symbol in the $k$th time slot.  Then the $m$th sample of the transmitted symbol in the $k$th time slot is
 \begin{align}
-Y_k(m)\ast H^*_k(M-m) =H^*_k(M-m)\ast H_k(m) \ast X_k + V_k(m) 
+S_k(m)=h_k(m)* X_k
 \end{align}
-
-$H(f)$ will be choosen from the \cite{dvb} which is converted to time domain form to get $ H_k(m)$
+where $h_k(m), m=1,\dots, M; k=1,\dots,N$ are samples of the pulse shaping filter \cite{dvb}  obtained from
 \begin{align}
 H(f) =\begin{cases}
 1& \abs{f}<f_N(1-\alpha)\\
 \cbrak{\frac{1}{2}+\frac{1}{2}\sin \frac{\pi}{2}\sbrak{\frac{f_N-\abs{f}}{\alpha}}}^{\frac{1}{2}}&\abs{f}=f_N(1-\alpha)\\
-0&\abs{f}>f_N(1-\alpha)
+0&\abs{f}>f_N(1+\alpha)
 \end{cases}
 \end{align}
+%
+where $f_N$ is the Nyquist frequency and $\alpha = 0.35, 0.25$ or $0.2$.
+Let the $m$th received sample in the  $k$th time slot be $Y_k(m)$. At the Receiver, the symbol to be demodulated is then obtained as
+\begin{align}
+Y_k(m)*h_k(M-m)
+\end{align}
+
+%\begin{multline}
+%=H_k(m)* X_k + V_k(m) 
+%\\
+%\end{multline}
+%where $H_k(m)$ represents the pulse shape and $V_k(m) \sim \mathcal{N}\brak{0,\sigma^2} $.
+
+
+
 %\begin{itemize}
 %\item After randomization, the signals shall be square root raised cosine filtered. The roll-off factor shall be $\alpha$ = 0,35, 0,25and 0,20, depending on the service requirements.
 %\item Suitable $H(f)$ will be choosen from the \cite{dvb}.
