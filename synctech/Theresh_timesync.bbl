@@ -55,7 +55,12 @@ R.~{De Gaudenzi} and M.~{Luise}, ``{Analysis and design of an all-digital
 \BIBentrySTDinterwordspacing
 
 \bibitem{frame_offset}
-J.~{Han}, ``{Optimal frame synchronization for DVB-S2},'' in \emph{2008 IEEE
-  International Symposium on Circuits and Systems}, May 2008, pp. 956--959.
+\BIBentryALTinterwordspacing
+H.~{Miyashiro}, E.~{Boutillon}, C.~{Roland}, J.~{Vilca}, and D.~{Díaz},
+  ``{Improved Multiplierless Architecture for Header Detection in DVB-S2
+  Standard},'' in \emph{2016 IEEE International Workshop on Signal Processing
+  Systems (SiPS)}, Oct 2016, pp. 248--253. [Online]. Available:
+  \url{https://doi.org/10.1109/SiPS.2016.51}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}

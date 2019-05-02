@@ -16,37 +16,37 @@ Database file #2: Theresh_timesync.bib
 Done.
 You've used 5 entries,
             4087 wiz_defined-function locations,
-            1380 strings with 18583 characters,
-and the built_in function-call counts, 4633 in all, are:
-= -- 398
-> -- 76
+            1382 strings with 18740 characters,
+and the built_in function-call counts, 4821 in all, are:
+= -- 410
+> -- 93
 < -- 50
-+ -- 50
-- -- 9
-* -- 248
-:= -- 727
++ -- 58
+- -- 13
+* -- 264
+:= -- 753
 add.period$ -- 10
 call.type$ -- 5
 change.case$ -- 5
 chr.to.int$ -- 111
 cite$ -- 5
-duplicate$ -- 308
-empty$ -- 330
-format.name$ -- 12
-if$ -- 1065
+duplicate$ -- 317
+empty$ -- 338
+format.name$ -- 17
+if$ -- 1106
 int.to.chr$ -- 0
 int.to.str$ -- 5
-missing$ -- 45
-newline$ -- 46
+missing$ -- 49
+newline$ -- 48
 num.names$ -- 5
-pop$ -- 74
+pop$ -- 86
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 358
+skip$ -- 369
 stack$ -- 0
 substring$ -- 264
-swap$ -- 288
+swap$ -- 298
 text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 5
@@ -54,4 +54,4 @@ type$ -- 5
 warning$ -- 0
 while$ -- 20
 width$ -- 6
-write$ -- 87
+write$ -- 90

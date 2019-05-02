@@ -503,19 +503,70 @@ in Fig. \ref{fig:diffaoff}.  $\gamma = 10^{-3}, SNR=10 dB$.
 \begin{lstlisting}
 https://github.com/gadepall/EE5837/raw/master/synctech/codes/Digital_AGC_with_fixed_SNR.py
 \end{lstlisting}
-\section{Frame Synchronization : Differential detection and non-threshold peak search Algorithm} 
-%
-\cite{frame_offset}
-%
 
+\section{Frame Synchronization : Global Summation of SOF/PLSC Detectors} 
+%
+%
+Let the frequency offset be $\Delta f$ and phase offset be $\Delta \phi$.Then,
+\begin{equation}
+\label{eq:freq_offset_model}
+Y_k= X_k e^{j(2\pi\Delta fkM+\phi_k)} + V_k, \quad k = 1,\dots,N 
+\end{equation}
+%
+assuming that no pilot symbols are trasmitted. 
+Let the phase information be $\theta_k$, and defined as
+%
+\begin{equation}
+\theta(k) = \frac{Y_k}{\abs{Y_k}}
+\end{equation}
+%
+At the receiver, the header information is available in the form of 
 \begin{align}
-\Lambda&= max(\abs{\sum_{j=1}^{\frac{L_{PLSC}}{2}}R_{2j-1}R^*_{2j}T_j+\sum_{i=1}^{L_{SOF}-1}r_i r_{i+1}^*t_i}\\
-&,\abs{\sum_{j=1}^{\frac{L_{PLSC}}{2}}R_{2j-1}R^*_{2j}T_j-\sum_{i=1}^{L_{SOF}-1}r_i r_{i+1}^*t_i})
+g_i(l)&=x_s(l)x_s(l-i), l = 0,\dots, SOF-1
+\\
+h_i(l)&=x_p(l)x_p(l-i), l = 0,\dots, PLSC-1
 \end{align}
-Where $R$ denotes the received symbol of PLSC, $r$ is the
-received symbol of SOF, $T$ and $t$ are the taps corresponding to the differential correlation, $L_{SOF} =$ 26, $L_{PLSC}=$ 64.
-\subsection{Plots}
+%
+where $x_s$ are the mapped SOF symbols, $x_p$ are the scrambled PLSC  symbols, both  modulated using $\pi/2$ BPSK
+for $i=1,2,4,8,16,32$.
+A special kind of correlation is performed to obtain
+\begin{align}
+m_i(k)&=\sum_{l=0}^{PLSC-1} e^{j(\theta(k-l)-\theta(k-l-i))} h_i(l),
+\\
+n_i(k)&=\sum_{l=0}^{SOF-1} e^{j(\theta(k-l)-\theta(k-l-i))} g_i(l) ,
+\\
+&k = 1, \dots, N 
+\end{align}
+%
+Compute
+\begin{align}
+p_i(k)=
+\begin{cases}
+\max \lbrak{\abs{n_i({k-PLSC})+m_i(k)},} &
+\\
+\rbrak{\abs{n_i({k-PLSC})-m_i(k)}} & k > PLSC
+\\
+\max \abs{m_i(k)}  & k < 64
+\end{cases}
+\end{align}
 
+ GLOBAL variable $G_{R,T}(k)$  \cite{frame_offset} defined as,
+
+\begin{equation}
+G_{R,T}(k)=\sum_{i\geq1}p_i(k) , \quad i=1,2,4,8,16,32
+\end{equation}
+Where,
+%
+%
+\begin{equation}
+\end{equation}
+% Where $g_i(l)$
+%\begin{equation}
+%g_i(l)=xsof(l)xsof(l-i)
+%\end{equation} 
+\begin{equation}
+\end{equation} 
+Where $xsof$,$xscr$ are the mapped symbols of sof and scr using $\frac{\pi}{2} BPSK$. 
 
 %
 \bibliography{IEEEabrv,Theresh_timesync.bib}
