@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  6 MAY 2019 11:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  6 MAY 2019 11:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -717,12 +717,12 @@ File: ./figs/pulseshaping.eps Graphic file (type eps)
  <./figs/pulseshaping.eps>
 (./others.bbl) [3] (./others.aux) ) 
 Here is how much of TeX's memory you used:
- 7898 strings out of 494591
- 119531 string characters out of 6176027
- 220890 words of memory out of 5000000
- 11387 multiletter control sequences out of 15000+600000
+ 7899 strings out of 494591
+ 119549 string characters out of 6176027
+ 234890 words of memory out of 5000000
+ 11388 multiletter control sequences out of 15000+600000
  65897 words of font info for 163 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,17n,39p,408b,968s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,17n,39p,290b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on others.dvi (3 pages, 20564 bytes).
+Output written on others.dvi (3 pages, 21060 bytes).
