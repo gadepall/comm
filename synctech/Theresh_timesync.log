@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  1 MAY 2019 11:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  8 MAY 2019 10:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -547,11 +547,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/ls
 cape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-) (./Theresh_timesync.aux
-
-LaTeX Warning: Label `eq:freq_offset_model' multiply defined.
-
-)
+) (./Theresh_timesync.aux)
 \openout1 = `Theresh_timesync.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 115.
@@ -700,23 +696,19 @@ File: ./figs/Phase_error_with_respect_to_SNR_fixed_pilot.eps Graphic file (type
 File: ./figs/Convergence_of_Digital_AGC.eps Graphic file (type eps)
 
 <./figs/Convergence_of_Digital_AGC.eps>
-Underfull \vbox (badness 1509) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-(./Theresh_timesync.bbl) [4
+File: ./figs/framesync.eps Graphic file (type eps)
 
-] (./Theresh_timesync.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+<./figs/framesync.eps> (./Theresh_timesync.bbl) [4] (./Theresh_timesync.aux) ) 
 Here is how much of TeX's memory you used:
- 7854 strings out of 494591
- 119459 string characters out of 6176027
+ 7859 strings out of 494591
+ 119550 string characters out of 6176027
  195890 words of memory out of 5000000
- 11355 multiletter control sequences out of 15000+600000
+ 11359 multiletter control sequences out of 15000+600000
  62210 words of font info for 151 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,16n,39p,234b,993s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,16n,39p,323b,993s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Theresh_timesync.dvi (4 pages, 20104 bytes).
+Output written on Theresh_timesync.dvi (4 pages, 22540 bytes).

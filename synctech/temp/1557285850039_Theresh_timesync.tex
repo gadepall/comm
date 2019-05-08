@@ -216,7 +216,7 @@ Digital Synchronization Techniques for Reliable Communication
 
 
 
-\author{Theresh Babu Benguluri, Raktim Goswami, Abhishek Bairagi, Siddharth Maurya, Pappu Manasa, Sandeep Khyalia and G V V 
+\author{Theresh Babu Benguluri,Sandeep Kumar Khyalia, Raktim Goswami, Abhishek Bairagi, Siddharth Maurya, Pappu Manasa and G V V 
 Sharma$^{*}$% <-this % stops a space
 \thanks{*The authors are with the Department
 of Electrical Engineering, Indian Institute of Technology, Hyderabad
@@ -503,12 +503,13 @@ in Fig. \ref{fig:diffaoff}.  $\gamma = 10^{-3}, SNR=10 dB$.
 \begin{lstlisting}
 https://github.com/gadepall/EE5837/raw/master/synctech/codes/Digital_AGC_with_fixed_SNR.py
 \end{lstlisting}
+
 \section{Frame Synchronization : Global Summation of SOF/PLSC Detectors} 
 %
 %
 Let the frequency offset be $\Delta f$ and phase offset be $\Delta \phi$.Then,
 \begin{equation}
-%\label{eq:freq_offset_model}
+\label{eq:freq_offset_model}
 Y_k= X_k e^{j(2\pi\Delta fkM+\phi_k)} + V_k, \quad k = 1,\dots,N 
 \end{equation}
 %
@@ -553,31 +554,15 @@ p_i(k)=
 
 \begin{equation}
 G_{R,T}(k)=\sum_{i\geq1}p_i(k) , \quad i=1,2,4,8,16,32
-\label{eq:global}
 \end{equation}
 
-At the receiver, let us consider we have sent two types of transmission. One is PLHEADER+DATA $\brak{Y_{k1}}$ and another is only DATA $\brak{Y_{k2}}$ and the GLOBAL variables for $\brak{Y_{k1}}$ and $\brak{Y_{k2}}$ from \eqref{eq:global} are $G1_{R,T}(k)$, $G2_{R,T}(k)$ respectively.
+Where $xsof$,$xscr$ are the mapped symbols of sof and scr using $\frac{\pi}{2} BPSK$. 
 
-\subsection{Global Threshold Calculation}
-The Global Threshold variable is defined as
-\begin{align}
-T&= \max \brak{ \max \brak{G1_{R,T}(k)},\max \brak{ G2_{R,T}(k)}}
-\end{align} 
-%\subsection{False Alarm Probability}
-The probability of false detection of plheader when only DATA frame $\brak{Y_{k2}}$ has been sent is defined as
-\begin{align}
-P_{FA} &= \frac{\sum \frac{sign(\abs{Y_{k2}-T})+1}{2} }{N}
-\end{align}
-
-%\subsection{Missed Detection Probability}
-The probability of missed detection of plheader when PLHEADER+DATA $\brak{Y_{k1}}$ has been sent is defined as
-\begin{align}
-P_{MD} &= \frac{\sum \frac{sign(T-\abs{Y_{k1}})+1}{2} }{N+PLSC+SOF}
-\end{align}
-%\subsection{False Alarm Probability}
-%False Alarm Probability $(p_{fa})$, is the probability of false detection of plheader when only DATA frame has been sent.
-%%\subsection{Missed Detection Probability}
-%Missed Detection Probabililty $(p_{md})$, is the probability of missed detection of plheader when PLHEADER+DATA has been sent.
+At the receiver, let us consider we have sent two types of transmission. One is PLHEADER+DATA and another is only DATA.
+\subsection{False Alarm Probability}
+False Alarm Probability $(p_{fa})$, is the probability of false detection of plheader when only DATA frame has been sent.
+\subsection{Missed Detection Probability}
+Missed Detection Probabililty $(p_{md})$, is the probability of missed detection of plheader when PLHEADER+DATA has been sent.
 
 \subsection{Plots}
 
@@ -589,8 +574,7 @@ P_{MD} &= \frac{\sum \frac{sign(T-\abs{Y_{k1}})+1}{2} }{N+PLSC+SOF}
 \label{fig:frameoff}
 \end{figure}
 
-Fig.\ref{fig:frameoff} shows the ROC curve ($P_{FA} vs P_{MD}$)  at the receiver for frame synchronization at $\frac{E_b}{N_0}=-2$ dB.
-
+Fig.\ref{fig:frameoff} shows ROC curves at the receiver for frame synchronization at $\frac{E_b}{N_0}=-2$ dB
 
 %
 \bibliography{IEEEabrv,Theresh_timesync.bib}
