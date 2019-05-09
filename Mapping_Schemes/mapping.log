@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  26 APR 2019 16:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Termux) (preloaded format=latex 2018.11.30)  9 MAY 2019 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -671,33 +671,38 @@ File: utxsyc.fd 2000/12/15 v3.1
 \tf@toc=\write3
 \openout3 = `mapping.toc'.
 
-
-Underfull \hbox (badness 2512) in paragraph at lines 234--237
-[]\OT1/txr/bx/it/10 Abstract\OT1/txr/bx/n/10 ---A brief de-scrip-tion about the
- map-ping
- []
-
 File: ./figs/qpsk.eps Graphic file (type eps)
-<./figs/qpsk.eps>
+ <./figs/qpsk.eps>
+File: ./figs/QPSK1.eps Graphic file (type eps)
+ <./figs/QPSK1.eps>
 File: ./figs/8psk.eps Graphic file (type eps)
  <./figs/8psk.eps>
-File: ./figs/16apsk.eps Graphic file (type eps)
- <./figs/16apsk.eps>
-File: ./figs/32APSK.eps Graphic file (type eps)
- <./figs/32APSK.eps>
 [1
 
 
-] (./mapping.bbl) [2
+]
+File: ./figs/8PSK1.eps Graphic file (type eps)
+ <./figs/8PSK1.eps>
+File: ./figs/16apsk.eps Graphic file (type eps)
+ <./figs/16apsk.eps>
+File: ./figs/apsk16.eps Graphic file (type eps)
+ <./figs/apsk16.eps>
+Overfull \hbox (24.30696pt too wide) detected at line 358
+[]
+ []
 
-] (./mapping.aux) ) 
+[2]
+File: ./figs/32APSK.eps Graphic file (type eps)
+ <./figs/32APSK.eps>
+File: ./figs/apsk32.eps Graphic file (type eps)
+ <./figs/apsk32.eps> (./mapping.bbl) [3] (./mapping.aux) ) 
 Here is how much of TeX's memory you used:
- 7576 strings out of 494591
- 116603 string characters out of 6176027
- 180890 words of memory out of 5000000
- 11079 multiletter control sequences out of 15000+600000
+ 7592 strings out of 494591
+ 116873 string characters out of 6176027
+ 184890 words of memory out of 5000000
+ 11091 multiletter control sequences out of 15000+600000
  62210 words of font info for 151 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,9n,39p,230b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,9n,39p,230b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on mapping.dvi (2 pages, 6420 bytes).
+Output written on mapping.dvi (3 pages, 12272 bytes).
