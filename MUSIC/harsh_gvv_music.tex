@@ -226,11 +226,10 @@ columns=fullflexible
 
 \title{ 
 	\logo{
-JEE Advanced:2019
-	}
+MUSIC	}
 }
 
-\author{ G V V Sharma$^{*}$% <-this % stops a space
+\author{ Harsh Raj and G V V Sharma$^{*}$% <-this % stops a space
 	\thanks{*The author is with the Department
 		of Electrical Engineering, Indian Institute of Technology, Hyderabad
 		502285 India e-mail:  gadepall@iith.ac.in. All solutions in this manual is released under GNU 
@@ -249,40 +248,25 @@ GPL.  Free and open source.}
 \renewcommand{\thetable}{\theenumi}
 %\setcounter{nc}{1}
 \begin{abstract}
-This manual has exercises   based on 
-problems in JEE advanced.
+This manual explains the MUSIC algorithm through examples.
 \end{abstract}
-\section{Complex Numbers: Optimization and  KKT Conditions}
+\section{Source signal generation}
+The system parameters are listed in Table \ref{table:music}.
+
 \begin{enumerate}[label=\thesection.\arabic*
 ,ref=\thesection.\theenumi]
 %
-\item Consider the optimization problem
-\begin{align}
-\label{eq:opt_def}
-\max_{z} \frac{1}{\abs{z-1}}
-\\
-s.t. \quad \abs{z-2 + \j} \ge \sqrt{5}
-\end{align}
-%
-Show that it can be reframed as
-\begin{align}
-\label{eq:opt_rev}
-\min_{\vec{x}} \,\norm{\vec{x} - \vec{c}_1}^2
-\\
- s.t. \quad  \norm{\vec{x} - \vec{c}_2}^2 \ge 5
-%\min_{z} \abs{z-1}
-%\\
-% s.t. \quad \abs{z-2 + \j} \ge \sqrt{5}
-\end{align}
-%
-where
-\begin{align}
-z &= \vec{x} = \myvec{x_1 \\ x_2},
-%\\
-\vec{c}_1 = \myvec{1 \\ 0},
-%\\
-\vec{c}_2 = \myvec{2 \\ -1}
-\end{align}
+\item See Table \ref{table:music}
+
+\begin{table}[!h]
+\centering
+%\resizebox {0.5\columnwidth} {!} {
+%\input{./figs/components.tex}
+\input{./figs/music.tex}
+%}
+\caption{}
+\label{table:music}
+\end{table}
 
 %
 %
