@@ -1,6 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from cmath import e,pi,sin,cos
+#if using termux
+import subprocess
+import shlex
+#end if
 
 N=5
 M=10
@@ -62,9 +66,15 @@ P_vals = np.array([P(val*pi/180.0) for val in theta_vals]).real
 #Plotting P_vals vs theta to find peaks
 plt.plot(np.abs(theta_vals),P_vals)
 plt.xticks(np.arange(0, 181, 10))
-plt.xlabel('theta')
+plt.xlabel('$\\theta$')
+plt.ylabel('$P(\\theta)$')
 plt.title('Dotted Lines = Actual DOA    Peaks = Estimated DOA')
 
 plt.legend()
 plt.grid()
-plt.show()
+#if using termux
+plt.savefig('../figs/music.pdf')
+plt.savefig('../figs/music.eps')
+subprocess.run(shlex.split("termux-open ../figs/music.pdf"))
+#else
+#plt.show()

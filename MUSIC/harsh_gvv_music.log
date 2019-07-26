@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.6.30)  25 JUL 2019 18:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.6.30)  26 JUL 2019 20:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1302,134 +1302,68 @@ File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
 File: tlc.eps Graphic file (type eps)
  <tlc.eps>
-(./harsh_gvv_music.toc
-Overfull \hbox (33.732pt too wide) in paragraph at lines 13--13
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--13
-[]  
- []
-
-)
+(./harsh_gvv_music.toc)
 \tf@toc=\write6
 \openout6 = `harsh_gvv_music.toc'.
 
- (./figs/music.tex
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 264.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 264.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 274.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 274.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 274.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 274.
+
+(./figs/music.tex
 \gnumericTableWidth=\skip66
 \gnumericTableWidthComplete=\skip67
 \gnumericMultiRowLength=\skip68
 \gnumericColA=\skip69
 \gnumericColB=\skip70
+\gnumericColC=\skip71
 )
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-File: ./figs/2019_1_1.eps Graphic file (type eps)
-<./figs/2019_1_1.eps> [1
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 
 ]
+File: ./figs/music.eps Graphic file (type eps)
 
-LaTeX Warning: Command \j invalid in math mode on input line 355.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 355.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 369.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 369.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 369.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 369.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 369.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 369.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 369.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 369.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 369.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 369.
-
-File: ./figs/2019_1_2.eps Graphic file (type eps)
-<./figs/2019_1_2.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-File: ./figs/2019_3.eps Graphic file (type eps)
-
-<./figs/2019_3.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-File: ./figs/2019_4.eps Graphic file (type eps)
-
-<./figs/2019_4.eps>
-Underfull \vbox (badness 4595) has occurred while \output is active []
-
-
-Underfull \vbox (badness 1365) has occurred while \output is active []
-
- [4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5]
-(./figs/2019_7.tex
-\gnumericColC=\skip71
-\gnumericColD=\skip72
-)
-File: ./figs/2019_8.eps Graphic file (type eps)
- <./figs/2019_8.eps> [6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8]
-[9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1399.
-
-[11
+<./figs/music.eps>
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 345.
+ [2
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1399.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
  (./harsh_gvv_music.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1399.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1399.
-
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 345.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 345.
 Package rerunfilecheck Info: File `harsh_gvv_music.out' has not changed.
-(rerunfilecheck)             Checksum: A0EB00E7D1B5D6CEE98BBD88EB4A28E6;773.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: 5699EE28055DF303667A8E2253199D24;161.
  ) 
 Here is how much of TeX's memory you used:
- 24336 strings out of 492615
- 479904 string characters out of 6118492
- 597964 words of memory out of 5000000
- 27791 multiletter control sequences out of 15000+600000
- 74604 words of font info for 188 fonts, out of 8000000 for 9000
+ 24254 strings out of 492615
+ 478759 string characters out of 6118492
+ 585964 words of memory out of 5000000
+ 27717 multiletter control sequences out of 15000+600000
+ 67844 words of font info for 167 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 54i,16n,67p,801b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,16n,67p,801b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on harsh_gvv_music.dvi (11 pages, 133452 bytes).
+Output written on harsh_gvv_music.dvi (2 pages, 19848 bytes).

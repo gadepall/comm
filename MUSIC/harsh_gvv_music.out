@@ -1,13 +1,3 @@
-\BOOKMARK [1][-]{section.1}{Source signal generation}{}% 1
-\BOOKMARK [1][-]{section.2}{Matrices: Cayley-Hamilton Theorem}{}% 2
-\BOOKMARK [1][-]{section.3}{Vector Algebra}{}% 3
-\BOOKMARK [1][-]{section.4}{Calculus: Integration}{}% 4
-\BOOKMARK [1][-]{section.5}{Signal Processing: Z Transform}{}% 5
-\BOOKMARK [1][-]{section.6}{Matrices: Adjugate}{}% 6
-\BOOKMARK [1][-]{section.7}{Probability}{}% 7
-\BOOKMARK [1][-]{section.8}{Trigonometry}{}% 8
-\BOOKMARK [1][-]{section.9}{Coordinate Geometry}{}% 9
-\BOOKMARK [1][-]{section.10}{Calculus: Differentiation}{}% 10
-\BOOKMARK [1][-]{section.11}{Calculus: Differential Equations}{}% 11
-\BOOKMARK [1][-]{section.12}{Linear Algebra: Orthogonality}{}% 12
-\BOOKMARK [1][-]{section.13}{Linear Algebra: Eigenvalue and Eigenvector}{}% 13
+\BOOKMARK [1][-]{section.1}{System Model}{}% 1
+\BOOKMARK [1][-]{section.2}{Estimating DOA using MUSIC}{}% 2
+\BOOKMARK [1][-]{section.3}{Simulation Results}{}% 3
