@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "musicForInitialValues", "musicForInitialValues.pyproj", "{E6B46FB4-8BF1-4A65-8E6C-643AF958C123}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6B46FB4-8BF1-4A65-8E6C-643AF958C123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6B46FB4-8BF1-4A65-8E6C-643AF958C123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDACB56B-22C8-4614-8BAD-B9EC3CDB224D}
+	EndGlobalSection
+EndGlobal
