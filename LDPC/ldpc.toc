@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Introduction}{1}% 
+\contentsline {section}{\numberline {2}Encoding}{1}% 
+\contentsline {section}{\numberline {3}Decoding}{2}% 
+\contentsline {subsection}{\numberline {3.1}Useful Calculations for proceeding LDPC Decoding }{2}% 
+\contentsline {subsection}{\numberline {3.2}Message Passing Algorithm using min-sum Approximation}{4}% 
+\contentsline {subsection}{\numberline {3.3}Simulation Results}{4}% 
+\contentsline {section}{\numberline {4}LDPC Decoding for Higher Order Mapping Schemes}{4}% 
+\contentsline {subsection}{\numberline {4.1}General Expression for Calculation of Log Likelihood Ratio(LLR)}{4}% 
+\contentsline {subsection}{\numberline {4.2}Approximated LLR's for QPSK Mapping Scheme}{5}% 
+\contentsline {subsection}{\numberline {4.3}Approximated LLR's for 8-PSK Mapping Scheme}{5}% 
+\contentsline {section}{References}{5}% 
