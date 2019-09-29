@@ -1,0 +1,32 @@
+\contentsline {section}{\numberline {1}Modulation and Demodulation}{1}% 
+\contentsline {subsection}{\numberline {1.1}QPSK}{1}% 
+\contentsline {subsection}{\numberline {1.2}8PSK}{2}% 
+\contentsline {section}{\numberline {2}Amplitude Phase Shift Keying (APSK)}{2}% 
+\contentsline {subsection}{\numberline {2.1}16-APSK}{2}% 
+\contentsline {subsection}{\numberline {2.2}32-APSK}{3}% 
+\contentsline {section}{\numberline {3}BCH: Generator Polynomial}{3}% 
+\contentsline {section}{\numberline {4}BCH: Encoding}{4}% 
+\contentsline {section}{\numberline {5}Berlekamp's Decoding Algorithm}{4}% 
+\contentsline {section}{\numberline {6}BCH Decoding: The Chien's Search Algorithm}{4}% 
+\contentsline {section}{\numberline {7}LDPC: Introduction}{4}% 
+\contentsline {section}{\numberline {8}LDPC: Encoding}{5}% 
+\contentsline {section}{\numberline {9}LDPC: Decoding}{5}% 
+\contentsline {subsection}{\numberline {9.1}Useful Calculations for proceeding LDPC Decoding }{5}% 
+\contentsline {subsection}{\numberline {9.2}Message Passing Algorithm using min-sum Approximation}{7}% 
+\contentsline {subsection}{\numberline {9.3}Simulation Results}{7}% 
+\contentsline {section}{\numberline {10}LDPC Decoding for Higher Order Mapping Schemes}{7}% 
+\contentsline {subsection}{\numberline {10.1}General Expression for Calculation of Log Likelihood Ratio(LLR)}{7}% 
+\contentsline {subsection}{\numberline {10.2}Approximated LLR's for QPSK Mapping Scheme}{8}% 
+\contentsline {subsection}{\numberline {10.3}Approximated LLR's for 8-PSK Mapping Scheme}{8}% 
+\contentsline {section}{\numberline {11}Time Offset: Gardner TED}{8}% 
+\contentsline {subsection}{\numberline {11.1}Plots}{8}% 
+\contentsline {section}{\numberline {12}Frequency Offset: LR Technique}{8}% 
+\contentsline {subsection}{\numberline {12.1}Plots}{9}% 
+\contentsline {section}{\numberline {13}Phase Offset: Feed Forward Maximum Likelihood (FF-ML)technique}{9}% 
+\contentsline {subsection}{\numberline {13.1}Plots}{10}% 
+\contentsline {section}{\numberline {14}Automatic Gain Controller (AGC): Data-Aided Vector-Tracker (DA-VT) }{10}% 
+\contentsline {subsection}{\numberline {14.1}Plots}{10}% 
+\contentsline {section}{\numberline {15}Frame Synchronization : Global Summation of SOF/PLSC Detectors}{10}% 
+\contentsline {subsection}{\numberline {15.1}Global Threshold Calculation}{11}% 
+\contentsline {subsection}{\numberline {15.2}Plots}{11}% 
+\contentsline {section}{References}{11}% 
