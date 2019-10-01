@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usetikzlibrary{positioning}
+
+\begin{document}
+
+%------------------------------------------------------------------------------
+% QSPK
+\begin{figure}
+\begin{tikzpicture}
+\draw[thick](0,0) circle (1);
+\filldraw [blue] (0.707106781,0.707106781) circle (2pt) node[anchor=west] {00};
+\filldraw [blue] (-0.707106781,0.707106781) circle (2pt) node[anchor=east] {10};
+\filldraw [blue] (-0.707106781,-0.707106781) circle (2pt) node[anchor=east] {11};
+\filldraw [blue] (0.707106781,-0.707106781) circle (2pt) node[anchor=west] {01};
+
+
+\draw[red,ultra thick,->] (0,0) -- (0.707106781,0.707106781);
+
+\draw[black,very thick,->] (-2,0) -- (2,0) node[anchor=west] {I};
+\draw[black,very thick,->] (0,-2) -- (0,2) node[anchor=east] {Q};
+
+\end{tikzpicture}
+\end{figure}
+
+%\begin{equation*}
+%X_k \in \cbrak{e^{j \frac{2\pi n}{4}}} \quad n=0,1,2,3
+%\end{equation*}
+%------------------------------------------------------------------------------
+
+\end{document}
