@@ -1,35 +1,32 @@
-\contentsline {section}{\numberline {1}Introduction}{2}% 
-\contentsline {section}{\numberline {2}Modulation and Demodulation}{2}% 
-\contentsline {subsection}{\numberline {2.1}QPSK}{2}% 
-\contentsline {subsection}{\numberline {2.2}8PSK}{2}% 
-\contentsline {section}{\numberline {3}Amplitude Phase Shift Keying (APSK)}{2}% 
-\contentsline {subsection}{\numberline {3.1}16-APSK}{2}% 
-\contentsline {subsection}{\numberline {3.2}32-APSK}{3}% 
-\contentsline {section}{\numberline {4}BCH: Generator Polynomial}{3}% 
-\contentsline {section}{\numberline {5}BCH: Encoding}{4}% 
-\contentsline {section}{\numberline {6}Berlekamp's Decoding Algorithm}{4}% 
-\contentsline {section}{\numberline {7}BCH Decoding: The Chien's Search Algorithm}{4}% 
-\contentsline {section}{\numberline {8}LDPC: Introduction}{4}% 
-\contentsline {section}{\numberline {9}LDPC: Encoding}{5}% 
-\contentsline {section}{\numberline {10}LDPC: Decoding}{5}% 
-\contentsline {subsection}{\numberline {10.1}Useful Calculations for proceeding LDPC Decoding }{5}% 
-\contentsline {subsection}{\numberline {10.2}Message Passing Algorithm using min-sum Approximation}{7}% 
-\contentsline {subsection}{\numberline {10.3}Simulation Results}{7}% 
-\contentsline {section}{\numberline {11}LDPC Decoding for Higher Order Mapping Schemes}{7}% 
-\contentsline {subsection}{\numberline {11.1}General Expression for Calculation of Log Likelihood Ratio(LLR)}{7}% 
-\contentsline {subsection}{\numberline {11.2}Approximated LLR's for QPSK Mapping Scheme}{8}% 
-\contentsline {subsection}{\numberline {11.3}Approximated LLR's for 8-PSK Mapping Scheme}{8}% 
-\contentsline {section}{\numberline {12}Carrier Synchronization}{8}% 
-\contentsline {subsection}{\numberline {12.1}Time Offset: Gardner TED}{8}% 
-\contentsline {subsection}{\numberline {12.2}Frequency Offset: LR Technique}{8}% 
-\contentsline {subsection}{\numberline {12.3}Phase Offset: Feed Forward Maximum Likelihood (FF-ML)technique}{9}% 
-\contentsline {subsection}{\numberline {12.4}Automatic Gain Controller (AGC): Data-Aided Vector-Tracker (DA-VT) }{9}% 
-\contentsline {section}{\numberline {13}Frame Synchronization : Global Summation of SOF/PLSC Detectors}{9}% 
-\contentsline {subsection}{\numberline {13.1}Global Threshold Calculation}{10}% 
-\contentsline {section}{\numberline {14}Results and Discussion}{10}% 
-\contentsline {subsection}{\numberline {14.1}Time Offset}{10}% 
-\contentsline {subsection}{\numberline {14.2}Frequency}{10}% 
-\contentsline {subsection}{\numberline {14.3}Plots}{10}% 
-\contentsline {subsection}{\numberline {14.4}Plots}{11}% 
-\contentsline {subsection}{\numberline {14.5}Frame}{11}% 
-\contentsline {section}{References}{12}% 
+\contentsline {section}{\numberline {1}Introduction}{1}% 
+\contentsline {section}{\numberline {2}Modulation and Demodulation}{1}% 
+\contentsline {subsection}{\numberline {2.1}16-APSK}{2}% 
+\contentsline {subsection}{\numberline {2.2}32-APSK}{2}% 
+\contentsline {section}{\numberline {3}Carrier Synchronization}{3}% 
+\contentsline {subsection}{\numberline {3.1}Time Offset: Gardner TED}{3}% 
+\contentsline {subsection}{\numberline {3.2}Frequency Offset: LR Technique}{3}% 
+\contentsline {subsection}{\numberline {3.3}Phase Offset: Feed Forward Maximum Likelihood (FF-ML)technique}{3}% 
+\contentsline {subsection}{\numberline {3.4}Automatic Gain Controller (AGC): Data-Aided Vector-Tracker (DA-VT) }{3}% 
+\contentsline {section}{\numberline {4}Frame Synchronization : Global Summation of SOF/PLSC Detectors}{3}% 
+\contentsline {subsection}{\numberline {4.1}Global Threshold Calculation}{4}% 
+\contentsline {section}{\numberline {5}BCH: Generator Polynomial}{4}% 
+\contentsline {section}{\numberline {6}BCH: Encoding}{4}% 
+\contentsline {section}{\numberline {7}Berlekamp's Decoding Algorithm}{4}% 
+\contentsline {section}{\numberline {8}BCH Decoding: The Chien's Search Algorithm}{5}% 
+\contentsline {section}{\numberline {9}LDPC: Introduction}{5}% 
+\contentsline {section}{\numberline {10}LDPC: Encoding}{5}% 
+\contentsline {section}{\numberline {11}LDPC: Decoding}{6}% 
+\contentsline {subsection}{\numberline {11.1}Useful Calculations for proceeding LDPC Decoding }{6}% 
+\contentsline {subsection}{\numberline {11.2}Message Passing Algorithm using min-sum Approximation}{7}% 
+\contentsline {subsection}{\numberline {11.3}Simulation Results}{8}% 
+\contentsline {section}{\numberline {12}LDPC Decoding for Higher Order Mapping Schemes}{8}% 
+\contentsline {subsection}{\numberline {12.1}General Expression for Calculation of Log Likelihood Ratio(LLR)}{8}% 
+\contentsline {subsection}{\numberline {12.2}Approximated LLR's for QPSK Mapping Scheme}{8}% 
+\contentsline {subsection}{\numberline {12.3}Approximated LLR's for 8-PSK Mapping Scheme}{8}% 
+\contentsline {section}{\numberline {13}Results and Discussion}{9}% 
+\contentsline {subsection}{\numberline {13.1}Time Offset}{9}% 
+\contentsline {subsection}{\numberline {13.2}Frequency}{10}% 
+\contentsline {subsection}{\numberline {13.3}Plots}{10}% 
+\contentsline {subsection}{\numberline {13.4}Plots}{10}% 
+\contentsline {subsection}{\numberline {13.5}Frame}{11}% 
+\contentsline {section}{References}{11}% 

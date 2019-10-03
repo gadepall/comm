@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  1 OCT 2019 15:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  3 OCT 2019 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -861,12 +861,6 @@ cape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 ) (./NCC_2020.aux
 
-LaTeX Warning: Label `fig:qpsk' multiply defined.
-
-
-LaTeX Warning: Label `fig:8psk' multiply defined.
-
-
 LaTeX Warning: Label `fig:8psk1' multiply defined.
 
 )
@@ -991,17 +985,17 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 231.
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 ) (./NCC_2020.toc
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
  [][] []\OT1/txr/m/n/12 Approximated LLR's for 
  []
 
 
-Underfull \hbox (badness 2932) in paragraph at lines 25--25
+Underfull \hbox (badness 2932) in paragraph at lines 22--22
  \OT1/txr/m/n/12 Max-i-mum Like-li-hood (FF- 
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 26--26
+Underfull \hbox (badness 3407) in paragraph at lines 23--23
  [][] []\OT1/txr/m/n/12 Automatic Gain Con-troller 
  []
 
@@ -1009,14 +1003,7 @@ Underfull \hbox (badness 3407) in paragraph at lines 26--26
 \tf@toc=\write4
 \openout4 = `NCC_2020.toc'.
 
-
-Underfull \vbox (badness 1062) has occurred while \output is active []
-
- [1
-
-
-]
-(./tables/psk.tex
+ (./tables/psk.tex
 \gnumericTableWidth=\skip68
 \gnumericTableWidthComplete=\skip69
 \gnumericMultiRowLength=\skip70
@@ -1033,31 +1020,25 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 154--154
 
 LaTeX Warning: Command \j invalid in math mode on input line 220.
 
-)
-File: ./figs/qpsk.eps Graphic file (type eps)
- <./figs/qpsk.eps>
-File: ./figs/8psk.eps Graphic file (type eps)
- <./figs/8psk.eps>
-File: ./figs/16apsk.eps Graphic file (type eps)
- <./figs/16apsk.eps>
-File: ./figs/apsk16.eps Graphic file (type eps)
- <./figs/apsk16.eps>
-[2]
-Overfull \hbox (24.30696pt too wide) detected at line 377
-[]
- []
+) [1
 
-File: ./figs/32APSK.eps Graphic file (type eps)
-<./figs/32APSK.eps>
-File: ./figs/apsk32.eps Graphic file (type eps)
- <./figs/apsk32.eps> [3]
-Overfull \hbox (27.59984pt too wide) detected at line 481
+
+] (./figs/16apsk.tex)
+Underfull \vbox (badness 7415) has occurred while \output is active []
+
+
+(./figs/32apsk.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+[3]
+Overfull \hbox (27.59984pt too wide) detected at line 714
 \OML/txmi/m/it/12 T[]\OT1/txr/m/n/12 (\OML/txmi/m/it/12 x\OT1/txr/m/n/12 ) = []
 
  []
 
-
-Overfull \hbox (9.14091pt too wide) detected at line 499
+[4]
+Overfull \hbox (9.14091pt too wide) detected at line 732
 \OML/txmi/m/it/12 r\OT1/txr/m/n/12 (\OML/txmi/m/it/12 x\OT1/txr/m/n/12 ) = \OML
 /txmi/m/it/12 c\OT1/txr/m/n/12 (\OML/txmi/m/it/12 x\OT1/txr/m/n/12 ) + \OML/txm
 i/m/it/12 e\OT1/txr/m/n/12 (\OML/txmi/m/it/12 x\OT1/txr/m/n/12 ) = \OML/txmi/m/
@@ -1065,17 +1046,20 @@ it/12 r[]x[] \OT1/txr/m/n/12 + \OML/txmi/m/it/12 r[]x[] \OT1/txr/m/n/12 + [] +
 \OML/txmi/m/it/12 r[]x \OT1/txr/m/n/12 + \OML/txmi/m/it/12 r[]
  []
 
-[4]
 File: ./figs/tanner.eps Graphic file (type eps)
- <./figs/tanner.eps>
+<./figs/tanner.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
 File: ./figs/checkope.eps Graphic file (type eps)
- <./figs/checkope.eps> [5] (./figs/ptable.tex)
-Overfull \hbox (4.52466pt too wide) detected at line 687
+
+<./figs/checkope.eps> (./figs/ptable.tex)
+Overfull \hbox (4.52466pt too wide) detected at line 920
 []
  []
 
 
-Overfull \hbox (9.7864pt too wide) detected at line 691
+Overfull \hbox (9.7864pt too wide) detected at line 924
 \OML/txmi/m/it/12 p[] \OMS/txsy/m/n/12 ^^@ \OT1/txr/m/n/12 (1 \OMS/txsy/m/n/12 
 ^^@ \OML/txmi/m/it/12 p[]\OT1/txr/m/n/12 ) = \OML/txmi/m/it/12 p[] \OMS/txsy/m/
 n/12 ^^@ \OT1/txr/m/n/12 (1 \OMS/txsy/m/n/12 ^^@ \OML/txmi/m/it/12 p[]\OT1/txr/
@@ -1086,32 +1070,35 @@ OMS/txsy/m/n/12 ^^@ \OT1/txr/m/n/12 (1 \OMS/txsy/m/n/12 ^^@ \OML/txmi/m/it/12 p
  []
 
 
-Overfull \hbox (6.3206pt too wide) detected at line 702
-[]
- []
-
-File: ./figs/fxgraph.eps Graphic file (type eps)
-<./figs/fxgraph.eps>
-File: ./figs/varope.eps Graphic file (type eps)
- <./figs/varope.eps>
-Overfull \hbox (29.5127pt too wide) detected at line 766
+Overfull \hbox (6.3206pt too wide) detected at line 935
 []
  []
 
 [6]
+File: ./figs/fxgraph.eps Graphic file (type eps)
+ <./figs/fxgraph.eps>
+File: ./figs/varope.eps Graphic file (type eps)
+ <./figs/varope.eps>
+Overfull \hbox (29.5127pt too wide) detected at line 999
+[]
+ []
+
+[7]
 File: ./figs/ber.eps Graphic file (type eps)
- <./figs/ber.eps> [7]
+ <./figs/ber.eps>
 File: ./figs/qpsk.eps Graphic file (type eps)
  <./figs/qpsk.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 838--838
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1071
  \OT1/txr/m/it/12 C. Ap-prox-i-mated LLR's for 8-PSK Map-ping
  []
 
+[8]
 File: ./figs/8psk.eps Graphic file (type eps)
-<./figs/8psk.eps> [8]
-Underfull \vbox (badness 5147) has occurred while \output is active []
-
- [9]
+ <./figs/8psk.eps>
+File: ./figs/apsk32.eps Graphic file (type eps)
+ <./figs/apsk32.eps>
+File: ./figs/apsk16.eps Graphic file (type eps)
+ <./figs/apsk16.eps>
 File: ./figs/8PSK1.eps Graphic file (type eps)
 
 <./figs/8PSK1.eps>
@@ -1121,7 +1108,7 @@ File: ./figs/QPSK1.eps Graphic file (type eps)
  <./figs/QPSK1.eps>
 File: ./figs/Different_timeoffsets_snrvsber.eps Graphic file (type eps)
 
-<./figs/Different_timeoffsets_snrvsber.eps>
+<./figs/Different_timeoffsets_snrvsber.eps> [9]
 File: ./figs/frequency_best.eps Graphic file (type eps)
  <./figs/frequency_best.eps>
 File: ./figs/frequencyestiamtion_best_error_vs_snr.eps Graphic file (type eps)
@@ -1129,34 +1116,36 @@ File: ./figs/frequencyestiamtion_best_error_vs_snr.eps Graphic file (type eps)
 <./figs/frequencyestiamtion_best_error_vs_snr.eps>
 File: ./figs/Phase_error_with_respect_to_pilots.eps Graphic file (type eps)
 
-<./figs/Phase_error_with_respect_to_pilots.eps> [10]
+<./figs/Phase_error_with_respect_to_pilots.eps>
 File: ./figs/Phase_error_with_respect_to_SNR_fixed_pilot.eps Graphic file (type
  eps)
 
 <./figs/Phase_error_with_respect_to_SNR_fixed_pilot.eps>
 File: ./figs/Convergence_of_Digital_AGC.eps Graphic file (type eps)
 
-<./figs/Convergence_of_Digital_AGC.eps>
+<./figs/Convergence_of_Digital_AGC.eps> [10]
 File: ./figs/framesync.eps Graphic file (type eps)
- <./figs/framesync.eps> (./NCC_2020.bbl
-[11]
+ <./figs/framesync.eps>
+(./NCC_2020.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 31--33
 []\OT1/txr/m/n/9 R.Gallager, ``Low-density par-ity check codes,'' \OT1/txr/m/it
 /9 IRE
  []
 
-) [12] (./NCC_2020.aux)
+[11]) [12
+
+] (./NCC_2020.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17641 strings out of 492624
- 336041 string characters out of 6119216
- 392466 words of memory out of 5000000
- 21187 multiletter control sequences out of 15000+600000
+ 17743 strings out of 492624
+ 338356 string characters out of 6119216
+ 412793 words of memory out of 5000000
+ 21285 multiletter control sequences out of 15000+600000
  68385 words of font info for 173 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,19n,48p,417b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,19n,50p,417b,1587s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on NCC_2020.dvi (12 pages, 77916 bytes).
+Output written on NCC_2020.dvi (12 pages, 118356 bytes).
