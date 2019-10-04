@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  3 OCT 2019 10:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  4 OCT 2019 07:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -685,14 +685,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 247--257
 
  []
 
-[1] [2] (./equalizer_implementation.aux) ) 
+[1] (./tables/parameter_equalizer.tex
+\gnumericTableWidth=\skip68
+\gnumericTableWidthComplete=\skip69
+\gnumericMultiRowLength=\skip70
+\gnumericColA=\skip71
+\gnumericColB=\skip72
+) [2] (./equalizer_implementation.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 7622 strings out of 492624
- 117825 string characters out of 6119216
- 383944 words of memory out of 5000000
- 11408 multiletter control sequences out of 15000+600000
+ 7646 strings out of 492624
+ 118214 string characters out of 6119216
+ 386944 words of memory out of 5000000
+ 11428 multiletter control sequences out of 15000+600000
  62210 words of font info for 151 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 36i,14n,49p,242b,217s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,49p,242b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on equalizer_implementation.dvi (2 pages, 4648 bytes).
+Output written on equalizer_implementation.dvi (2 pages, 7528 bytes).
