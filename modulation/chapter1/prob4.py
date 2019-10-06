@@ -16,7 +16,8 @@ import subprocess
 maxrange=50
 maxlim=6.0
 x = np.linspace(-maxlim,maxlim,maxrange)#points on the x axis
-simlen = 1e5 #number of samples
+#simlen = 1e5 #number of samples
+simlen = 100000
 err = [] #declaring probability list
 pdf = [] #declaring pdf list
 h = 2*maxlim/(maxrange-1);
