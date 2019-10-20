@@ -1,0 +1,83 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+%
+\item
+Consider a system where 
+$\mathbf{s}_i=
+\begin{pmatrix}
+\cos\brak{\frac{2\pi i}{M}}\\
+\cos\brak{\frac{2\pi i}{M}}
+\end{pmatrix}, i = 0, 1 , \dots M-1
+$
+.
+Let
+%
+\begin{align}
+\mathbf{y}|s_0 = 
+\begin{pmatrix}
+y_1\\
+y_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+\sqrt{E_s}+n_1\\
+n_2
+\end{pmatrix}
+\end{align}
+where $n_1,n_2 \sim \mathcal{N}\brak{0,\frac{N_0}{2}}$.
+\item
+ Substituting 
+\begin{align}
+y_1=R\cos \theta \\
+y_2=R\sin \theta
+\end{align}
+show that the joint pdf of $R,\theta$ is
+%
+\begin{equation}
+p\brak{R,\theta}=\frac{R}{\pi N_0}\exp\brak{-\frac{R^2-2R\sqrt{E_s}\cos \theta + E_s}{N_0}}
+\end{equation}
+
+\item
+Show that 
+%
+\begin{align}
+\lim_{\alpha \rightarrow \infty}\int_{0}^{\infty}\brak{V-\alpha }e^{-\brak{V-\alpha}^2 }\,dV
+&= 0
+\\
+\lim_{\alpha \rightarrow \infty}\int_{0}^{\infty} e^{-\brak{V-\alpha}^2 }\,dV
+&=  \sqrt{\pi}
+\end{align}
+
+\item
+Using the above, show that
+%
+\begin{multline}
+\int_{0}^{\infty}V\exp\cbrak{-\brak{V^2 - 2V \sqrt{\gamma}\cos \theta +\gamma}}\,dV
+\\
+= e^{-\gamma\sin^2 \theta} \sqrt{\gamma\pi}\cos \theta
+\end{multline}
+%
+for large values of $\gamma$.
+
+\item
+Find a compact expression for
+%
+\begin{align}
+I = 1 - \sqrt{\frac{\gamma}{\pi}}\int_{-\frac{\pi}{M}}^{\frac{\pi}{M}}e^{- \gamma\sin^2\theta }\cos \theta\, d\theta
+\end{align}
+
+\item
+Show that
+\begin{equation}
+P_{e|\mathbf{s}_0}=2\qfunc{\sqrt{2\brak{\frac{{E_s}}{N_o}}}\sin \frac{\pi}{M}}
+\end{equation}
+
+\item
+Verify the SER through simulation.
+
+
+%
+\end{enumerate}
+
+

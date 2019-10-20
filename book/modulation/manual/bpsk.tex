@@ -1,0 +1,93 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item
+The {\em signal constellation diagram} for BPSK is given by Fig. \ref{bpsk:fig:bpsk_const}.  The symbols $s_0$ and $s_1$ are equiprobable.  $\sqrt{E_b}$ is the energy transmitted per bit. Assuming a zero mean additive white gaussian noise (AWGN) with variance $\frac{N_0}{2}$,
+obtain the symbols that are received.
+
+%
+\begin{figure}[!h]
+\centering
+\includegraphics[width=\columnwidth]{./modulation/manual/figs/bpsk_const.eps}
+\caption{}
+\label{bpsk:fig:bpsk_const}
+\end{figure}
+\solution The possible received symbols are
+\begin{align}
+y|s_0 &= \sqrt{E_b} + n
+\\
+y|s_1 &= -\sqrt{E_b} + n
+\end{align}
+%
+where the AWGN $n \sim \gauss{0}{\frac{N_0}{2}}$.
+%
+\item
+\label{bpsk:prob:bpsk_decision}
+From Fig. \ref{bpsk:fig:bpsk_const} obtain a decision rule for BPSK
+
+\solution The decision rule is
+\begin{equation}
+y \dec{s_0}{s_1} 0
+\end{equation}
+\item
+Repeat the previous exercise using the MAP criterion.
+
+\item
+Using the decision rule in Problem \ref{bpsk:prob:bpsk_decision}, obtain an expression for the probability of error for BPSK.
+
+\solution
+Since the symbols are equiprobable, it is sufficient if the error is calculated assuming that a 0 was sent.  This results in
+\begin{align}
+P_e &= \pr{y < 0|s_0} = \pr{\sqrt{E_b} + n < 0}
+\\
+&= \pr{ -n > \sqrt{E_b} } = \pr{ n > \sqrt{E_b} }
+\label{bpsk:eq:bpsk_proof_n0}
+\end{align}
+since $n$ has a symmetric pdf.
+Let $w \sim \gauss{0}{1}$.  Then $n = \sqrt{\frac{N_0}{2}}w$. Substituting this in \eqref{bpsk:eq:bpsk_proof_n0},
+\begin{align}
+P_e &=  \pr{ \sqrt{\frac{N_0}{2}}w > \sqrt{E_b} } = \pr{ w > \sqrt{\frac{2E_b}{N_0}} }
+\\
+&= \qfunc{\sqrt{\frac{2E_b}{N_0}}}
+\end{align}
+%
+where $\qfunc{x} \define \pr{w > x}, x \ge 0$.
+\item
+The PDF of $w \sim \gauss{0}{1}$ is given by
+%
+\begin{equation}
+p_{w}(x) = \frac{1}{\sqrt{2\pi}}\exp\brak{-\frac{x^2}{2}}, -\infty < x < \infty
+\end{equation}
+and the complementary error function is defined as
+\begin{equation}
+\operatorname {erfc} (x)={\frac {2}{\sqrt {\pi }}}\int _{x}^{\infty }e^{-t^{2}}\,dt.
+\end{equation}
+%
+Show that 
+\begin{equation}
+Q(x) = \frac{1}{2}\operatorname {erfc}\left({\frac  {x}{{\sqrt  {2}}}}\right)
+\end{equation}
+
+\item
+Verify the bit error rate (BER) plots for BPSK through simulation and analysis for 0 to 10 dB.
+
+\solution
+The following code
+\begin{lstlisting}
+codes/modulation/bpsk_ber.py
+\end{lstlisting}
+yields Fig. \ref{bpsk:fig:bpsk_ber}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=\columnwidth]{./modulation/manual/figs/bpsk_ber.eps}
+\caption{}
+\label{bpsk:fig:bpsk_ber}
+\end{figure}
+
+\item
+Show that
+\begin{equation}
+Q(x) = \frac{1}{\pi}\int^{\frac{\pi}{2}}_{0}e^{-\frac{x^2}{2\sin^2 \theta}}\,d\theta
+\end{equation}
+
+\end{enumerate}

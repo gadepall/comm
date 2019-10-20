@@ -1,0 +1,35 @@
+#Open a terminal and type
+
+sudo apt install wget subversion git python3-numpy python3-scipy python3-matplotlib geany
+
+
+
+Triangle:
+
+wget https://github.com/gadepall/school/raw/master/linalg/2D/python_2d/gvv_python_2d.pdf
+svn checkout https://github.com/gadepall/school/trunk/linalg/2D/python_2d/codes
+
+mv codes triangle
+
+Manual:
+
+wget https://github.com/gadepall/school/raw/master/linalg/2D/manual/gvv_2d.pdf
+
+svn checkout https://github.com/gadepall/school/trunk/linalg/2D/manual/codes
+
+mv codes conics
+
+Line:
+
+wget https://github.com/gadepall/school/raw/master/linalg/2D/line/jee_linalg_2d_line.pdf
+
+Circle:
+
+wget https://github.com/gadepall/school/raw/master/linalg/2D/circle/jee_linalg_2d_circle.pdf
+
+Conics:
+wget https://github.com/gadepall/school/raw/master/linalg/2D/conics/jee_linalg_2d_conics.pdf
+
+Exercises:
+wget https://github.com/gadepall/school/raw/master/linalg/2D/jee/jee_linalg_2d.pdf
+
