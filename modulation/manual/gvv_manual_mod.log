@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  20 OCT 2019 08:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  20 OCT 2019 08:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -766,24 +766,26 @@ File: ./figs/bfsk_const.eps Graphic file (type eps)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2]
+
+Underfull \vbox (badness 3907) has occurred while \output is active []
+
+ [2]
 File: ./figs/bfsk_ber.eps Graphic file (type eps)
- <./figs/bfsk_ber.eps>
+
+<./figs/bfsk_ber.eps>
 File: ./figs/qpsk.eps Graphic file (type eps)
- <./figs/qpsk.eps> [3] [4
+ <./figs/qpsk.eps>
 
-] (./gvv_manual_mod.aux)
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[3] [4] (./gvv_manual_mod.aux) ) 
 Here is how much of TeX's memory you used:
- 7974 strings out of 492624
- 121149 string characters out of 6119216
- 400470 words of memory out of 5000000
- 11757 multiletter control sequences out of 15000+600000
+ 7981 strings out of 492624
+ 121225 string characters out of 6119216
+ 402470 words of memory out of 5000000
+ 11764 multiletter control sequences out of 15000+600000
  58914 words of font info for 137 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 36i,17n,40p,309b,1144s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,17n,40p,309b,1150s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_manual_mod.dvi (4 pages, 23756 bytes).
+Output written on gvv_manual_mod.dvi (4 pages, 24092 bytes).
