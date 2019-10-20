@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  3 OCT 2019 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  20 OCT 2019 07:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -985,18 +985,18 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 231.
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 ) (./NCC_2020.toc
-Underfull \hbox (badness 10000) in paragraph at lines 17--17
- [][] []\OT1/txr/m/n/12 Approximated LLR's for 
- []
-
-
-Underfull \hbox (badness 2932) in paragraph at lines 22--22
+Underfull \hbox (badness 2932) in paragraph at lines 8--8
  \OT1/txr/m/n/12 Max-i-mum Like-li-hood (FF- 
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 23--23
+Underfull \hbox (badness 3407) in paragraph at lines 9--9
  [][] []\OT1/txr/m/n/12 Automatic Gain Con-troller 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+ [][] []\OT1/txr/m/n/12 Approximated LLR's for 
  []
 
 )
@@ -1023,11 +1023,7 @@ LaTeX Warning: Command \j invalid in math mode on input line 220.
 ) [1
 
 
-] (./figs/16apsk.tex)
-Underfull \vbox (badness 7415) has occurred while \output is active []
-
-
-(./figs/32apsk.tex)
+] (./figs/16apsk.tex) (./figs/32apsk.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
@@ -1142,10 +1138,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  17743 strings out of 492624
  338356 string characters out of 6119216
- 412793 words of memory out of 5000000
+ 412860 words of memory out of 5000000
  21285 multiletter control sequences out of 15000+600000
  68385 words of font info for 173 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,19n,50p,417b,1587s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on NCC_2020.dvi (12 pages, 118356 bytes).
+Output written on NCC_2020.dvi (12 pages, 118352 bytes).
