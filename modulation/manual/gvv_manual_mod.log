@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  20 OCT 2019 08:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  20 OCT 2019 08:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -592,67 +592,63 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/ls
 cape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/ls
-tlang1.sty
-File: lstlang1.sty 2019/02/27 1.8b listings language file
 ) (./gvv_manual_mod.aux)
 \openout1 = `gvv_manual_mod.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 75.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 75.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 76.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 76.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oml
 txmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 75.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 75.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 76.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oms
 txsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 75.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 75.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 76.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/omx
 txex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 75.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 75.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 76.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 exa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 75.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 76.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
 txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 75.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 75.
+LaTeX Info: Redefining \celsius on input line 76.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 76.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 75.
-Package gensymb Info: Using \Omega for \ohm on input line 75.
+LaTeX Info: Redefining \ohm on input line 76.
+Package gensymb Info: Using \Omega for \ohm on input line 76.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -676,35 +672,35 @@ Package caption Info: End \AtBeginDocument code.
 \c@rem=\count154
 File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
-LaTeX Font Info:    Calculating math sizes for size <24> on input line 162.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 162.
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 163.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 163.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 162.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 163.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 162.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 163.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 162.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 163.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 162.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 163.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
@@ -721,7 +717,7 @@ File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
 File: tlc.eps Graphic file (type eps)
  <tlc.eps>
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 162.
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 163.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oms
@@ -729,19 +725,19 @@ txr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <9> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 162.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 163.
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
 [][][]\OT1/txr/m/n/9 The au-thors are with the De-part-ment of Elec-tri-cal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
 \OT1/txr/m/n/9 En-gi-neer-ing, IIT, Hy-der-abad 502285 In-dia e-mail:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
 \OMS/txsy/m/n/9 f\OT1/txr/m/n/9 ee16btech11023,ee16btech11043,jbala,gadepall\OM
 S/txsy/m/n/9 g\OT1/txr/m/n/9 @iith.ac.in. All
  []
@@ -780,12 +776,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [3] [4] (./gvv_manual_mod.aux) ) 
 Here is how much of TeX's memory you used:
- 7981 strings out of 492624
- 121225 string characters out of 6119216
- 402470 words of memory out of 5000000
- 11764 multiletter control sequences out of 15000+600000
+ 7810 strings out of 492624
+ 119299 string characters out of 6119216
+ 203983 words of memory out of 5000000
+ 11597 multiletter control sequences out of 15000+600000
  58914 words of font info for 137 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 36i,17n,40p,309b,1150s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,17n,39p,309b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_manual_mod.dvi (4 pages, 24092 bytes).
+Output written on gvv_manual_mod.dvi (4 pages, 23952 bytes).
