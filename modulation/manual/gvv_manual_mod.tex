@@ -627,13 +627,24 @@ where $\mathbf{s} \in \cbrak{\mathbf{s}_0,\mathbf{s}_1,\mathbf{s}_2, \mathbf{s}_
 E\sbrak{\mathbf{n}} &= \mathbf{0}, E\sbrak{\mathbf{n}\mathbf{n}^T} = \sigma^2 \mathbf{I}
 \end{align}
 %
-\item Show that the MAP decision for detecting $\mathbf{s}_0$ results in
+\item Using \eqref{eq:bivariate}, show that the MAP decision for detecting $\mathbf{s}_0$ results in
 \begin{equation}
+\label{eq:qpsk_dec}
 \abs{y_2} < y_1
 \end{equation}
 
-\item Express $\pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0}$ in terms of $r_1, r_2$.
-Let $X=n_2-n_1, Y = -n_2-n_1$, where $\mathbf{n}=\brak{n_1,n_2}$.
+\item Express $\pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0}$ in terms of 
+$y_1, y_2$.
+\\
+\solution From \eqref{eq:qpsk_dec},
+\begin{multline}
+\pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0} 
+\\
+= \pr{\abs{y_2} < y_1
+|y_1 = \sqrt{E}_s, y_2 = 0}
+\end{multline}
+%$r_1, r_2$.
+\item Let $X=n_2-n_1, Y = -n_2-n_1$, where $\mathbf{n}=\brak{n_1,n_2}$.
 Their correlation coefficient is defined as
 %
 \begin{align}
@@ -643,7 +654,7 @@ Their correlation coefficient is defined as
 $X$ and $Y$ are said to be uncorrelated if $\rho = 0$
 
 \item
-Show that if $X$ and $Y$ are uncorrelated 
+Show that  $X$ and $Y$ are uncorrelated. 
 Verify this numerically.
 
 \item
