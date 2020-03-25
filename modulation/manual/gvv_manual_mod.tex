@@ -2,19 +2,13 @@
 %
 \usepackage{setspace}
 \usepackage{gensymb}
-\usepackage{xcolor}
-\usepackage{caption}
-%\usepackage{subcaption}
 %\doublespacing
 \singlespacing
-\usepackage{multicol}
 
-\usepackage{iithtlc}
 %\usepackage{graphicx}
 %\usepackage{amssymb}
 %\usepackage{relsize}
 \usepackage[cmex10]{amsmath}
-\usepackage{mathtools}
 %\usepackage{amsthm}
 %\interdisplaylinepenalty=2500
 %\savesymbol{iint}
@@ -22,9 +16,11 @@
 %\restoresymbol{TXF}{iint}
 %\usepackage{wasysym}
 \usepackage{amsthm}
+\usepackage{iithtlc}
 \usepackage{mathrsfs}
 \usepackage{txfonts}
 \usepackage{stfloats}
+\usepackage{bm}
 \usepackage{cite}
 \usepackage{cases}
 \usepackage{subfig}
@@ -35,10 +31,15 @@
 %\usepackage{algpseudocode}
 \usepackage{enumitem}
 \usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
 %\usepackage{stmaryrd}
-
+\usepackage{tkz-euclide} % loads  TikZ and tkz-base
+\usetkzobj{all}
 \usepackage{listings}
-    \usepackage[latin1]{inputenc}                                 %%
     \usepackage{color}                                            %%
     \usepackage{array}                                            %%
     \usepackage{longtable}                                        %%
@@ -48,6 +49,9 @@
     \usepackage{ifthen}                                           %%
   %optionally (for landscape tables embedded in another document): %%
     \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+%\usepackage{enumerate}
 
 %\usepackage{wasysym}
 %\newcounter{MYtempeqncnt}
@@ -63,8 +67,7 @@
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
-
-\def\inputGnumericTable{}  
+\def\inputGnumericTable{}                                 %%
 
 \lstset{
 %language=C,
@@ -72,11 +75,15 @@ frame=single,
 breaklines=true,
 columns=fullflexible
 }
+%\lstset{
+%language=tex,
+%frame=single, 
+%breaklines=true
+%}
 
 \begin{document}
 %
 
-\theoremstyle{definition}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{problem}{Problem}
@@ -84,7 +91,9 @@ columns=fullflexible
 \newtheorem{lemma}{Lemma}[section]
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{example}{Example}[section]
-\newtheorem{definition}{Definition}[section]
+\newtheorem{definition}[problem]{Definition}
+%\newtheorem{thm}{Theorem}[section] 
+%\newtheorem{defn}[thm]{Definition}
 %\newtheorem{algorithm}{Algorithm}[section]
 %\newtheorem{cor}{Corollary}
 \newcommand{\BEQA}{\begin{eqnarray}}
@@ -95,7 +104,7 @@ columns=fullflexible
 %\bibliographystyle{ieeetr}
 
 
-
+\providecommand{\mbf}{\mathbf}
 \providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
 \providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
 \providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
@@ -112,18 +121,37 @@ columns=fullflexible
 \newcommand{\sgn}{\mathop{\mathrm{sgn}}}
 \providecommand{\abs}[1]{\left\vert#1\right\vert}
 \providecommand{\res}[1]{\Res\displaylimits_{#1}} 
-\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
 \providecommand{\mtx}[1]{\mathbf{#1}}
 \providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\gauss}[2]{\mathcal{N}\ensuremath{\left(#1,#2\right)}}
 \providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
 %\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
 \providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
-\providecommand{\gauss}[2]{\mathcal{N}\ensuremath{\left(#1,#2\right)}}
 	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
 \newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
 %\numberwithin{equation}{section}
+%\numberwithin{equation}{subsection}
 %\numberwithin{problem}{section}
+%\numberwithin{definition}{section}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
+\renewcommand{\thefigure}{\theproblem}
+%\setlist[enumerate,1]{before=\renewcommand\theequation{\theenumi.\arabic{equation}}
+%\counterwithin{equation}{enumi}
+
+
+%\renewcommand{\theequation}{\arabic{subsection}.\arabic{equation}}
 
 \def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
      \def\rightbox#1{\makebox[0in][r]{#1}}
@@ -131,14 +159,27 @@ columns=fullflexible
      \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
      \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
 
+\vspace{3cm}
+
+\title{
+	\logo{
+Digital Modulation Techniques
+	}
+}
+\author{ C.~Shruti, P.~N.~V.~S.~S.~K.~ HAVISH, S.~S.~Ashish and G V V Sharma$^{*}$% <-this % stops a space
+	\thanks{*The author is with the Department
+		of Electrical Engineering, Indian Institute of Technology, Hyderabad
+		502285 India e-mail:  gadepall@iith.ac.in. All content in this manual is released under GNU GPL.  Free and open source.}
+	
+}	
+%\title{
+%	\logo{Matrix Analysis through Octave}{\begin{center}\includegraphics[scale=.24]{tlc}\end{center}}{}{HAMDSP}
+%}
+
 
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{
-\logo{
-Digital Modulation Techniques
-}
-}
+%\title{Matrix Analysis through Octave}
 %
 %
 % author names and IEEE memberships
@@ -150,21 +191,92 @@ Digital Modulation Techniques
 % was not built to handle multiple paragraphs
 %
 
-%\author{Y Aditya, A Rathnakar and G V V Sharma$^{*}$% <-this % stops a space
-\author{P.~N.~V.~S.~S.~K.~ HAVISH, S.~S.~Ashish and G V V Sharma %<-this  stops a space
-\thanks{The authors are with the Department
-of Electrical Engineering, IIT, Hyderabad
-502285 India e-mail: \{ee16btech11023,ee16btech11043,jbala,gadepall\}@iith.ac.in. All material in the manuscript is released under GNU GPL.  Free to use for all.
-}}
+%\author{<-this % stops a space
+%\thanks{}}
+%}
+% note the % following the last \IEEEmembership and also \thanks - 
+% these prevent an unwanted space from occurring between the last author name
+% and the end of the author line. i.e., if you had this:
+% 
+% \author{....lastname \thanks{...} \thanks{...} }
+%                     ^------------^------------^----Do not want these spaces!
+%
+% a space would be appended to the last name and could cause every name on that
+% line to be shifted left slightly. This is one of those "LaTeX things". For
+% instance, "\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get
+% "AB" then you have to do: "\textbf{A}\textbf{B}"
+% \thanks is no different in this regard, so shield the last } of each \thanks
+% that ends a line with a % and do not let a space in before the next \thanks.
+% Spaces after \IEEEmembership other than the last one are OK (and needed) as
+% you are supposed to have spaces between the names. For what it is worth,
+% this is a minor point as most people would not even notice if the said evil
+% space somehow managed to creep in.
+
+
+
+% The paper headers
+%\markboth{Journal of \LaTeX\ Class Files,~Vol.~6, No.~1, January~2007}%
+%{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
+% The only time the second header will appear is for the odd numbered pages
+% after the title page when using the twoside option.
+% 
+% *** Note that you probably will NOT want to include the author's ***
+% *** name in the headers of peer review papers.                   ***
+% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
+% you desire.
+
+
+
+
+% If you want to put a publisher's ID mark on the page you can do it like
+% this:
+%\IEEEpubid{0000--0000/00\$00.00~\copyright~2007 IEEE}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark.
 
 
 
 % make the title area
 \maketitle
 
+\newpage
+
 \tableofcontents
 
 \bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+%\renewcommand{\theequation}{\theenumi}
+
+%\begin{abstract}
+%%\boldmath
+%In this letter, an algorithm for evaluating the exact analytical bit error rate  (BER)  for the piecewise linear (PL) combiner for  multiple relays is presented. Previous results were available only for upto three relays. The algorithm is unique in the sense that  the actual mathematical expressions, that are prohibitively large, need not be explicitly obtained. The diversity gain due to multiple relays is shown through plots of the analytical BER, well supported by simulations. 
+%
+%\end{abstract}
+% IEEEtran.cls defaults to using nonbold math in the Abstract.
+% This preserves the distinction between vectors and scalars. However,
+% if the journal you are submitting to favors bold math in the abstract,
+% then you can use LaTeX's standard command \boldmath at the very start
+% of the abstract to achieve this. Many IEEE journals frown on math
+% in the abstract anyway.
+
+% Note that keywords are not normally used for peerreview papers.
+%\begin{IEEEkeywords}
+%Cooperative diversity, decode and forward, piecewise linear
+%\end{IEEEkeywords}
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+%\IEEEpeerreviewmaketitle
 
 \begin{abstract}
 %\boldmath
@@ -200,11 +312,13 @@ Download all codes in this manual from
 svn co https://github.com/gadepall/comm/trunk/modulation/manual/codes
 \end{lstlisting}
 
+\renewcommand{\theequation}{\theenumi}
 \section{BPSK}
-\begin{problem}
-The {\em signal constellation diagram} for BPSK is given by Fig. \ref{fig:bpsk_const}.  The symbols $s_0$ and $s_1$ are equiprobable.  $\sqrt{E_b}$ is the energy transmitted per bit. Assuming a zero mean additive white gaussian noise (AWGN) with variance $\frac{N_0}{2}$,
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item The {\em signal constellation diagram} for BPSK is given by Fig. \ref{fig:bpsk_const}.  The symbols $s_0$ and $s_1$ are equiprobable.  $\sqrt{E_b}$ is the energy transmitted per bit. Assuming a zero mean additive white gaussian noise (AWGN) with variance $\frac{N_0}{2}$,
 obtain the symbols that are received.
-\end{problem}
 %
 \begin{figure}[!h]
 \centering
@@ -221,20 +335,21 @@ y|s_1 &= -\sqrt{E_b} + n
 %
 where the AWGN $n \sim \gauss{0}{\frac{N_0}{2}}$.
 %
-\begin{problem}
+\item
+
 \label{prob:bpsk_decision}
 From Fig. \ref{fig:bpsk_const} obtain a decision rule for BPSK
-\end{problem}
 \solution The decision rule is
 \begin{equation}
 y \dec{s_0}{s_1} 0
 \end{equation}
-\begin{problem}
+
+\item
 Repeat the previous exercise using the MAP criterion.
-\end{problem}
-\begin{problem}
+
+\item
 Using the decision rule in Problem \ref{prob:bpsk_decision}, obtain an expression for the probability of error for BPSK.
-\end{problem}
+\\
 \solution
 Since the symbols are equiprobable, it is sufficient if the error is calculated assuming that a 0 was sent.  This results in
 \begin{align}
@@ -251,8 +366,14 @@ P_e &=  \pr{ \sqrt{\frac{N_0}{2}}w > \sqrt{E_b} } = \pr{ w > \sqrt{\frac{2E_b}{N
 &= \qfunc{\sqrt{\frac{2E_b}{N_0}}}
 \end{align}
 %
-where $\qfunc{x} \define \pr{w > x}, x \ge 0$.
-\begin{problem}
+where 
+\begin{align}
+\label{eq:qfunc_def}
+\qfunc{x} &\define \pr{w > x}, x \ge 0 .
+\\
+&= \frac{1}{\pi}\int^{\frac{\pi}{2}}_{0}e^{-\frac{x^2}{2\sin^2 \theta}}\,d\theta
+\end{align}
+
 The PDF of $w \sim \gauss{0}{1}$ is given by
 %
 \begin{equation}
@@ -261,16 +382,28 @@ p_{w}(x) = \frac{1}{\sqrt{2\pi}}\exp\brak{-\frac{x^2}{2}}, -\infty < x < \infty
 and the complementary error function is defined as
 \begin{equation}
 \operatorname {erfc} (x)={\frac {2}{\sqrt {\pi }}}\int _{x}^{\infty }e^{-t^{2}}\,dt.
+\label{eq:erfc}
 \end{equation}
 %
+\item
 Show that 
 \begin{equation}
 Q(x) = \frac{1}{2}\operatorname {erfc}\left({\frac  {x}{{\sqrt  {2}}}}\right)
+\label{eq:qerfc}
 \end{equation}
-\end{problem}
-\begin{problem}
+\solution From \eqref{eq:qfunc_def}
+\begin{align}
+\qfunc{x}& = \pr{w > x}, x \ge 0 
+\\
+&= \frac {1}{\sqrt {2\pi }}\int _{x}^{\infty }e^{-\frac{t^{2}}{2}}\,dt.
+\\
+&= \frac {1}{\sqrt {\pi }}\int _{\frac{x}{\sqrt{2}}}^{\infty }e^{-y^{2}}\,dy. \quad \brak{t = \sqrt{2}y}
+\end{align}
+%
+resulting in \label{eq:qerfc}
+
+\item
 Verify the bit error rate (BER) plots for BPSK through simulation and analysis for 0 to 10 dB.
-\end{problem}
 \solution
 The following code
 \begin{lstlisting}
@@ -284,23 +417,23 @@ yields Fig. \ref{fig:bpsk_ber}
 \label{fig:bpsk_ber}
 \end{figure}
 
-\begin{problem}
-Show that
-\begin{equation}
-Q(x) = \frac{1}{\pi}\int^{\frac{\pi}{2}}_{0}e^{-\frac{x^2}{2\sin^2 \theta}}\,d\theta
-\end{equation}
-\end{problem}
+
+\end{enumerate}
+
 \section{Coherent BFSK}
-\begin{problem}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item
 The signal constellation for binary frequency shift keying (BFSK) is given in Fig. \ref{fig:bfsk_const}.
 Obtain the equations for the received symbols.
-\end{problem}
 \begin{figure}[!h]
 \centering
 \includegraphics[width=\columnwidth]{./figs/bfsk_const.eps}
 \caption{}
 \label{fig:bfsk_const}
 \end{figure}
+\\
 \solution
 The received symbols are given by
 \begin{align}
@@ -336,9 +469,9 @@ y_{1}\\
  y_{2}
 \end{pmatrix*}
 $.
-\begin{problem}
+
+\item
 Obtain a decision rule for BFSK from Fig. \ref{fig:bfsk_const}.
-\end{problem}
 \solution The decision rule is
 \begin{equation}
 \label{eq:bfsk_dec}
@@ -385,23 +518,23 @@ where
 %
 \end{definition}
 %
-\begin{problem}
+
 For equiprobably symbols, the MAP criterion is defined as
 %
 \begin{equation}
 \label{eq:map_bfsk_dec}
 p\brak{\mathbf{y}|s_0} \dec{s_0}{s_1} p\brak{\mathbf{y}|s_1}
 \end{equation}
+\item
 Use \eqref{eq:bivariate} in \eqref{eq:map_bfsk_dec}  to obtain \eqref{eq:bfsk_dec}.
-\end{problem}
 \solution According to the MAP criterion, assuming equiprobably symbols,
 \begin{align}
 %\pr{ \mathbf{y}|s_0 }
 p\brak{\mathbf{y}|s_0} \dec{s_0}{s_1} p\brak{\mathbf{y}|s_1}
 \end{align}
-\begin{problem}
+
+\item
 Derive and plot the probability of error.  Verify through simulation.
-\end{problem}
 \solution Given that $s_0$ was transmitted, the received symbols are
 \begin{align}
 \mathbf{y}|s_0 = 
@@ -450,10 +583,12 @@ codes/fsk_ber.py
 \label{fig:bfsk_ber}
 \end{figure}
 
-
+\end{enumerate}
 \section{QPSK}
-%\begin{problem}
-Let
+\begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+%
+\item Let
 \begin{equation}
 \mathbf{y} = \mathbf{s}+ \mathbf{n}
 \end{equation}
@@ -484,14 +619,12 @@ where $\mathbf{s} \in \cbrak{\mathbf{s}_0,\mathbf{s}_1,\mathbf{s}_2, \mathbf{s}_
 E\sbrak{\mathbf{n}} &= \mathbf{0}, E\sbrak{\mathbf{n}\mathbf{n}^T} = \sigma^2 \mathbf{I}
 \end{align}
 %
-\begin{problem}
-Show that the MAP decision for detecting $\mathbf{s}_0$ results in
+\item Show that the MAP decision for detecting $\mathbf{s}_0$ results in
 \begin{equation}
 \abs{y_2} < y_1
 \end{equation}
-\end{problem}
-\begin{problem}
-Express $\pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0}$ in terms of $r_1, r_2$.
+
+\item Express $\pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0}$ in terms of $r_1, r_2$.
 Let $X=n_2-n_1, Y = -n_2-n_1$, where $\mathbf{n}=\brak{n_1,n_2}$.
 Their correlation coefficient is defined as
 %
@@ -500,32 +633,32 @@ Their correlation coefficient is defined as
 \end{align}
 %
 $X$ and $Y$ are said to be uncorrelated if $\rho = 0$
-\end{problem}
-\begin{problem}
+
+\item
 Show that if $X$ and $Y$ are uncorrelated 
 Verify this numerically.
-\end{problem}
-\begin{problem}
+
+\item
 Show that $X$ and $Y$ are independent, i.e. $p_{XY}(x,y) = p_{X}(x)p_{Y}(y)$.
-\end{problem}
-\begin{problem}
+\item
+
 Show that $X,Y \sim \mathcal{N}\brak{0,N_0}$.
-\end{problem}
-\begin{problem}
+\item
+
 Show that 
 \begin{equation}
 \pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0} =\pr{ X < \sqrt{E_s},  Y < \sqrt{E_s}}.
 \end{equation}
-\end{problem}
-\begin{problem}
+\item
+
 Show that 
 \begin{equation}
 \pr{ X < \sqrt{E_s},  Y < \sqrt{E_s}} = \brak{1-\qfunc{\sqrt{\frac{E_s}{N_0}}}}^2
 \end{equation}
-\end{problem}
-\begin{problem}
+\item
+
 Verify the above through simulation.
-\end{problem}
+\\
 \solution 
 This is shown in Fig. \ref{fig:qpsk} through the following code.
 \begin{lstlisting}
@@ -538,9 +671,9 @@ codes/qpsk.py
 \caption{}
 \label{fig:qpsk}
 \end{figure}
-\begin{problem}
+
+\item
 Modify the above script to obtain the probability of symbol error.
-\end{problem}
 
 %\begin{enumerate}
 %\item 
@@ -574,11 +707,13 @@ Modify the above script to obtain the probability of symbol error.
 %\\
 %
 %\item 
-%\end{enumerate}
-%\end{problem}
+\end{enumerate}
+%\item
 \section{$M$-PSK}
+\begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
 
-Consider a system where 
+\item Consider a system where 
 $\mathbf{s}_i=
 \begin{pmatrix}
 \cos\brak{\frac{2\pi i}{M}}\\
@@ -601,7 +736,7 @@ n_2
 \end{pmatrix}
 \end{align}
 where $n_1,n_2 \sim \mathcal{N}\brak{0,\frac{N_0}{2}}$.
-\begin{problem}
+
  Substituting 
 \begin{align}
 y_1=R\cos \theta \\
@@ -612,8 +747,8 @@ show that the joint pdf of $R,\theta$ is
 \begin{equation}
 p\brak{R,\theta}=\frac{R}{\pi N_0}\exp\brak{-\frac{R^2-2R\sqrt{E_s}\cos \theta + E_s}{N_0}}
 \end{equation}
-\end{problem}
-\begin{problem}
+\item
+
 Show that 
 %
 \begin{align}
@@ -623,8 +758,8 @@ Show that
 \lim_{\alpha \rightarrow \infty}\int_{0}^{\infty} e^{-\brak{V-\alpha}^2 }\,dV
 &=  \sqrt{\pi}
 \end{align}
-\end{problem}
-\begin{problem}
+\item
+
 Using the above, show that
 %
 \begin{multline}
@@ -634,24 +769,23 @@ Using the above, show that
 \end{multline}
 %
 for large values of $\gamma$.
-\end{problem}
-\begin{problem}
+\item
+
 Find a compact expression for
 %
 \begin{align}
 I = 1 - \sqrt{\frac{\gamma}{\pi}}\int_{-\frac{\pi}{M}}^{\frac{\pi}{M}}e^{- \gamma\sin^2\theta }\cos \theta\, d\theta
 \end{align}
-\end{problem}
-\begin{problem}
+\item
+
 Show that
 \begin{equation}
 P_{e|\mathbf{s}_0}=2\qfunc{\sqrt{2\brak{\frac{{E_s}}{N_o}}}\sin \frac{\pi}{M}}
 \end{equation}
-\end{problem}
-\begin{problem}
-Verify the SER through simulation.
-\end{problem}
+\item
 
+Verify the SER through simulation.
+\end{enumerate}
 %
 \end{document}
 
