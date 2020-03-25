@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  20 OCT 2019 08:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  25 MAR 2020 08:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -784,4 +784,4 @@ Here is how much of TeX's memory you used:
  1144 hyphenation exceptions out of 8191
  36i,17n,39p,309b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_manual_mod.dvi (4 pages, 23952 bytes).
+Output written on gvv_manual_mod.dvi (4 pages, 23972 bytes).
