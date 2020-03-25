@@ -3,6 +3,11 @@ import numpy as np
 import mpmath as mp
 import matplotlib.pyplot as plt
 
+#if using termux
+import subprocess
+import shlex
+#end if
+
 
 #the ber expression is sqrt(E_b)+n1-n2<0
 
@@ -46,5 +51,10 @@ plt.xlabel('SNR$\\left(\\frac{E_b}{N_0}\\right)$')
 plt.ylabel('$P_e$')
 plt.legend()
 plt.grid()
-plt.savefig('../figs/bfsk_ber.eps')
-plt.show()
+
+#if using termux
+plt.savefig('./figs/bfsk_ber.pdf')
+plt.savefig('./figs/bfsk_ber.eps')
+subprocess.run(shlex.split("termux-open ./figs/bfsk_ber.pdf"))
+#else
+#plt.show()

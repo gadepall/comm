@@ -488,18 +488,22 @@ y_1 \dec{s_0}{s_1} y_2
 %where $\mathbf{\mu}$ is the mean vector, $\Sigma = E\sbrak{\brak{\mathbf{x}-\mathbf{\mu}}\brak{\mathbf{x}-\mathbf{\mu}}^T}$ is the covariance matrix and $\abs{\Sigma}$ is the determinant of $\Sigma$.
 \begin{definition}
 The joint PDF of $X,Y$ is given by
+{\small
 \begin{multline}
 \label{eq:bivariate}
 p(x,y)= \frac{1}{2\pi \sigma_x\sigma_y\sqrt{1-\rho^2}}\exp\lsbrak{-\frac{1}{2\brak{1-\rho^2}}}
 \\
 \times \rsbrak{\cbrak{\frac{\brak{x-\mu_x}^2}{\sigma_x^2}+\frac{\brak{y-\mu_y}^2}{\sigma_y^2}-\frac{2\rho\brak{x-\mu_x}\brak{y-\mu_y}}{\sigma_x\sigma_y}}}
 \end{multline}
+}
 %
 where
 \begin{align}
 \mu_x &= E\sbrak{X},
-\sigma_x^2 = \text{var}\brak{X},
-\rho = \frac{E\sbrak{\brak{X - \mu_x}\brak{Y-\mu_y}}}{\sigma_x\sigma_y}.
+\\
+\sigma_x^2 &= \text{var}\brak{X},
+\\
+\rho &= \frac{E\sbrak{\brak{X - \mu_x}\brak{Y-\mu_y}}}{\sigma_x\sigma_y}.
 \end{align}
 %where
 %%
@@ -527,6 +531,7 @@ p\brak{\mathbf{y}|s_0} \dec{s_0}{s_1} p\brak{\mathbf{y}|s_1}
 \end{equation}
 \item
 Use \eqref{eq:bivariate} in \eqref{eq:map_bfsk_dec}  to obtain \eqref{eq:bfsk_dec}.
+\\
 \solution According to the MAP criterion, assuming equiprobably symbols,
 \begin{align}
 %\pr{ \mathbf{y}|s_0 }
@@ -535,6 +540,7 @@ p\brak{\mathbf{y}|s_0} \dec{s_0}{s_1} p\brak{\mathbf{y}|s_1}
 
 \item
 Derive and plot the probability of error.  Verify through simulation.
+\\
 \solution Given that $s_0$ was transmitted, the received symbols are
 \begin{align}
 \mathbf{y}|s_0 = 
@@ -558,7 +564,9 @@ P_e &= \pr{y_1 < y_2|s_0} = \pr{\sqrt{E_b} + n_1 < n_2}
 \end{align}
 Note that $n_2-n_1 \sim \gauss{0}{N_0}$. Thus, 
 \begin{align}
-P_e &= \pr{ \sqrt{N_0}w > \sqrt{E_b} }  =  \pr{ w > \sqrt{\frac{E_b}{N_0}} }
+P_e &= \pr{ \sqrt{N_0}w > \sqrt{E_b} }  
+\\
+&=  \pr{ w > \sqrt{\frac{E_b}{N_0}} }
 %= \pr{ X > \sqrt{E_b} }
 \\
 \implies 
