@@ -598,15 +598,18 @@ codes/fsk_ber.py
 %
 \item Let
 \begin{equation}
+\label{eq:qpsk_rx}
 \mathbf{y} = \mathbf{s}+ \mathbf{n}
 \end{equation}
 where $\mathbf{s} \in \cbrak{\mathbf{s}_0,\mathbf{s}_1,\mathbf{s}_2, \mathbf{s}_3}$ and
 \begin{align}
+\label{eq:qpsk_s0}
 \mathbf{s}_0 &= 
 \begin{pmatrix*}
 \sqrt{E_s}\\
 0
 \end{pmatrix*},
+%\label{eq:qpsk_s1}
 \mathbf{s}_1 = 
 \begin{pmatrix*}
 0\\
@@ -624,7 +627,8 @@ where $\mathbf{s} \in \cbrak{\mathbf{s}_0,\mathbf{s}_1,\mathbf{s}_2, \mathbf{s}_
 -\sqrt{E_s}
 \end{pmatrix*},
 \\
-E\sbrak{\mathbf{n}} &= \mathbf{0}, E\sbrak{\mathbf{n}\mathbf{n}^T} = \sigma^2 \mathbf{I}
+E\sbrak{\mathbf{n}} &= \mathbf{0}, E\sbrak{\mathbf{n}\mathbf{n}^T} = \frac{N_0}{2} \mathbf{I}
+\label{eq:qpsk_mean}
 \end{align}
 %
 \item Using \eqref{eq:bivariate}, show that the MAP decision for detecting $\mathbf{s}_0$ results in
@@ -636,44 +640,103 @@ E\sbrak{\mathbf{n}} &= \mathbf{0}, E\sbrak{\mathbf{n}\mathbf{n}^T} = \sigma^2 \m
 \item Express $\pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0}$ in terms of 
 $y_1, y_2$.
 \\
-\solution From \eqref{eq:qpsk_dec},
+\solution From \eqref{eq:qpsk_dec} and \eqref{eq:qpsk_s0}
+,
 \begin{multline}
+\label{eq:ser_dec}
 \pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0} 
 \\
 = \pr{\abs{y_2} < y_1
 |y_1 = \sqrt{E}_s, y_2 = 0}
 \end{multline}
 %$r_1, r_2$.
-\item Let $X=n_2-n_1, Y = -n_2-n_1$, where $\mathbf{n}=\brak{n_1,n_2}$.
-Their correlation coefficient is defined as
+\item Let 
+\label{prob:qpsk_xy}
+\begin{align}
+\label{eq:qpskx}
+X=n_2-n_1, 
+\\
+Y = -n_2-n_1, 
+\label{eq:qpsky}
+\end{align}
+where $\mathbf{n}=\myvec{n_1\\n_2}$.
+
+Show that $X,Y \sim \mathcal{N}\brak{0,N_0}$.
+
+\item The correlation coefficient of $X, Y$ is defined as
 %
 \begin{align}
 \rho = \frac{E\sbrak{\brak{X-\mu_x}\brak{Y-\mu_y}}}{\sigma_x\sigma_y}
 \end{align}
 %
 $X$ and $Y$ are said to be uncorrelated if $\rho = 0$
-
-\item
 Show that  $X$ and $Y$ are uncorrelated. 
 Verify this numerically.
-
+\\
+\solution From \eqref{eq:qpsk_mean},
+\begin{align}
+\mu_x &= E\sbrak{X} = 0
+\\
+\mu_y &= E\sbrak{Y} = 0
+\\
+\implies \rho &= E\sbrak{XY} = E\sbrak{\brak{n_2-n_1}\brak{-n_2-n_1}} 
+\nonumber \\
+&= 0
+\label{eq:qpsk_uncorr}
+\end{align}
+%
+upon substituting from \eqref{eq:qpskx} and \eqref{eq:qpsky}.
 \item
-Show that $X$ and $Y$ are independent, i.e. $p_{XY}(x,y) = p_{X}(x)p_{Y}(y)$.
-\item
+Show that $X$ and $Y$ are independent, i.e. 
+\begin{align}
+\label{eq:qpsk_uncorr_indep}
+p_{XY}(x,y) = p_{X}(x)p_{Y}(y).
+\end{align}
+\\
+\solution Use \eqref{eq:qpsk_uncorr} in 
+\eqref{eq:bivariate} to get \eqref{eq:qpsk_uncorr_indep}.  Uncorrelated Gaussians are independent.
 
-Show that $X,Y \sim \mathcal{N}\brak{0,N_0}$.
 \item
 
 Show that 
 \begin{equation}
-\pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0} =\pr{ X < \sqrt{E_s},  Y < \sqrt{E_s}}.
+\pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0} =\pr{ X < \sqrt{E_s}}\pr{  Y < \sqrt{E_s}}.
 \end{equation}
+\\
+\solution From \eqref{eq:ser_dec}  and \eqref{eq:qpsk_rx}
+%and \eqref{eq:qpsk_s0}
+%
+\begin{multline}
+\pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0} 
+\\
+= \pr{\abs{n_2} < \sqrt{E}_s+n_1}
+\end{multline}
+%
+which can be expressed as
+%
+\begin{align}
+\pr{{n_2} < \sqrt{E}_s+n_1,-{n_2} > \sqrt{E}_s+n_1 }&
+\\
+= \pr{X < \sqrt{E}_s,Y < \sqrt{E}_s }&
+\\
+=\pr{X < \sqrt{E}_s}\pr{Y < \sqrt{E}_s }&
+\end{align}
+%
+after some algebra, using the fact that $X,Y$ are independent.
 \item
 
 Show that 
 \begin{equation}
-\pr{ X < \sqrt{E_s},  Y < \sqrt{E_s}} = \brak{1-\qfunc{\sqrt{\frac{E_s}{N_0}}}}^2
+\pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0} 
+ = \brak{1-\qfunc{\sqrt{\frac{E_s}{N_0}}}}^2
+\label{eq:qpsk_ser_final}
 \end{equation}
+\solution From \label{prob:qpsk_xy}, 
+\begin{align}
+\pr{X > \sqrt{E}_s} = \pr{Y > \sqrt{E}_s} = \qfunc{\sqrt{\frac{E_s}{N_0}}}
+\end{align}
+yielding \eqref{eq:qpsk_ser_final}.
+
 \item
 
 Verify the above through simulation.

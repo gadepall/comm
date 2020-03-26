@@ -3,6 +3,10 @@ import numpy as np
 import mpmath as mp
 import matplotlib.pyplot as plt
 
+#if using termux
+import subprocess
+import shlex
+#end if
 
 
 
@@ -36,9 +40,9 @@ for i in range(0,snrlen):
 	#calculating the total number of errors
 	#err_n = np.size(err_ind)
 	#calcuating the simulated BER
-	err.append(temp/simlen)
+	err.append(1-temp/simlen)
 	#calculating the analytical BER
-	ber.append((1-qfunc(mp.sqrt(snr)))**2)
+	ber.append(1-(1-qfunc(mp.sqrt(snr)))**2)
 	
 plt.semilogy(snrdb.T,ber,label='Analysis')
 plt.semilogy(snrdb.T,err,'o',label='Sim')
@@ -46,5 +50,9 @@ plt.xlabel('SNR$\\left(\\frac{E_b}{N_0}\\right)$')
 plt.ylabel('$P_e$')
 plt.legend()
 plt.grid()
-plt.savefig('../figs/qpsk.eps')
-plt.show()
+#if using termux
+plt.savefig('./figs/qpsk.pdf')
+plt.savefig('./figs/qpsk.eps')
+subprocess.run(shlex.split("termux-open ./figs/qpsk.pdf"))
+#else
+#plt.show()

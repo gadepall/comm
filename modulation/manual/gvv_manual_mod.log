@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  25 MAR 2020 22:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  26 MAR 2020 12:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1306,6 +1306,9 @@ Package chngcntr Info: \counterwithout already defined.
 
 LaTeX Warning: Label `eq:qerfc' multiply defined.
 
+
+LaTeX Warning: Label `prob:qpsk_xy' multiply defined.
+
 )
 \openout1 = `gvv_manual_mod.aux'.
 
@@ -1482,45 +1485,45 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [2]
 File: ./figs/bfsk_ber.eps Graphic file (type eps)
 
-<./figs/bfsk_ber.eps>
+<./figs/bfsk_ber.eps> [3]
+Overfull \hbox (6.93236pt too wide) detected at line 704
+[] [] [] \OT1/txr/m/n/12 = [] [] [] [] \OML/txmi/m/it/12 :
+ []
+
 File: ./figs/qpsk.eps Graphic file (type eps)
- <./figs/qpsk.eps>
+<./figs/qpsk.eps>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 731.
+(hyperref)                removing `math shift' on input line 794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 731.
+(hyperref)                removing `math shift' on input line 794.
 
-[3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 809.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 809.
-
-(./gvv_manual_mod.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 809.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 809.
+[4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 872.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 872.
+ (./gvv_manual_mod.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 872.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 872.
 Package rerunfilecheck Info: File `gvv_manual_mod.out' has not changed.
 (rerunfilecheck)             Checksum: 845C490F9C155EFA0BDBA6874A4E896D;166.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 809.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 872.
  ) 
 Here is how much of TeX's memory you used:
- 31905 strings out of 492624
- 685990 string characters out of 6119216
+ 31915 strings out of 492624
+ 686131 string characters out of 6119216
  893992 words of memory out of 5000000
- 35226 multiletter control sequences out of 15000+600000
+ 35236 multiletter control sequences out of 15000+600000
  85942 words of font info for 220 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,17n,69p,506b,1158s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_manual_mod.dvi (4 pages, 50320 bytes).
+Output written on gvv_manual_mod.dvi (4 pages, 56504 bytes).
