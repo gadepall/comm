@@ -799,7 +799,7 @@ Modify the above script to obtain the probability of symbol error.
 $\mathbf{s}_i=
 \begin{pmatrix}
 \cos\brak{\frac{2\pi i}{M}}\\
-\cos\brak{\frac{2\pi i}{M}}
+\sin\brak{\frac{2\pi i}{M}}
 \end{pmatrix}, i = 0, 1 , \dots M-1
 $
 .
@@ -834,9 +834,11 @@ p\brak{R,\theta}=\frac{R}{\pi N_0}\exp\brak{-\frac{R^2-2R\sqrt{E_s}\cos \theta +
 Show that 
 %
 \begin{align}
+\label{eq:mpsk_alpha1}
 \lim_{\alpha \rightarrow \infty}\int_{0}^{\infty}\brak{V-\alpha }e^{-\brak{V-\alpha}^2 }\,dV
 &= 0
 \\
+\label{eq:mpsk_alpha2}
 \lim_{\alpha \rightarrow \infty}\int_{0}^{\infty} e^{-\brak{V-\alpha}^2 }\,dV
 &=  \sqrt{\pi}
 \end{align}
@@ -845,12 +847,36 @@ Show that
 Using the above, show that
 %
 \begin{multline}
+\label{eq:mpsk_integ}
 \int_{0}^{\infty}V\exp\cbrak{-\brak{V^2 - 2V \sqrt{\gamma}\cos \theta +\gamma}}\,dV
 \\
 = e^{-\gamma\sin^2 \theta} \sqrt{\gamma\pi}\cos \theta
+%\label{eq:mpsk_gamma_large}
 \end{multline}
 %
 for large values of $\gamma$.
+\\
+\solution The integrand in \eqref{eq:mpsk_integ} can be expressed as
+\begin{multline}
+Ve^{-\brak{V^2 - 2V \sqrt{\gamma}\cos \theta +\gamma}} 
+\\
+= \cbrak{\brak{V - \sqrt{\gamma}\cos \theta} + \brak{\sqrt{\gamma}\cos \theta}}
+\\
+\times e^{-\brak{V -  \sqrt{\gamma}\cos \theta }^2}e^{-  \sqrt{\gamma}\sin^2 \theta} 
+\\
+\implies \int_{0}^{\infty}Ve^{-\brak{V^2 - 2V \sqrt{\gamma}\cos \theta +\gamma}}\,dV
+\\
+ = e^{-  \sqrt{\gamma}\sin^2 \theta}
+\\
+\times  \lcbrak{\int_{0}^{\infty}\brak{V - \sqrt{\gamma}\cos \theta}e^{-\brak{V -  \sqrt{\gamma}\cos \theta }^2}\,d\theta}
+\\
++ \rcbrak{\int_{0}^{\infty}\brak{\sqrt{\gamma}\cos \theta}e^{-\brak{V -  \sqrt{\gamma}\cos \theta }^2}\,d \theta}
+\end{multline}
+%
+yielding \eqref{eq:mpsk_integ} from \eqref{eq:mpsk_alpha1}
+and \eqref{eq:mpsk_alpha2}
+
+
 \item
 
 Find a compact expression for
@@ -858,6 +884,18 @@ Find a compact expression for
 \begin{align}
 I = 1 - \sqrt{\frac{\gamma}{\pi}}\int_{-\frac{\pi}{M}}^{\frac{\pi}{M}}e^{- \gamma\sin^2\theta }\cos \theta\, d\theta
 \end{align}
+\solution The above integral can be expressed as
+%
+\begin{align}
+I &= 1 - 2\sqrt{\frac{\gamma}{\pi}}\int_{0}^{\frac{\pi}{M}}e^{- \gamma\sin^2\theta }\cos \theta\, d\theta
+\\
+&= 1 - 2 \cbrak{\qfunc{0}-\qfunc{\sqrt{2\gamma}\sin \frac{\pi}{M}}}
+\\
+&= 2\qfunc{\sqrt{2\gamma}\sin \frac{\pi}{M}}
+\end{align}
+$\because \qfunc{0} = \frac{1}{2}$.
+\item Find the decision region for the symbol $\vec{s}_0$.
+
 \item
 
 Show that
