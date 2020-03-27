@@ -1,0 +1,35 @@
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=gray,draw=none,text=white]
+
+  \node[state] (A)                    {$\varphi_0$};
+  \node[state]         (B) [right of=A] {$\varphi_0$};
+  \node[state]         (C) [right of=B] {$\varphi_0$};
+  \node[state]         (D) [right of=C] {$\varphi_0$};
+  \node[state]         (E) [right of=D] {$\varphi_0$};
+  \node[state]         (F) [below of=B] {$\varphi_1$};
+  \node[state]         (G) [right of=F] {$\varphi_1$};    
+  \node[state]         (H) [right of=G] {$\varphi_1$};   
+  \draw (A)--node[above] {$0/0.0$}(B);
+  \draw (A)--node[below] {$0.04$}(B);
+  \draw (A)--node[right] {$1/1.0$}(F);
+  \draw (A)--node[below left] {$0.64$}(F);
+  \draw (B)--node[above] {$0/0.0$}(C);
+  \draw (B)--node[below] {$0.36$}(C);
+  \draw (C)--node[above] {$0/0.0$}(D);
+  \draw (C)--node[below] {$0.81$}(D);
+  \draw (D)--node[above] {$0/0.0$}(E);
+  \draw (D)--node[below] {$0.01$}(E);
+  \draw (B)--node[above left] {$1/1.0$}(G);
+  \draw (B)--node[above right] {$0.01$}(G);
+  \draw (F)--node[below left] {$0/0.5$}(C);
+  \draw (F)--node[below right] {$0.16$}(C);
+  \draw (C)--node[above left] {$1/1.0$}(H);
+  \draw (C)--node[below right] {$0.01$}(H);
+  \draw (G)--node[above right] {$0/0.5$}(D);
+  \draw (G)--node[below left] {$0.16$}(D);
+  \draw (H)--node[left] {$0/0.5$}(E);
+  \draw (H)--node[right] {$0.16$}(E);
+  \draw (F)--node[above] {$1/1.5$}(G) --node[above] {$1/1.5$}(H);
+  \draw (F)--node[below] {$0.81$}(G) --node[below] {$0.36$}(H);
+\end{tikzpicture}

@@ -1,0 +1,3 @@
+\contentsline {subsection}{\numberline {0.1}Global Threshold Calculation}{1}
+\contentsline {subsection}{\numberline {0.2}Plots}{1}
+\contentsline {section}{References}{2}

@@ -1,0 +1,12 @@
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.0cm,semithick]
+  \tikzstyle{every state}=[fill=gray,draw=none,text=white]
+
+  \node[state]         (B) {$\varphi_0$};
+
+  \node[state]         (E) [below of=B]       {$\varphi_1$};
+
+   \path     (B) edge [loop above] node {0/0.0} (B)
+   			 (E) edge [bend right]  node[right] {0/0.5} (B)
+             (B) edge[bend right]node[left]{1/1.0} (E)
+        	 (E)  edge [loop below] node {1/1.5} (E);
+\end{tikzpicture}
