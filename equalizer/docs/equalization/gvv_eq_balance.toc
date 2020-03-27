@@ -1,3 +1,10 @@
 \contentsline {section}{\numberline {1}Chemistry}{1}{section.1}% 
 \contentsline {section}{\numberline {2}Mathematics}{2}{section.2}% 
 \contentsline {section}{\numberline {3}Physics}{2}{section.3}% 
+\contentsline {section}{\numberline {4}Maximum Likelihood Sequence Estimation (MLSE)}{2}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Viterbi Algorithm}{2}{subsection.4.1}% 
+\contentsline {subsubsection}{\numberline {4.1.1}Trellis structure in Code}{3}{subsubsection.4.1.1}% 
+\contentsline {section}{\numberline {5}Channel Estimation}{4}{section.5}% 
+\contentsline {section}{\numberline {6}Zero Forcing Equalizer and MMSE Equalizer}{4}{section.6}% 
+\contentsline {subsection}{\numberline {6.1}Zero Forcing Equalizer}{4}{subsection.6.1}% 
+\contentsline {subsection}{\numberline {6.2}MMSE Equalizer}{4}{subsection.6.2}% 

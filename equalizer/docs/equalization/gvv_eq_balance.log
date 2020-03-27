@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  25 JAN 2020 14:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=latex 2020.3.27)  27 MAR 2020 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -843,6 +843,42 @@ z/pgfcirccurrent.tex)
 z/pgfcircflow.tex)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/circuitik
 z/pgfcircpath.tex))
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryautomata.code.tex
+File: tikzlibraryautomata.code.tex 2019/02/02 v3.1.1 (3.1.1)
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2019/02/02 v3.1.1 (3.1.1)
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
+ries/shapes/pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgfnodepartlowerbox=\box47
+\pgfnodeparttwobox=\box48
+\pgfnodepartthreebox=\box49
+\pgfnodepartfourbox=\box50
+\pgfnodeparttwentybox=\box51
+\pgfnodepartnineteenbox=\box52
+\pgfnodeparteighteenbox=\box53
+\pgfnodepartseventeenbox=\box54
+\pgfnodepartsixteenbox=\box55
+\pgfnodepartfifteenbox=\box56
+\pgfnodepartfourteenbox=\box57
+\pgfnodepartthirteenbox=\box58
+\pgfnodeparttwelvebox=\box59
+\pgfnodepartelevenbox=\box60
+\pgfnodeparttenbox=\box61
+\pgfnodepartninebox=\box62
+\pgfnodeparteightbox=\box63
+\pgfnodepartsevenbox=\box64
+\pgfnodepartsixbox=\box65
+\pgfnodepartfivebox=\box66
+)))
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/verba
 tim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
@@ -976,7 +1012,7 @@ Package hyperref Warning: You have enabled option `breaklinks'.
 (hyperref)                Expect trouble with the link areas of broken links.
 
 \pdf@docset=\toks43
-\pdf@box=\box47
+\pdf@box=\box67
 \pdf@toks=\toks44
 \pdf@defaulttoks=\toks45
 \HyField@AnnotCount=\count159
@@ -999,10 +1035,6 @@ Package: tkz-euclide 2011/06/01 1.16 c for plots 2d
 z-base.sty
 Package: tkz-base 2018/09/19 1.16 d tkz-base
 
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
-endlayer/tikz/libraries/tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
-)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
 endlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2019/02/02 v3.1.1 (3.1.1)
@@ -1036,7 +1068,7 @@ es/pgfmoduledecorations.code.tex
 \pgfdecorationsegmentamplitude=\dimen279
 \pgfdecorationsegmentlength=\dimen280
 )
-\tikz@lib@dec@box=\box48
+\tikz@lib@dec@box=\box68
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
 endlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex
@@ -1062,12 +1094,12 @@ Package: numprint 2012/08/20 v1.39 Print numbers (HH)
 .sty
 Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \col@sep=\dimen281
-\ar@mcellbox=\box49
+\ar@mcellbox=\box69
 \extrarowheight=\dimen282
 \NC@list=\toks46
 \extratabsurround=\skip67
 \backup@length=\skip68
-\ar@cellbox=\box50
+\ar@cellbox=\box70
 )
 \c@nprt@mantissa@digitsbefore=\count163
 \c@nprt@mantissa@digitsafter=\count164
@@ -1205,7 +1237,7 @@ z-obj-marks.tex
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/li
 stings.sty
 \lst@mode=\count185
-\lst@gtempboxa=\box51
+\lst@gtempboxa=\box71
 \lst@token=\toks50
 \lst@length=\count186
 \lst@currlwidth=\dimen294
@@ -1222,7 +1254,7 @@ tmisc.sty
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 \c@lstnumber=\count191
 \lst@skipnumbers=\count192
-\lst@framebox=\box52
+\lst@framebox=\box72
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/li
 stings.cfg
@@ -1251,7 +1283,7 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 Package multicol Warning: May not work with the twocolumn option on input line 
 141.
 
-\mult@box=\box53
+\mult@box=\box73
 \multicol@leftmargin=\dimen298
 \c@unbalance=\count194
 \c@collectmore=\count195
@@ -1264,37 +1296,37 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \postmulticols=\dimen302
 \multicolsep=\skip73
 \multicolbaselineskip=\skip74
-\partial@page=\box54
-\last@line=\box55
+\partial@page=\box74
+\last@line=\box75
 \maxbalancingoverflow=\dimen303
-\mult@rightbox=\box56
-\mult@grightbox=\box57
-\mult@gfirstbox=\box58
-\mult@firstbox=\box59
-\@tempa=\box60
-\@tempa=\box61
-\@tempa=\box62
-\@tempa=\box63
-\@tempa=\box64
-\@tempa=\box65
-\@tempa=\box66
-\@tempa=\box67
-\@tempa=\box68
-\@tempa=\box69
-\@tempa=\box70
-\@tempa=\box71
-\@tempa=\box72
-\@tempa=\box73
-\@tempa=\box74
-\@tempa=\box75
-\@tempa=\box76
+\mult@rightbox=\box76
+\mult@grightbox=\box77
+\mult@gfirstbox=\box78
+\mult@firstbox=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
 \c@columnbadness=\count199
 \c@finalcolumnbadness=\count266
 \last@try=\dimen304
 \multicolovershoot=\dimen305
 \multicolundershoot=\dimen306
-\mult@nat@firstbox=\box77
-\colbreak@box=\box78
+\mult@nat@firstbox=\box97
+\colbreak@box=\box98
 \mc@col@check@num=\count267
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/chngcntr/ch
@@ -1303,64 +1335,62 @@ Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
 ) (./gvv_eq_balance.aux)
-\openout1 = `gvv_eq_balance.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 84.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 84.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 86.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 86.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oml
 txmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 84.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 84.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 86.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 86.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oms
 txsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 84.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 84.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 86.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 86.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/omx
 txex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 84.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 84.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 86.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 86.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 exa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 84.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 86.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
 txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 84.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 84.
+LaTeX Info: Redefining \celsius on input line 86.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 86.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 84.
-Package gensymb Info: Using \Omega for \ohm on input line 84.
+LaTeX Info: Redefining \ohm on input line 86.
+Package gensymb Info: Using \Omega for \ohm on input line 86.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1376,8 +1406,8 @@ Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box79
-Package hyperref Info: Link coloring OFF on input line 84.
+\AtBeginShipoutBox=\box99
+Package hyperref Info: Link coloring OFF on input line 86.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/na
 meref.sty
@@ -1389,13 +1419,11 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count268
 )
-LaTeX Info: Redefining \ref on input line 84.
-LaTeX Info: Redefining \pageref on input line 84.
-LaTeX Info: Redefining \nameref on input line 84.
+LaTeX Info: Redefining \ref on input line 86.
+LaTeX Info: Redefining \pageref on input line 86.
+LaTeX Info: Redefining \nameref on input line 86.
  (./gvv_eq_balance.out) (./gvv_eq_balance.out)
 \@outlinefile=\write4
-\openout4 = `gvv_eq_balance.out'.
-
 \c@lstlisting=\count269
 \c@theorem=\count270
 \c@problem=\count271
@@ -1406,35 +1434,35 @@ LaTeX Info: Redefining \nameref on input line 84.
 File: iith_logo.eps Graphic file (type eps)
 
 <iith_logo.eps>
-LaTeX Font Info:    Calculating math sizes for size <24> on input line 240.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 240.
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 242.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 242.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 240.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 242.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 240.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 242.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 240.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 242.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 240.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 242.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
@@ -1443,7 +1471,7 @@ File: utxsyc.fd 2000/12/15 v3.1
 )
 File: tlc.eps Graphic file (type eps)
  <tlc.eps>
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 240.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 242.
 File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
 File: tlc.eps Graphic file (type eps)
@@ -1454,8 +1482,6 @@ File: tlc.eps Graphic file (type eps)
  <tlc.eps>
 (./gvv_eq_balance.toc)
 \tf@toc=\write5
-\openout5 = `gvv_eq_balance.toc'.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1463,26 +1489,112 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 478.
 
-[2
+LaTeX Warning: Reference `eq:chem_balance_planes' on page 2 undefined on input 
+line 445.
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 478.
+
+LaTeX Warning: Reference `eq:chem_balance_normals' on page 2 undefined on input
+ line 456.
+
+
+LaTeX Warning: Reference `fig:FSM' on page 2 undefined on input line 540.
+
+(./figs/fsm.tex)
+
+LaTeX Warning: Reference `fig:FSM' on page 2 undefined on input line 550.
+
+
+LaTeX Warning: Reference `fig:trellis' on page 2 undefined on input line 550.
+
+(./figs/trellis.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:multi-stage' on page 2 undefined on input line 56
+1.
+
+(./figs/multi_stage.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2]
+
+LaTeX Warning: Reference `fig:branch_metric' on page 3 undefined on input line 
+594.
+
+(./figs/branch_metric.tex)
+
+LaTeX Warning: Reference `fig:shortest_path' on page 3 undefined on input line 
+604.
+
+(./figs/shortest_path.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `viterbi' on page 3 undefined on input line 624.
+
+
+LaTeX Warning: Citation `MLSE' on page 3 undefined on input line 624.
+
+
+LaTeX Warning: Citation `Proakis' on page 3 undefined on input line 624.
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 624--626
+[]\OT1/txr/m/n/12 The ML se-quence es-ti-ma-tor struc-ture us-ing
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+
+LaTeX Warning: Citation `eq' on page 4 undefined on input line 660.
+
+
+Underfull \vbox (badness 1314) has occurred while \output is active []
+
+
+No file gvv_eq_balance.bbl.
+[4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 731.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 731.
  (./gvv_eq_balance.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 478.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 478.
-Package rerunfilecheck Info: File `gvv_eq_balance.out' has not changed.
-(rerunfilecheck)             Checksum: 8002BD971AC188A936A7AC0ED751DBB3;132.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 478.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 731.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 731.
+
+
+Package rerunfilecheck Warning: File `gvv_eq_balance.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `gvv_eq_balance.out':
+(rerunfilecheck)             Before: 3D4DE0FA76238CF665B570A780EAF505;44
+(rerunfilecheck)             After:  E756E8AA28784EB8CBAF6C1D848E6DAF;628.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 731.
  ) 
 Here is how much of TeX's memory you used:
- 31851 strings out of 492624
- 685206 string characters out of 6119216
- 896992 words of memory out of 5000000
- 35178 multiletter control sequences out of 15000+600000
+ 32603 strings out of 492620
+ 709155 string characters out of 6119111
+ 961663 words of memory out of 5000000
+ 35905 multiletter control sequences out of 15000+600000
  77739 words of font info for 194 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,19n,69p,506b,1150s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,19n,73p,506b,1150s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_eq_balance.dvi (2 pages, 25196 bytes).
+Output written on gvv_eq_balance.dvi (4 pages, 100868 bytes).

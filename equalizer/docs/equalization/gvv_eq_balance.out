@@ -1,3 +1,10 @@
 \BOOKMARK [1][-]{section.1}{Chemistry}{}% 1
 \BOOKMARK [1][-]{section.2}{Mathematics}{}% 2
 \BOOKMARK [1][-]{section.3}{Physics}{}% 3
+\BOOKMARK [1][-]{section.4}{Maximum Likelihood Sequence Estimation \(MLSE\)}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Viterbi Algorithm}{section.4}% 5
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Trellis structure in Code}{subsection.4.1}% 6
+\BOOKMARK [1][-]{section.5}{Channel Estimation}{}% 7
+\BOOKMARK [1][-]{section.6}{Zero Forcing Equalizer and MMSE Equalizer}{}% 8
+\BOOKMARK [2][-]{subsection.6.1}{Zero Forcing Equalizer}{section.6}% 9
+\BOOKMARK [2][-]{subsection.6.2}{MMSE Equalizer}{section.6}% 10
