@@ -1,0 +1,131 @@
+\subsection{Specifications}
+To develop a robust equalizer with time/frequency synchronization at the receiver to  sustain fading effects of
+V/UHF channel as per the  specifications in Table \ref{table:specs}
+\begin{table}
+\centering
+\input{./tables/specs.tex}
+\caption{}
+\label{table:specs}
+\end{table}
+\subsection{Sequence of Steps}
+\begin{enumerate}
+
+\item Simulation of suitable Preamble detection algorithm.
+\item Simulation of suitable channel estimation and equalization algorithms for mitigating Rayleigh fading channel effects.
+\item  Simulation of suitable timing and frequency algorithms for narrow band waveform (coherent TCM-8PSK). Convergence of timing, frequency and equalization algorithms in limited preamble symbols provided (19.5 bytes which is equal to 156 bits or 78 symbols for  TCM 8PSK modulation) and efficient utilization of hardware resources (required all these algorithms shall take max 40\% of FPGA resources).
+\item Performance evaluation and Simulation of equalizer and synchronization algorithms should to be done in fixed point.
+\item MATLAB codes should be hardware implementable and consider FPGA resources restrictions. Matrix inversions in MATLAB code should not be there.
+
+\end{enumerate}
+\subsection{Technology Overview}
+Preamble detection can be done using a special kind of correlation as in \cite{frame_offset}.  A symbol detection technique in the presence of time offsets is available in \cite{time_offset}.  A correlation based technique for frequency offset estimation is provided in \cite{freq_offset}. A DFSE based equalization technique based on the Viterbi algorithm is provided in \cite{dfse_viterbi}. A constant modulus decision directed algorithm is proposed in \cite{cmdd}. A channel impulse response based sparse equalization and synchronization technique is given in \cite{cir_sparse}.  Blind equalization techniques are listed in \cite{blind}.
+
+All the above techniques will be analyzed before before finalizing the algorithms for preamble detection, synchronization and equalization.
+%\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+%\numberwithin{equation}{enumi}
+%	
+%\item
+%\label{ch1_lp1}
+%	Graphically obtain a solution to the following 
+%	\begin{align}
+%\max_{\mbf{x}}	6x_1 + 5x_2
+%	\end{align}
+%	with constraints
+%	\begin{align}
+%	x_1 + x_2 &\leq 5\\
+%	3x_1 + 2x_2 &\leq 12\\
+%	\text{ where } x_1,x_2 &\geq 0
+%	\end{align}
+%
+%%
+%\solution
+%The following program plots the solution in Fig. \ref{fig.4.1}
+%%	
+%\begin{lstlisting}
+%codes/optimization/4.1.py
+%\end{lstlisting}
+%
+%%
+%\begin{figure}[!ht]
+%\centering
+%\includegraphics[width=\columnwidth]{./optimization/figs/4.1.eps}
+%\caption{ The cost function intersects with the two constraints at $\mbf{x} = \brak{2,3}$. }
+%\label{fig.4.1}	
+%\end{figure}
+%%
+%\item
+%	Now use {\em cvxpy} to obtain a solution to problem \ref{ch1_lp1}.
+%
+%\solution
+%The given problem is expressed as follows
+%%
+%\begin{align}
+%\min_{\mbf{x}}	\mbf{c}^{T}\mbf{x}\quad s.t.
+%\\
+%\mbf{A}\mbf{x} \preceq \mbf{b}
+%\end{align}
+%%
+%where
+%%
+%\begin{equation}
+%\mbf{c}
+%=
+%\begin{pmatrix}
+%-6
+%\\
+%-5
+%\end{pmatrix},
+%\mbf{A} = 
+%\begin{pmatrix}
+%1 & 1
+%\\
+%3 & 2
+%\\
+%-1 & 0
+%\\
+%0 & -1
+%\end{pmatrix},
+%\mbf{b}
+%= 
+%\begin{pmatrix}
+%5
+%\\
+%12
+%\\
+%0
+%\\
+%0 
+%\end{pmatrix}
+%\end{equation}
+%%	
+%The desired solution is then obtained using the following program.
+%%\begin{lstlisting}
+%%codes/optimization/4.2.py
+%%\end{lstlisting}
+%%
+%%
+%%\item
+%%Repeat the previous exercise using {\em cvxpy}
+%%
+%%\solution
+%\begin{lstlisting}
+%codes/optimization/4.2-cvx.py
+%\end{lstlisting}
+%
+%\item
+%	Verify your solution to the above problem using the method of Lagrange multipliers.
+%
+%%
+%\item
+%	 Maximise $5x_1 + 3x_2$ w.r.t the constraints
+%	 \begin{align}
+%	 x_1 + x_2 &\leq 2 \nonumber\\
+%	 5x_1 + 2x_2 &\leq 10 \nonumber\\
+%	 3x_1 + 8x_2 &\leq 12 \nonumber\\
+%	 \text{ where } x_1,x_2 &\geq 0 \nonumber
+%	 \end{align}	
+%
+%\end{enumerate}
+%%
+%

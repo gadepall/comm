@@ -1,0 +1,25 @@
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=gray,draw=none,text=white]
+
+  \node[state] (A)                    {$\varphi_0$};
+  \node[state]         (B) [right of=A] {$\varphi_0$};
+  \node[state]         (C) [right of=B] {$\varphi_0$};
+  \node[state]         (D) [right of=C] {$\varphi_0$};
+  \node[state]         (E) [right of=D] {$\varphi_0$};
+  \node[state]         (F) [below of=B] {$\varphi_1$};
+  \node[state]         (G) [right of=F] {$\varphi_1$};    
+  \node[state]         (H) [right of=G] {$\varphi_1$};   
+  \path (A) edge              node {$0/0.0$} (B)
+            edge              node {$1/1.0$} (F)
+        (B) edge              node {$0/0.0$} (C)
+            edge              node {$1/1.0$} (G)
+        (C) edge              node {$0/0.0$} (D)
+            edge              node {$1/1.0$} (H)
+        (D) edge              node {$0/0.0$} (E)
+        (F) edge              node {$0/0.5$} (C)
+            edge              node {$1/1.5$} (G) 
+        (G) edge              node {$0/0.5$} (D)
+            edge              node {$1/1.5$} (H) 
+        (H) edge              node {$0/0.5$} (E);
+\end{tikzpicture}

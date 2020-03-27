@@ -1,0 +1,23 @@
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=gray,draw=none,text=white]
+
+  \node[state] 			(A)                   {$\varphi_0$};
+  \node[state]         (B) [ right of=A] {$\varphi_0$};
+  \node[state]         (D) [below  of=A] {$\varphi_1$};
+  \node[state]         (C) [below  of=B] {$\varphi_1$};
+ 
+ 
+ \path (A) edge              node {$0/0.0$} (B)
+            edge              node {$0/0.5$} (C)
+        
+            
+        (D) edge              node {$1/1.5$} (C)
+            
+        
+            edge              node {$1/1.0$} (B);
+        
+
+
+  
+\end{tikzpicture}
