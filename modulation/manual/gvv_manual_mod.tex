@@ -162,11 +162,12 @@ columns=fullflexible
 \vspace{3cm}
 
 \title{
-	\logo{
+%	\logo{
 Digital Modulation Techniques
-	}
+%	}
 }
-\author{ C.~Shruti, P.~N.~V.~S.~S.~K.~ HAVISH, S.~S.~Ashish and G V V Sharma$^{*}$% <-this % stops a space
+\author{ G V V Sharma$^{*}$% <-this % stops a space
+%\author{ C.~Shruti, P.~N.~V.~S.~S.~K.~ HAVISH, S.~S.~Ashish and G V V Sharma$^{*}$% <-this % stops a space
 	\thanks{*The author is with the Department
 		of Electrical Engineering, Indian Institute of Technology, Hyderabad
 		502285 India e-mail:  gadepall@iith.ac.in. All content in this manual is released under GNU GPL.  Free and open source.}
@@ -326,6 +327,7 @@ obtain the symbols that are received.
 \caption{}
 \label{fig:bpsk_const}
 \end{figure}
+\\
 \solution The possible received symbols are
 \begin{align}
 y|s_0 &= \sqrt{E_b} + n
@@ -338,15 +340,72 @@ where the AWGN $n \sim \gauss{0}{\frac{N_0}{2}}$.
 \item
 
 \label{prob:bpsk_decision}
-From Fig. \ref{fig:bpsk_const} obtain a decision rule for BPSK
+From Fig. \ref{fig:bpsk_const} obtain a decision rule for BPSK.
+\\
 \solution The decision rule is
 \begin{equation}
+\label{eq:bsk_map_dec}
 y \dec{s_0}{s_1} 0
 \end{equation}
+%
+\item Find the PDFs of $y|s_0$ and $y|s_0$
+\\
+\solution $\because y|s_0$ is Gaussian with 
+\begin{align}
+E\sbrak{y|s_0} &= \sqrt{E_b}
+\\
+\text{var}\brak{y|s_0} &= \frac{N_0}{2},
+\\
+\implies p\brak{y|s_0} &= \frac{1}{\sqrt{2\pi}}\exp\cbrak{-\frac{\brak{y - \sqrt{E_b}}^2}{\frac{N_0}{2}}}
+\label{eq:bpsk_y0pdf}
+\end{align}
+%
+Similarly,
+\begin{align}
+p\brak{y|s_1} &= \frac{1}{\sqrt{2\pi}}\exp\cbrak{-\frac{\brak{y + \sqrt{E_b}}^2}{\frac{N_0}{2}}}
+\label{eq:bpsk_y1pdf}
+\end{align}
 
-\item
-Repeat the previous exercise using the MAP criterion.
-
+\item Obtain \eqref{eq:bsk_map_dec} using the MAP criterion.
+\\
+\solution According to the MAP rule, 
+\begin{align}
+\hat{s} = \max_{s \in \cbrak{s_0,s_1}} p\brak{s|y}
+\\
+\implies  p\brak{s_0|y} \dec{s_0}{s_1}  p\brak{s_1|y}
+\label{bpsk_map}
+\end{align}
+%
+Using Bayes' rule, 
+\begin{align}
+ p\brak{s_0|y} &= \frac{p\brak{y|s_0}p(s_0)}{p\brak{y}}
+\\
+ p\brak{s_1|y} &= \frac{p\brak{y|s_1}p(s_1)}{p\brak{y}}
+\end{align}
+%
+which, upon substituting in \eqref{bpsk_map}, yields
+\begin{align}
+\frac{p\brak{y|s_0}p(s_0)}{p\brak{y}} &\dec{s_0}{s_1} \frac{p\brak{y|s_1}p(s_1)}{p\brak{y}}
+\\
+p\brak{y|s_0}&\dec{s_0}{s_1} p\brak{y|s_1}
+\label{bpsk_map_temp}
+\end{align}
+%
+$\because$ the symbols are equiprobable. Substituting from \label{eq:bpsk_y0pdf} and \label{eq:bpsk_y1pdf} in \label{bpsk_map_temp} 
+%
+\begin{multline}
+\frac{1}{\sqrt{2\pi}}\exp\cbrak{-\frac{\brak{y - \sqrt{E_b}}^2}{\frac{N_0}{2}}} 
+\\
+\dec{s_0}{s_1} \frac{1}{\sqrt{2\pi}}\exp\cbrak{-\frac{\brak{y + \sqrt{E_b}}^2}{\frac{N_0}{2}}}
+\end{multline}
+\begin{align}
+\implies \brak{y + \sqrt{E_b}}^2 &\dec{s_0}{s_1} \brak{y - \sqrt{E_b}}^2
+\\
+\text{or, } y &\dec{s_0}{s_1} 0
+\end{align}
+%
+after some algebra.
+%
 \item
 Using the decision rule in Problem \ref{prob:bpsk_decision}, obtain an expression for the probability of error for BPSK.
 \\
