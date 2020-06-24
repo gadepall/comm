@@ -472,7 +472,7 @@ Q(x) = \frac{1}{2}\operatorname {erfc}\left({\frac  {x}{{\sqrt  {2}}}}\right)
 &= \frac {1}{\sqrt {\pi }}\int _{\frac{x}{\sqrt{2}}}^{\infty }e^{-y^{2}}\,dy. \quad \brak{t = \sqrt{2}y}
 \end{align}
 %
-resulting in \label{eq:qerfc}
+resulting in \eqref{eq:qerfc}
 
 \item
 Verify the bit error rate (BER) plots for BPSK through simulation and analysis for 0 to 10 dB.
@@ -549,17 +549,17 @@ Obtain a decision rule for BFSK from Fig. \ref{fig:ee18btech11042_bfsk_const}.
 \label{eq:bfsk_dec}
 y_1 \dec{s_0}{s_1} y_2
 \end{equation}
-%The multivariate Gaussian distribution is defined as
-%%
-%\begin{multline}
-%p_{\mathbf{x}}(x_1,\dots,x_k)
-%\\
-%=\frac{1}{\sqrt{\brak{2\pi}^k\abs{\Sigma}}}\exp\cbrak{-\frac{1}{2}\brak{\mathbf{x}-\mathbf{\mu}}^T\Sigma^{-1}\brak{\mathbf{x}-\mathbf{\mu}}}
-%\end{multline}
-%%
-%where $\mathbf{\mu}$ is the mean vector, $\Sigma = E\sbrak{\brak{\mathbf{x}-\mathbf{\mu}}\brak{\mathbf{x}-\mathbf{\mu}}^T}$ is the covariance matrix and $\abs{\Sigma}$ is the determinant of $\Sigma$.
-\begin{definition}
-The joint PDF of $X,Y$ is given by
+\item The multivariate Gaussian distribution is defined as
+%
+\begin{multline}
+\label{eq:multivariate}
+p_{\mathbf{x}}(x_1,\dots,x_k)
+\\
+=\frac{1}{\sqrt{\brak{2\pi}^k\abs{\bm{\Sigma}}}}\exp\cbrak{-\frac{1}{2}\brak{\mathbf{x}-\bm{\mu}}^T\bm{\Sigma}^{-1}\brak{\mathbf{x}-\bm{\mu}}}
+\end{multline}
+%
+where $\bm{\mu}$ is the mean vector, $\bm{\Sigma} = E\sbrak{\brak{\mathbf{x}-\bm{\mu}}\brak{\mathbf{x}-\bm{\mu}}^T}$ is the covariance matrix and $\abs{\bm{\Sigma}}$ is the determinant of $\bm{\Sigma}$.
+Show that the PDF of the {\em bivariate} Gaussian is
 {\small
 \begin{multline}
 \label{eq:bivariate}
@@ -570,36 +570,73 @@ p(x,y)= \frac{1}{2\pi \sigma_x\sigma_y\sqrt{1-\rho^2}}\exp\lsbrak{-\frac{1}{2\br
 }
 %
 where
+%
 \begin{align}
-\mu_x &= E\sbrak{X},
-\\
-\sigma_x^2 &= \text{var}\brak{X},
-\\
-\rho &= \frac{E\sbrak{\brak{X - \mu_x}\brak{Y-\mu_y}}}{\sigma_x\sigma_y}.
+%\bm{\mu}=
+\bm{\mu}=
+\begin{pmatrix*}
+\mu_x \\
+\mu_y
+\end{pmatrix*},
+\bm{\Sigma} = 
+\begin{pmatrix*}%[r]
+\sigma_x^2 & \rho\sigma_x\sigma_y \\
+\rho\sigma_x\sigma_y & \sigma_y^2
+\end{pmatrix*}
 \end{align}
-%where
+
+%The multivariate Gaussian distribution is defined as
 %%
+%\begin{multline}
+%p_{\mathbf{x}}(x_1,\dots,x_k)
+%\\
+%=\frac{1}{\sqrt{\brak{2\pi}^k\abs{\Sigma}}}\exp\cbrak{-\frac{1}{2}\brak{\mathbf{x}-\mathbf{\mu}}^T\Sigma^{-1}\brak{\mathbf{x}-\mathbf{\mu}}}
+%\end{multline}
+%%
+%where $\mathbf{\mu}$ is the mean vector, $\Sigma = E\sbrak{\brak{\mathbf{x}-\mathbf{\mu}}\brak{\mathbf{x}-\mathbf{\mu}}^T}$ is the covariance matrix and $\abs{\Sigma}$ is the determinant of $\Sigma$.
+%\begin{definition}
+%The joint PDF of $X,Y$ is given by
+%{\small
+%\begin{multline}
+%\label{eq:bivariate}
+%p(x,y)= \frac{1}{2\pi \sigma_x\sigma_y\sqrt{1-\rho^2}}\exp\lsbrak{-\frac{1}{2\brak{1-\rho^2}}}
+%\\
+%\times \rsbrak{\cbrak{\frac{\brak{x-\mu_x}^2}{\sigma_x^2}+\frac{\brak{y-\mu_y}^2}{\sigma_y^2}-\frac{2\rho\brak{x-\mu_x}\brak{y-\mu_y}}{\sigma_x\sigma_y}}}
+%\end{multline}
+%}
+%%
+%where
 %\begin{align}
-%\mathbf{\mu}=
-%\begin{pmatrix*}
-%\mu_x \\
-%\mu_y
-%\end{pmatrix*},
-%\Sigma = 
-%\begin{pmatrix*}%[r]
-%\sigma_x^2 & \rho\sigma_x\sigma_y \\
-%\rho\sigma_x\sigma_y & \sigma_y^2
-%\end{pmatrix*}
+%\mu_x &= E\sbrak{X},
+%\\
+%\sigma_x^2 &= \text{var}\brak{X},
+%\\
+%\rho &= \frac{E\sbrak{\brak{X - \mu_x}\brak{Y-\mu_y}}}{\sigma_x\sigma_y}.
 %\end{align}
-%
-\end{definition}
-%
+%%where
+%%%
+%%\begin{align}
+%%\mathbf{\mu}=
+%%\begin{pmatrix*}
+%%\mu_x \\
+%%\mu_y
+%%\end{pmatrix*},
+%%\Sigma = 
+%%\begin{pmatrix*}%[r]
+%%\sigma_x^2 & \rho\sigma_x\sigma_y \\
+%%\rho\sigma_x\sigma_y & \sigma_y^2
+%%\end{pmatrix*}
+%%\end{align}
+%%
+%\end{definition}
+%%
 
 For equiprobably symbols, the MAP criterion is defined as
 %
 \begin{equation}
 \label{eq:map_bfsk_dec}
-p\brak{\mathbf{y}|s_0} \dec{s_0}{s_1} p\brak{\mathbf{y}|s_1}
+%p\brak{\mathbf{y}|s_0} \dec{s_0}{s_1} p\brak{\mathbf{y}|s_1}
+p\brak{s_0|\vec{y}} \dec{s_0}{s_1} p\brak{s_1|\vec{y}}
 \end{equation}
 \item
 Use \eqref{eq:bivariate} in \eqref{eq:map_bfsk_dec}  to obtain \eqref{eq:bfsk_dec}.
@@ -607,7 +644,8 @@ Use \eqref{eq:bivariate} in \eqref{eq:map_bfsk_dec}  to obtain \eqref{eq:bfsk_de
 \solution According to the MAP criterion, assuming equiprobably symbols,
 \begin{align}
 %\pr{ \mathbf{y}|s_0 }
-p\brak{\mathbf{y}|s_0} \dec{s_0}{s_1} p\brak{\mathbf{y}|s_1}
+%p\brak{\mathbf{y}|s_0} \dec{s_0}{s_1} p\brak{\mathbf{y}|s_1}
+p\brak{s_0|\vec{y}} \dec{s_0}{s_1} p\brak{s_1|\vec{y}}
 \end{align}
 
 \item
@@ -799,7 +837,9 @@ $X$ and $Y$ are said to be uncorrelated if $\rho = 0$
 Show that  $X$ and $Y$ are uncorrelated. 
 Verify this numerically.
 \\
-\solution From \eqref{eq:qpsk_mean},
+\solution From \eqref{eq:qpskx}
+and \eqref{eq:qpsky}
+%\eqref{eq:qpsk_mean},
 \begin{align}
 \mu_x &= E\sbrak{X} = 0
 \\
@@ -857,7 +897,7 @@ Show that
  = \brak{1-\qfunc{\sqrt{\frac{E_s}{N_0}}}}^2
 \label{eq:qpsk_ser_final}
 \end{equation}
-\solution From \label{prob:qpsk_xy}, 
+\solution From \eqref{prob:qpsk_xy}, 
 \begin{align}
 \pr{X > \sqrt{E}_s} = \pr{Y > \sqrt{E}_s} = \qfunc{\sqrt{\frac{E_s}{N_0}}}
 \end{align}
