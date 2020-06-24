@@ -1,5 +1,4 @@
-\contentsline {section}{\numberline {1}BPSK}{1}{section.1}% 
-\contentsline {section}{\numberline {2}Coherent BFSK}{2}{section.2}% 
-\contentsline {section}{\numberline {3}Maximum Likelihood: Higher Order Modulation}{3}{section.3}% 
-\contentsline {section}{\numberline {4}QPSK}{4}{section.4}% 
-\contentsline {section}{\numberline {5}$M$-PSK}{5}{section.5}% 
+\contentsline {section}{\numberline {1}BPSK}{1}{section.1}%
+\contentsline {section}{\numberline {2}Coherent BFSK}{2}{section.2}%
+\contentsline {section}{\numberline {3}QPSK}{4}{section.3}%
+\contentsline {section}{\numberline {4}$M$-PSK}{6}{section.4}%

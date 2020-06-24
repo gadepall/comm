@@ -1,0 +1,12 @@
+\begin{circuitikz}[american]
+
+
+    \ctikzset{tripoles/mos style/arrows}
+    \draw[<->] (-5,0)--(5,0)node[right]{$x$};
+    \draw[-,dashed] (0,-5)--(0,5);
+    \filldraw[black](-2.5,0) circle(2pt) node[below] {$s_1$};
+    \filldraw[black](2.5,0) circle(2pt) node[below] {$s_0$};
+    \filldraw[black](0,0) circle(2pt) node[below] {$o$};
+    \coordinate[label = left:$D_1$]  (a) at (4,3);
+    \coordinate[label = left:$D_2$]  (a) at (-4,3 );
+    \end{circuitikz}

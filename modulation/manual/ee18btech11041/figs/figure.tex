@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+
+
+\draw (0,0) -- (12,0);
+\draw (0,0) -- (0,-3) -- (12,-3) -- (12,0);
+\draw (3,0) -- (3,-3);
+\draw (6,0) -- (6,-3);
+
+
+\node [align=center] at (1.5,-1.5) {SOM};
+\node [align=center] at (4.5,-1.5) {PILOT};
+\node [align=center] at (9,-1.5) {PAYLOAD};
+
+\draw[<->,thick] (0,-4)--(3,-4) node[align = center] at (1.5,-4.5) {$32 symbols$};
+\draw[<->,thick] (3,-4)--(6,-4) node[align = center] at (4.5,-4.5) {$32 symbols$};
+\draw[<->,thick] (6,-4)--(12,-4) node[align = center] at (9,-4.5) {$436 symbols$};
+\draw[<->,thick] (0,-5)--(12,-5) node[align = center] at (6,-5.5) {$2ms$};
+
+\node [align=center] at (6,-6) {$500 symbols$};
+
+
+
+\end{tikzpicture}

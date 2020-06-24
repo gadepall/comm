@@ -1,0 +1,110 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\item Constellation diagram of BPSK 
+\begin{figure}[!h]
+		\resizebox{\columnwidth}{!}{\input{./figs/constellation.tex}}
+\caption{Constellation diagram}
+\label{fig:ee18btech11042_1}
+\end{figure}
+\item Encoding 
+\newline 
+We will encode bits as  symbols $s_0$ and $s_1$.Here, we will transmit $s_0$ if bit is 0 and we transmit $s_1$ if bit is 1.
+
+
+\[ s =   \left\{
+\begin{array}{cc}
+
+    s_0 ,&     bit = 0 \\
+    s_1, &     bit = 1 \\
+\end{array}
+\right .\]
+
+ 
+
+
+
+\item Decision rule for BPSK.
+\newline
+Given symbols $s_0$ and $ s_1$ are equiprobable and assume symbol carries $\sqrt{E_b}$ per bit and consider a  additive white gaussian noise(AWGN) with mean 0 and variance $\frac{N_o}{2}$ and take  symbols as equiprobable. The received symbols can be:
+\begin{align}
+    y|s_0 = \sqrt(E_b) + n
+    \label{eq:ee18btech11042_1}
+\end{align}
+\begin{align}
+    y|s_1 = -\sqrt(E_b) + n
+    \label{eq:ee18btech11042_2}
+\end{align}
+According to MAP detction rule, we will decode the received signal  as symbol s for which  p\brak{s|y} is more.
+\begin{align}
+    \hat{s} = max_{s \in  \cbrak{s_0,s_1}} p\brak{s|y}
+    \label{eq:ee18btech11042_3}
+\end{align}
+\begin{align}
+    \implies p\brak{s_0|y} \dec{s_0}{s_1} p\brak{s_1|y}
+    \label{eq:ee18btech11042_4}
+\end{align}
+Using Bayes rule,
+\begin{align}
+    p\brak{s_0|y} = \frac{p\brak{y|s_0}p\brak{s_0}}{p\brak{y}}
+    \label{eq:ee18btech11042_5}
+\end{align}
+\begin{align}
+    p\brak{s_1|y} = \frac{p\brak{y|s_1}p\brak{s_1}}{p\brak{y}}
+    \label{eq:ee18btech11042_6}
+\end{align}
+Since symbols are equi probable. p\brak{s_0} \&  p\brak{s_1} are equal.
+\begin{align}
+    \frac{p\brak{y|s_0}p\brak{s_0}}{p\brak{y}} \dec{s_0}{s_1}  \frac{p\brak{y|s_1}p\brak{s_1}}{p\brak{y}}
+    \label{eq:ee18btech11042_7}
+\end{align}
+\begin{align}
+    \implies p\brak{y|s_0} \dec{s_0}{s_1} p\brak{y|s_1}
+    \label{eq:ee18btech11042_8}
+\end{align}
+\begin{align}
+    \implies \frac{1}{\sqrt{2\pi}} \exp{-\frac{(y-\sqrt{E_b})^2}{\frac{N_o}{2}}}  \dec{s_0}{s_1}   
+\\
+    \frac{1}{\sqrt{2\pi}} \exp{-\frac{(y+\sqrt{E_b})^2}{\frac{N_o}{2}}}
+    \label{eq:ee18btech11042_9}
+\end{align}
+
+\begin{align}
+     \implies (y+\sqrt{E_b})^2 \dec{s_0}{s_1} (y - \sqrt{E_b})^2
+     \label{eq:ee18btech11042_10}
+\end{align}
+\begin{align}
+    \implies y \dec{s_0}{s_1} 0
+    \label{eq:ee18btech11042_11}
+\end{align}
+The decision region of BPSK is:
+\begin{align}
+    y \dec{s_0}{s_1} 0
+    \label{eq:ee18btech11042_12}
+\end{align}
+\begin{figure}[!h]
+		\resizebox{\columnwidth}{!}{\input{./figs/constellation_1.tex}}
+\caption{Decision region for BPSK}
+\label{fig:ee18btech11042_2}
+\end{figure}
+\item Decoding 
+\newline
+Consider, y is the received symbol .Then, we need to decode this symbol into bits.Here,we will  use decision region  to decode into bits.
+\[ bit =   \left\{
+\begin{array}{cc}
+
+    y>0 ,&     bit = 0 \\
+    y<0, &     bit = 1 \\
+\end{array}
+\right .\]
+So, if received symbol y $>$0 ,we decode that symbol into 0  and if y$<$0 we decode it as 1.
+\item The following code has simulation of ber of BPSK.
+\begin{lstlisting}
+ codes/bpsk_ber.py
+\end{lstlisting}
+
+
+\end{enumerate}
+
+

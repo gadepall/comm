@@ -38,7 +38,7 @@
 \usepackage[breaklinks=true]{hyperref}
 %\usepackage{stmaryrd}
 \usepackage{tkz-euclide} % loads  TikZ and tkz-base
-\usetkzobj{all}
+%\usetkzobj{all}
 \usepackage{listings}
     \usepackage{color}                                            %%
     \usepackage{array}                                            %%
@@ -129,7 +129,7 @@ columns=fullflexible
 \providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
 %\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
 \providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
-	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+	%\newcommand{\solution}[2]{\vec{Solution:}{#1}}
 \newcommand{\solution}{\noindent \textbf{Solution: }}
 \newcommand{\cosec}{\,\text{cosec}\,}
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
@@ -162,12 +162,12 @@ columns=fullflexible
 \vspace{3cm}
 
 \title{
-%	\logo{
+	\logo{
 Digital Modulation Techniques
-%	}
+	}
 }
-\author{ G V V Sharma$^{*}$% <-this % stops a space
 %\author{ C.~Shruti, P.~N.~V.~S.~S.~K.~ HAVISH, S.~S.~Ashish and G V V Sharma$^{*}$% <-this % stops a space
+\author{ G V V Sharma$^{*}$% <-this % stops a space
 	\thanks{*The author is with the Department
 		of Electrical Engineering, Indian Institute of Technology, Hyderabad
 		502285 India e-mail:  gadepall@iith.ac.in. All content in this manual is released under GNU GPL.  Free and open source.}
@@ -204,8 +204,8 @@ Digital Modulation Techniques
 %
 % a space would be appended to the last name and could cause every name on that
 % line to be shifted left slightly. This is one of those "LaTeX things". For
-% instance, "\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get
-% "AB" then you have to do: "\textbf{A}\textbf{B}"
+% instance, "\vec{A} \vec{B}" will typeset as "A B" not "AB". To get
+% "AB" then you have to do: "\vec{A}\vec{B}"
 % \thanks is no different in this regard, so shield the last } of each \thanks
 % that ends a line with a % and do not let a space in before the next \thanks.
 % Spaces after \IEEEmembership other than the last one are OK (and needed) as
@@ -318,15 +318,21 @@ svn co https://github.com/gadepall/comm/trunk/modulation/manual/codes
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 
-\item The {\em signal constellation diagram} for BPSK is given by Fig. \ref{fig:bpsk_const}.  The symbols $s_0$ and $s_1$ are equiprobable.  $\sqrt{E_b}$ is the energy transmitted per bit. Assuming a zero mean additive white gaussian noise (AWGN) with variance $\frac{N_0}{2}$,
+\item The {\em signal constellation diagram} for BPSK is given by Fig. \ref{fig:ee18btech11042_bpsk_const}.  The symbols $s_0$ and $s_1$ are equiprobable.  $\sqrt{E_b}$ is the energy transmitted per bit. Assuming a zero mean additive white gaussian noise (AWGN) with variance $\frac{N_0}{2}$,
 obtain the symbols that are received.
 %
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \centering
-\includegraphics[width=\columnwidth]{./figs/bpsk_const.eps}
+\resizebox{\columnwidth}{!}{\input{./ee18btech11042/figs/constellation.tex}}
+%\includegraphics[width=\columnwidth]{./ee18btech11042/figs/constellation.eps}
 \caption{}
-\label{fig:bpsk_const}
+\label{fig:ee18btech11042_bpsk_const}
 \end{figure}
+%\begin{figure}[!ht]
+%		\resizebox{\columnwidth}{!}{\input{./figs/constellation.tex}}
+%\caption{Constellation diagram}
+%\label{fig:ee18btech11042_ee18btech11042_1}
+%\end{figure}
 \\
 \solution The possible received symbols are
 \begin{align}
@@ -340,72 +346,79 @@ where the AWGN $n \sim \gauss{0}{\frac{N_0}{2}}$.
 \item
 
 \label{prob:bpsk_decision}
-From Fig. \ref{fig:bpsk_const} obtain a decision rule for BPSK.
-\\
+From Fig. \ref{fig:ee18btech11042_bpsk_const} obtain a decision rule for BPSK
 \solution The decision rule is
 \begin{equation}
-\label{eq:bsk_map_dec}
 y \dec{s_0}{s_1} 0
 \end{equation}
-%
-\item Find the PDFs of $y|s_0$ and $y|s_0$
-\\
-\solution $\because y|s_0$ is Gaussian with 
-\begin{align}
-E\sbrak{y|s_0} &= \sqrt{E_b}
-\\
-\text{var}\brak{y|s_0} &= \frac{N_0}{2},
-\\
-\implies p\brak{y|s_0} &= \frac{1}{\sqrt{2\pi}}\exp\cbrak{-\frac{\brak{y - \sqrt{E_b}}^2}{\frac{N_0}{2}}}
-\label{eq:bpsk_y0pdf}
-\end{align}
-%
-Similarly,
-\begin{align}
-p\brak{y|s_1} &= \frac{1}{\sqrt{2\pi}}\exp\cbrak{-\frac{\brak{y + \sqrt{E_b}}^2}{\frac{N_0}{2}}}
-\label{eq:bpsk_y1pdf}
-\end{align}
 
-\item Obtain \eqref{eq:bsk_map_dec} using the MAP criterion.
+\item
+Repeat the previous exercise using the MAP criterion.
 \\
-\solution According to the MAP rule, 
+\solution
+%Given symbols $s_0$ and $ s_1$ are equiprobable and assume symbol carries $\sqrt{E_b}$ per bit and consider a  additive white gaussian noise(AWGN) with mean 0 and variance $\frac{N_oN_0}{2}$ and take  symbols as equiprobable. The received symbols can be:
+%\begin{align}
+%    y|s_0 = \sqrt(E_b) + n
+%    \label{eq:ee18btech11042_1}
+%\end{align}
+%\begin{align}
+%    y|s_1 = -\sqrt(E_b) + n
+%    \label{eq:ee18btech11042_2}
+%\end{align}
+According to MAP detection rule
+%, we will decode the received signal  as symbol s for which  p\brak{s|y} is more.
 \begin{align}
-\hat{s} = \max_{s \in \cbrak{s_0,s_1}} p\brak{s|y}
+    \hat{s} &= \max_{s \in  \cbrak{s_0,s_1}} p\brak{s|y}
+    \label{eq:ee18btech11042_3}
 \\
-\implies  p\brak{s_0|y} \dec{s_0}{s_1}  p\brak{s_1|y}
-\label{bpsk_map}
+    \implies p\brak{s_0|y} &\dec{s_0}{s_1} p\brak{s_1|y}
+    \label{eq:ee18btech11042_4}
 \end{align}
-%
-Using Bayes' rule, 
+Using Bayes rule,
 \begin{align}
- p\brak{s_0|y} &= \frac{p\brak{y|s_0}p(s_0)}{p\brak{y}}
+    p\brak{s_0|y} &= \frac{p\brak{y|s_0}p\brak{s_0}}{p\brak{y}}
+    \label{eq:ee18btech11042_5}
 \\
- p\brak{s_1|y} &= \frac{p\brak{y|s_1}p(s_1)}{p\brak{y}}
+    p\brak{s_1|y} &= \frac{p\brak{y|s_1}p\brak{s_1}}{p\brak{y}}
+    \label{eq:ee18btech11042_6}
 \end{align}
-%
-which, upon substituting in \eqref{bpsk_map}, yields
+Since symbols are equi probable,  $p\brak{s_0} =  p\brak{s_1}$.  Hence the decision becomes
 \begin{align}
-\frac{p\brak{y|s_0}p(s_0)}{p\brak{y}} &\dec{s_0}{s_1} \frac{p\brak{y|s_1}p(s_1)}{p\brak{y}}
+    \frac{p\brak{y|s_0}p\brak{s_0}}{p\brak{y}} &\dec{s_0}{s_1}  \frac{p\brak{y|s_1}p\brak{s_1}}{p\brak{y}}
+    \label{eq:ee18btech11042_7}
 \\
-p\brak{y|s_0}&\dec{s_0}{s_1} p\brak{y|s_1}
-\label{bpsk_ml}
+    \implies p\brak{y|s_0} &\dec{s_0}{s_1} p\brak{y|s_1}
+    \label{eq:ee18btech11042_8}
 \end{align}
-%
-$\because$ the symbols are equiprobable. Substituting from \label{eq:bpsk_y0pdf} and \label{eq:bpsk_y1pdf} in \label{bpsk_ml} 
-%
-\begin{multline}
-\frac{1}{\sqrt{2\pi}}\exp\cbrak{-\frac{\brak{y - \sqrt{E_b}}^2}{\frac{N_0}{2}}} 
-\\
-\dec{s_0}{s_1} \frac{1}{\sqrt{2\pi}}\exp\cbrak{-\frac{\brak{y + \sqrt{E_b}}^2}{\frac{N_0}{2}}}
-\end{multline}
+The above condition is known as the maximum-likelihood (ML) criterion.      \eqref{eq:ee18btech11042_8}
+can be expressed as
+{\small
 \begin{align}
-\implies \brak{y + \sqrt{E_b}}^2 &\dec{s_0}{s_1} \brak{y - \sqrt{E_b}}^2
-\\
-\text{or, } y &\dec{s_0}{s_1} 0
+    \frac{1}{\sqrt{2\pi}} \exp{-\frac{(y-\sqrt{E_b})^2}{\frac{N_oN_0}{2}}}  \dec{s_0}{s_1}   
+    \frac{1}{\sqrt{2\pi}} \exp{-\frac{(y+\sqrt{E_b})^2}{\frac{N_oN_0}{2}}}
+    \label{eq:ee18btech11042_9}
 \end{align}
-%
-after some algebra.
-%
+}
+\begin{align}
+     \implies (y+\sqrt{E_b})^2 &\dec{s_0}{s_1} (y - \sqrt{E_b})^2
+     \label{eq:ee18btech11042_10}
+\\
+    \implies y &\dec{s_0}{s_1} 0
+    \label{eq:ee18btech11042_11}
+\end{align}
+%The decision region of BPSK is:
+%\begin{align}
+%    y \dec{s_0}{s_1} 0
+%    \label{eq:ee18btech11042_12}
+%\end{align}
+Fig. \ref{fig:ee18btech11042_2} shows the decision regions $D_1$ and $D_2$ for $s_0$ and $s_1$ respectively.
+
+\begin{figure}[!ht]
+		\resizebox{\columnwidth}{!}{\input{./ee18btech11042/figs/constellation_1.tex}}
+\caption{Decision region for BPSK}
+\label{fig:ee18btech11042_2}
+\end{figure}
+
 \item
 Using the decision rule in Problem \ref{prob:bpsk_decision}, obtain an expression for the probability of error for BPSK.
 \\
@@ -468,12 +481,12 @@ The following code
 \begin{lstlisting}
 codes/bpsk_ber.py
 \end{lstlisting}
-yields Fig. \ref{fig:bpsk_ber}
-\begin{figure}[!h]
+yields Fig. \ref{fig:ee18btech11042_bpsk_ber}
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=\columnwidth]{./figs/bpsk_ber.eps}
 \caption{}
-\label{fig:bpsk_ber}
+\label{fig:ee18btech11042_bpsk_ber}
 \end{figure}
 
 
@@ -484,13 +497,13 @@ yields Fig. \ref{fig:bpsk_ber}
 \numberwithin{equation}{enumi}
 
 \item
-The signal constellation for binary frequency shift keying (BFSK) is given in Fig. \ref{fig:bfsk_const}.
+The signal constellation for binary frequency shift keying (BFSK) is given in Fig. \ref{fig:ee18btech11042_bfsk_const}.
 Obtain the equations for the received symbols.
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=\columnwidth]{./figs/bfsk_const.eps}
 \caption{}
-\label{fig:bfsk_const}
+\label{fig:ee18btech11042_bfsk_const}
 \end{figure}
 \\
 \solution
@@ -530,23 +543,23 @@ y_{1}\\
 $.
 
 \item
-Obtain a decision rule for BFSK from Fig. \ref{fig:bfsk_const}.
+Obtain a decision rule for BFSK from Fig. \ref{fig:ee18btech11042_bfsk_const}.
 \solution The decision rule is
 \begin{equation}
 \label{eq:bfsk_dec}
 y_1 \dec{s_0}{s_1} y_2
 \end{equation}
-\item The multivariate Gaussian distribution is defined as
-%
-\begin{multline}
-\label{eq:multivariate}
-p_{\mathbf{x}}(x_1,\dots,x_k)
-\\
-=\frac{1}{\sqrt{\brak{2\pi}^k\abs{\bm{\Sigma}}}}\exp\cbrak{-\frac{1}{2}\brak{\mathbf{x}-\bm{\mu}}^T\bm{\Sigma}^{-1}\brak{\mathbf{x}-\bm{\mu}}}
-\end{multline}
-%
-where $\bm{\mu}$ is the mean vector, $\bm{\Sigma} = E\sbrak{\brak{\mathbf{x}-\bm{\mu}}\brak{\mathbf{x}-\bm{\mu}}^T}$ is the covariance matrix and $\abs{\bm{\Sigma}}$ is the determinant of $\bm{\Sigma}$.
-Show that the PDF of the {\em bivariate} Gaussian is
+%The multivariate Gaussian distribution is defined as
+%%
+%\begin{multline}
+%p_{\mathbf{x}}(x_1,\dots,x_k)
+%\\
+%=\frac{1}{\sqrt{\brak{2\pi}^k\abs{\Sigma}}}\exp\cbrak{-\frac{1}{2}\brak{\mathbf{x}-\mathbf{\mu}}^T\Sigma^{-1}\brak{\mathbf{x}-\mathbf{\mu}}}
+%\end{multline}
+%%
+%where $\mathbf{\mu}$ is the mean vector, $\Sigma = E\sbrak{\brak{\mathbf{x}-\mathbf{\mu}}\brak{\mathbf{x}-\mathbf{\mu}}^T}$ is the covariance matrix and $\abs{\Sigma}$ is the determinant of $\Sigma$.
+\begin{definition}
+The joint PDF of $X,Y$ is given by
 {\small
 \begin{multline}
 \label{eq:bivariate}
@@ -557,59 +570,32 @@ p(x,y)= \frac{1}{2\pi \sigma_x\sigma_y\sqrt{1-\rho^2}}\exp\lsbrak{-\frac{1}{2\br
 }
 %
 where
-%
 \begin{align}
-%\bm{\mu}=
-\bm{\mu}=
-\begin{pmatrix*}
-\mu_x \\
-\mu_y
-\end{pmatrix*},
-\bm{\Sigma} = 
-\begin{pmatrix*}%[r]
-\sigma_x^2 & \rho\sigma_x\sigma_y \\
-\rho\sigma_x\sigma_y & \sigma_y^2
-\end{pmatrix*}
+\mu_x &= E\sbrak{X},
+\\
+\sigma_x^2 &= \text{var}\brak{X},
+\\
+\rho &= \frac{E\sbrak{\brak{X - \mu_x}\brak{Y-\mu_y}}}{\sigma_x\sigma_y}.
 \end{align}
-%
-%\begin{definition}
-%The joint PDF of $X,Y$ is given by
-%{\small
-%\begin{multline}
-%\label{eq:bivariate}
-%p(x,y)= \frac{1}{2\pi \sigma_x\sigma_y\sqrt{1-\rho^2}}\exp\lsbrak{-\frac{1}{2\brak{1-\rho^2}}}
-%\\
-%\times \rsbrak{\cbrak{\frac{\brak{x-\mu_x}^2}{\sigma_x^2}+\frac{\brak{y-\mu_y}^2}{\sigma_y^2}-\frac{2\rho\brak{x-\mu_x}\brak{y-\mu_y}}{\sigma_x\sigma_y}}}
-%\end{multline}
-%}
-%
-%where
-%\begin{align}
-%\mu_x &= E\sbrak{X},
-%\\
-%\sigma_x^2 &= \text{var}\brak{X},
-%\\
-%\rho &= \frac{E\sbrak{\brak{X - \mu_x}\brak{Y-\mu_y}}}{\sigma_x\sigma_y}.
-%\end{align}
 %where
 %%
 %\begin{align}
-%\bm{\mu}=
+%\mathbf{\mu}=
 %\begin{pmatrix*}
 %\mu_x \\
 %\mu_y
 %\end{pmatrix*},
-%\bm{\Sigma} = 
+%\Sigma = 
 %\begin{pmatrix*}%[r]
 %\sigma_x^2 & \rho\sigma_x\sigma_y \\
 %\rho\sigma_x\sigma_y & \sigma_y^2
 %\end{pmatrix*}
 %\end{align}
 %
-%\end{definition}
+\end{definition}
 %
 
-For equiprobable symbols, the MAP criterion is defined as
+For equiprobably symbols, the MAP criterion is defined as
 %
 \begin{equation}
 \label{eq:map_bfsk_dec}
@@ -665,160 +651,117 @@ $w \sim \gauss{0}{1}$.
 %Then $X = \sqrt{N_0}w$. Substituting this in \eqref{eq:fsk_proof_n0},
 %where $\qfunc{x} \define \pr{w > x}, x \ge 0$.
 %
-The following code plots the BER curves in Fig. \ref{fig:bfsk_ber}
+The following code plots the BER curves in Fig. \ref{fig:ee18btech11042_bfsk_ber}
 \begin{lstlisting}
 codes/fsk_ber.py
 \end{lstlisting}
 %
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=\columnwidth]{./figs/bfsk_ber.eps}
 \caption{}
-\label{fig:bfsk_ber}
+\label{fig:ee18btech11042_bfsk_ber}
 \end{figure}
 
 \end{enumerate}
-\section{Maximum Likelihood: Higher Order Modulation}
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
-\item In higher order modulation, the number of possible symbols can be $M > 2$.  Suggest a model for the received vector.
-\\
-\solution The model can be expressed as
-\begin{align}
-\label{eq:rx_mult}
-\vec{y} = \vec{s} + \vec{n}
-\end{align}
-%
-where
-\begin{align}
-\vec{y} &= \myvec{y_1\\y_2\\ \dots\\y_N},
-\\
-\vec{s} &\in \cbrak{\vec{s}_0,\vec{s}_1 \dots \vec{s}_M},
-\\
-\vec{n} &\sim  \gauss{0}{\frac{N_0}{2}\vec{I}}
-\end{align}
-\item Find $p\brak{\vec{y}| \vec{s}}$.
-\\
-\solution For \eqref{eq:rx_mult}, the parameters in \eqref{eq:multivariate} are
-\begin{align}
-\bm{\mu} &= \vec{s}
-\\
-\bm{\Sigma} &= \frac{N_0}{2}\vec{I}
-\\
-\implies p\brak{\vec{y}| \vec{s}} &= \frac{1}{\brak{\pi N_0}^{\frac{1}{2}}}e^{-\frac{\norm{\vec{y}-\vec{s}}^2}{N_0}}
-\label{eq:mult_symb_prob}
-\end{align}
-
-
-
-\item Extending \eqref{bpsk_map}
- and \eqref{bpsk_ml} for arbitrary $M$
-
-\begin{align}
-\hat{\vec{s}} = \max_{\vec{s} \in \cbrak{\vec{s}_0,\vec{s}_1}\dots \vec{s}_M} p\brak{\vec{s}|\vec{y}}
-\\
-\implies \hat{\vec{s}} = \max_{\vec{s} \in \cbrak{\vec{s}_0,\vec{s}_1 \dots \vec{s}_M}} p\brak{\vec{y}|\vec{s}}
-\label{eq:multi_ml}
-\end{align}
-%
-which is known as the {\em maximum likelihood} decision.  Using \eqref{eq:mult_symb_prob}, show that \eqref{eq:multi_ml} reduces to the {\em minimum distance} criterion
-
-\begin{align}
-\label{eq:min_dist}
-\hat{\vec{s}} = \min_{\vec{s} \in \cbrak{\vec{s}_0,\vec{s}_1 \dots \vec{s}_M}} \norm{\vec{y}-\vec{s}}
-\end{align}
-\\
-\solution Using \eqref{eq:mult_symb_prob},  \eqref{eq:multi_ml} can be expressed as
-
-\begin{align}
-\hat{\vec{s}} &= \max_{\vec{s} \in \cbrak{\vec{s}_0,\vec{s}_1 \dots \vec{s}_M}}  \frac{1}{\brak{\pi N_0}^{\frac{1}{2}}}e^{-\frac{\norm{\vec{y}-\vec{s}}^2}{N_0}}
-\\
-&=\min_{\vec{s} \in \cbrak{\vec{s}_0,\vec{s}_1 \dots \vec{s}_M}}\frac{\norm{\vec{y}-\vec{s}}^2}{N_0}
-\\
-&=\min_{\vec{s} \in \cbrak{\vec{s}_0,\vec{s}_1 \dots \vec{s}_M}}\norm{\vec{y}-\vec{s}}^2
-\end{align}
-yielding \eqref{eq:min_dist}.
-
-
-\end{enumerate}
 \section{QPSK}
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 %
+\item See Fig.\ref{fig:ee18btech11041_fig1} for the constellation diagram.  The transmitted symbol set is given by 
+\begin{align}
+\vec{s}_m = \myvec{\cos \frac{2m\pi}{4}\\ \sin \frac{2m\pi}{4}}, \quad m \in \cbrak{0, 1, \dots, 3}.
+%\vec{y = s + n}
+\end{align}
+%
+The numerical values and encoding scheme for $\vec{s}_m$ are listed in Table \ref{table:ee18btech11041_table1}
+
+\begin{figure}[!ht]
+                \resizebox{\columnwidth}{!}{\input{./ee18btech11041/figs/ee18btech11041_fig1.tex}}
+
+\caption{constellation diagram}
+\label{fig:ee18btech11041_fig1}
+\end{figure}
+\begin{table}[!ht]
+\centering
+\input{./ee18btech11041/tables/ee18btech11041_table1.tex}
+\caption{}
+\label{table:ee18btech11041_table1}
+\end{table}
 \item Let
 \begin{equation}
 \label{eq:qpsk_rx}
-\mathbf{y} = \mathbf{s}+ \mathbf{n}
+\mathbf{y} = \sqrt{E}_s\mathbf{s}+ \mathbf{n}
 \end{equation}
-where $\mathbf{s} \in \cbrak{\mathbf{s}_0,\mathbf{s}_1,\mathbf{s}_2, \mathbf{s}_3}$ and
-\begin{align}
-\label{eq:qpsk_s0}
-\mathbf{s}_0 &= 
-\begin{pmatrix*}
-\sqrt{E_s}\\
-0
-\end{pmatrix*},
-%\label{eq:qpsk_s1}
-\mathbf{s}_1 = 
-\begin{pmatrix*}
-0\\
-\sqrt{E_s}
-\end{pmatrix*},
-\\
-\mathbf{s}_2 &= 
-\begin{pmatrix*}
--\sqrt{E_s}\\
-0
-\end{pmatrix*},
-\mathbf{s}_3 = 
-\begin{pmatrix*}
-0\\
--\sqrt{E_s}
-\end{pmatrix*},
-\\
-E\sbrak{\mathbf{n}} &= \mathbf{0}, E\sbrak{\mathbf{n}\mathbf{n}^T} = \frac{N_0}{2} \mathbf{I}
-\label{eq:qpsk_mean}
-\end{align}
+where $\mathbf{s} \in \cbrak{\mathbf{s}_0,\mathbf{s}_1,\mathbf{s}_2, \mathbf{s}_3}$ 
 %
-\item Using \eqref{eq:min_dist}, show that the MAP decision for detecting $\mathbf{s}_0$ results in
+\item Obtain the decision rule for QPSK by inspection.
+\\
+\solution The decision rule is given by Fig.\ref{fig:ee18btech11041_fig2} 
+
+\begin{figure}[!ht]
+                \resizebox{\columnwidth}{!}{\input{./ee18btech11041/figs/ee18btech11041_fig2.tex}}
+\caption{decision regions}
+\label{fig:ee18btech11041_fig2}	
+\end{figure}
+\item Using \eqref{eq:bivariate}, show that the MAP decision for detecting $\vec{s}_0$ results in
 \begin{equation}
 \label{eq:qpsk_dec}
 \abs{y_2} < y_1
 \end{equation}
-%
-Sketch this region.  
-\\
-\solution From \eqref{eq:min_dist}, $\vec{s}_0$ is chosen if
-\begin{align}
-\norm{\vec{y}-\vec{s}_0}^2 &<  \norm{\vec{y}-\vec{s}_1}^2 
-\\
-\norm{\vec{y}-\vec{s}_0}^2 &<  \norm{\vec{y}-\vec{s}_2}^2 
-\\
-\norm{\vec{y}-\vec{s}_0}^2 &<  \norm{\vec{y}-\vec{s}_3}^2 
-\end{align}
-%
-$\because \norm{\vec{s}_i}^2 = \sqrt{E}_s$, the above conditions can be simplified to obtain the region
+\solution The MAP criterion reduces to 
 %
 \begin{align}
-\brak{\vec{s}_0-\vec{s}_1}^T\vec{y} &> 0
-\\
-\brak{\vec{s}_0-\vec{s}_2}^T\vec{y} &> 0
-\\
-\brak{\vec{s}_0-\vec{s}_3}^T\vec{y} &> 0
+    \hat{s} = \min_{\vec{s} \in \vec{s}_i} \norm{\vec{y} - \vec{s}}, i \in \cbrak{0,\dots,3}
+    \label{eq:ee18btech11041_eq1}
 \end{align}
 %
-Substituting from \eqref{eq:qpsk_s0}, in the above and eliminating $E_s$, the desired region is
-%
+From eq.\ref{eq:ee18btech11041_eq1},$\vec{s}_{0}$ is chosen if
+
 \begin{align}
-\myvec{1 & -1}\vec{y}&> 0
+    \norm{\vec{y}-\vec{s}_0}^2 &< \norm{\vec{y}-\vec{s}_i}^2
 \\
-\myvec{1 & 0}\vec{y}&> 0
-\\
-\myvec{1 & 1}\vec{y}&> 0
+\implies    (\vec{s}_0-\vec{s}_i)^T\vec{y}&>0 \quad i \in \cbrak{1,2,3}
 \end{align}
+%\begin{align}
+%    \norm{\vec{y}-\vec{s}_0}^2 < \norm{\vec{y}-\vec{s}_2}^2
+%\end{align}
+%\begin{align}
+%    \norm{\vec{y}-\vec{s}_0}^2 < \norm{\vec{y}-\vec{s}_3}^2
+%\end{align}
 %
-yielding $\eqref{eq:qpsk_dec}$.  
-\item Show that $\eqref{eq:qpsk_dec}$ is convex.
+
+
+%\begin{align}
+%    (\vec{s}_0-\vec{s}_1)^T\vec{y}>0
+%\end{align}
+%\begin{align}
+%    (\vec{s}_0-\vec{s}_2)^T\vec{y}>0
+%\end{align}
+%\begin{align}
+%    (\vec{s}_0-\vec{s}_3)^T\vec{y}>0
+%\end{align}
+%
+%Substituting the values of $s_{0}$,$s_{1}$,....$s_{7}$ in the above
+or,
+\begin{align}
+\myvec{1 & -1 \\ 1& 0 \\ 1 & 1}\vec{y}\succeq 0
+\end{align}
+The above condition can be simplified to obtain the region
+\begin{align}
+D_1: \abs{y_2}< y_1
+\label{eq:qpsk_s0}
+\end{align}
+Table \ref{table:ee18btech11041_table2} summarizes the decisions for all symbols.
+%
+%
+\begin{table}[!ht]
+\centering
+\input{./ee18btech11041/tables/ee18btech11041_table2.tex}
+\caption{}
+\label{table:ee18btech11041_table2}
+\end{table}
+
 
 \item Express $\pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0}$ in terms of 
 $y_1, y_2$.
@@ -925,16 +868,16 @@ yielding \eqref{eq:qpsk_ser_final}.
 Verify the above through simulation.
 \\
 \solution 
-This is shown in Fig. \ref{fig:qpsk} through the following code.
+This is shown in Fig. \ref{fig:ee18btech11042_qpsk} through the following code.
 \begin{lstlisting}
 codes/qpsk.py
 \end{lstlisting}
 %
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=\columnwidth]{./figs/qpsk.eps}
 \caption{}
-\label{fig:qpsk}
+\label{fig:ee18btech11042_qpsk}
 \end{figure}
 
 \item
@@ -956,7 +899,7 @@ Modify the above script to obtain the probability of symbol error.
 %\implies \pr{\hat{\mathbf{s}} = \mathbf{s}_0|\mathbf{s} = \mathbf{s}_0} = \pr{X<\sqrt{E_s},Y<\sqrt{E_s}}
 %\end{equation}
 %\\
-%Where, $X=n_2-n_1, Y=-n_2-n_1$. Also $X,Y \sim \mathcal{N}\brak{0,2\bm{\Sigma}^2}$ and are independent. 
+%Where, $X=n_2-n_1, Y=-n_2-n_1$. Also $X,Y \sim \mathcal{N}\brak{0,2\sigma^2}$ and are independent. 
 %\item Show that 
 %\begin{equation}
 %\pr{ X < \sqrt{E_s},  Y < \sqrt{E_s}} = \brak{1-\qfunc{\sqrt{\frac{E_s}{N_0}}}}^2
@@ -966,7 +909,7 @@ Modify the above script to obtain the probability of symbol error.
 %\pr{X < A, Y < A} = \pr{X < A}\pr{Y < A}
 %\end{equation}
 %\begin{equation}
-%\implies \pr{X < A, Y < A} = \brak{1-\qfunc{\frac{A}{\sqrt{2}\bm{\Sigma}}}}^2
+%\implies \pr{X < A, Y < A} = \brak{1-\qfunc{\frac{A}{\sqrt{2}\sigma}}}^2
 %\end{equation}
 %\item 
 %\\
@@ -975,7 +918,7 @@ Modify the above script to obtain the probability of symbol error.
 \end{enumerate}
 %\item
 \section{$M$-PSK}
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 
 \item Consider a system where 
@@ -1083,7 +1026,7 @@ $\because \qfunc{0} = \frac{1}{2}$.
 
 Show that
 \begin{equation}
-P_{e|\mathbf{s}_0}=2\qfunc{\sqrt{2\brak{\frac{{E_s}}{N_o}}}\sin \frac{\pi}{M}}
+P_{e|\mathbf{s}_0}=2\qfunc{\sqrt{2\brak{\frac{{E_s}}{N_oN_0}}}\sin \frac{\pi}{M}}
 \end{equation}
 \item
 
